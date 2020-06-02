@@ -22,7 +22,7 @@
 | [Accuracy](fields/accuracy.md) | Accuracy of depth measurements in same unit specified for depth sensor | numerical, eg. “0.1”|
 | [Resolution](fields/resolution.md) | Resolution of depth measurements in same unit specified for depth sensor | numerical, eg. “0.1”|
 | [Pressure sampling frequency](fields/pressureSamplingFrequency.md) | Sampling frequency of depth measurements | eg. “0.25 Hz”|
-| [Sensor detection limits](fields/SensorDetectionLimits.md) | Maximum detection limits of depth sensor in same unit specified for depth sensor | numerical. eg. “2500”|
+| [Sensor detection limits](fields/sensorDetectionLimits.md) | Maximum detection limits of depth sensor in same unit specified for depth sensor | numerical. eg. “2500”|
 ### Environmental sensors
 | attributeName | description | format | 
 | ------------- | ----------- | ------ |
