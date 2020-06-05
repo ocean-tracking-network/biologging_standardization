@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- VERIFY: tag serial number not currently available for this instrument?-->
+<!-- Lots of these fields are completely optional, but are included for demonstrative purposes. 
+     The examples at sensorml.com/sensorML-2.0/examples are very instructive, 
+     but the namespaces and dependant .xsd files for sensorml, swe, and gml are outdated! Trying to fix. -->
+<sml:PhysicalComponent gml:id="[instrumentID]"  
+xmlns:sml="http://www.opengis.net/sensorML/2.0"
+xmlns:swe="http://www.opengis.net/sweCommon/2.0"
+xmlns:gml="http://www.opengis.net/gml/3.2.1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xsi:schemaLocation="http://www.opengis.net/sensorML/2.0" "http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+<!-- ================================================= -->
+<!--                  System Description               -->
+<!-- ================================================= -->
+<gml:description> Wildlife Computers Mk10 MiniPAT SPOT pop-up archival transmitting tag determining location via ARGOS satellite </gml:description>
+
+<!-- ======================================= -->
+<!--               Identifiers               -->
+<!-- ======================================= -->
+<sml:identification>
+        <sml:IdentifierList>
+              <sml:identifier>
+            <sml:Term definition="http://sensorml.com/ont/swe/property/LongName">
+                <sml:label>Long Name</sml:label>
+                <sml:value>Wildlife Computers Mk10 MiniPAT SPOT pop-up archival transmitting tag</sml:value>
+            </sml:Term>
+        </sml:identifier>
+        <sml:identifier>
+            <sml:Term definition="http://sensorml.com/ont/swe/property/ShortName">
+                <sml:label>Short Name</sml:label>
+                <sml:value>Mk10 SPOT tag</sml:value>
+            </sml:Term>
+        </sml:identifier>
+        <sml:identifier>
+            <sml:Term definition="http://sensorml.com/ont/swe/property/Manufacturer">
+                <sml:label>Manufacturer</sml:label>
+                <sml:value>Wildlife Computers</sml:value>
+            </sml:Term>
+        </sml:identifier>
+            <sml:identifier>
+                <sml:Term definition="https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L6">
+                    <sml:label>Instrument Model</sml:label>
+                    <sml:value>Mk10</sml:value>
+                </sml:Term>
+            </sml:identifier>
+       </sml:IdentifierList>
+ </sml:identification>
+
+<!-- ======================================= -->
+<!--               Classifiers               -->
+<!-- ======================================= -->
+
+<sml:classification>
+        <sml:ClassifierList>
+            <sml:classifier>
+                <sml:Term definition="https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L3">
+                    <sml:label>Instrument Type</sml:label>
+                    <sml:codeSpace xlink:href="urn:x-ceos:def:GCMD:sensors"></sml:codeSpace> <!-- TODO: what is appropriate here? -->
+                    <sml:value>satellite</sml:value>
+                </sml:Term>
+            </sml:classifier>
+            <sml:classifier>
+                <sml:Term definition="http://sensorml.com/ont/swe/property/IntendedApplication">
+                    <sml:label>Intended Application</sml:label>
+                    <sml:value>Animal Tracking</sml:value>
+                </sml:Term>
+            </sml:classifier>
+        </sml:ClassifierList>
+</sml:classification>
+
+<!-- ================================================= -->
+<!--       Temporal Validity of this description       -->    <!-- VERIFY: does this description only apply for the deployment -->
+<!-- ================================================= -->
+<sml:validTime>
+   <gml:TimePeriod gml:id="TimeSegment">
+      <gml:beginPosition>2016-08-27</gml:beginPosition>
+      <gml:endPosition>2017-02-15</gml:endPosition>  <!-- VERIFY: are the deployment dates appropriate here? 
+                                                            Are the times in the L1 data already Zulu?  -->
+   </gml:TimePeriod>
+</sml:validTime>
+<sml:legalConstraints>
+   <gmd:MD_LegalConstraints>
+      <gmd:useLimitation>
+            <gco:CharacterString>
+               Data associated with this instrument deployment is released under a Creative Commons CC-BY license. 
+               Citation of the data provider is necessary for any intended publication. 
+               The provider takes no responsibility for any misunderstanding or misuse of the information. 
+            </gco:CharacterString>
+      </gmd:useLimitation>
+   </gmd:MD_LegalConstraints>
+</sml:legalConstraints>
+<!-- ======================================= -->
+<!--            Characteristics              -->
+<!-- ======================================= -->
+<!-- physical instrument characteristics, may be an interesting place to put paint/markings 
+     that are intended to facilitate return of found equipment. -->
+
+<!-- ============================ -->
+<!--        Capabilities          -->
+<!-- ============================ -->
+    <sml:capabilities name="specifications">
+        <sml:CapabilityList>
+            <sml:capability name="measurementProperties">
+                <swe:DataRecord definition="http://sensorml.com/ont/swe/property/MeasurementProperties">
+                    <swe:label>Measurement Properties</swe:label>
+                    <swe:field name="Water Temperature">
+                        <swe:QuantityRange definition="http://sensorml.com/ont/swe/property/Temperature">
+                            <swe:uom code="Cel"/>
+                            <swe:value><!-- range of possible values --></swe:value>
+                        </swe:QuantityRange>
+                    </swe:field>
+                     <swe:field name="Pressure">
+                        <swe:QuantityRange definition="http://sensorml.com/ont/swe/property/Pressure">
+                            <swe:uom code="dbar"/>
+                            <swe:value><!-- range of possible values --></swe:value>
+                        </swe:QuantityRange>
+                    </swe:field>
+                    <swe:field name="MeasurementOutputTime">  <!-- can record things like sampling period for oceanographic eq. -->
+                        <swe:Quantity definition="http://sensorml.com/ont/swe/property/OutputPeriod">
+                            <swe:uom code="s"/>
+                            <swe:value>???</swe:value>
+                        </swe:Quantity>
+                    </swe:field>
+                </swe:DataRecord>
+            </sml:capability>
+        </sml:CapabilityList>
+    </sml:capabilities>
+
+<!-- ============================ -->
+<!--           Contacts           -->
+<!-- ============================ -->
+<sml:contacts>
+   <sml:ContactList>
+      <sml:contact xlink:arcrole="http://sensorml.com/def/role/Manufacturer">
+            <gmd:CI_ResponsibleParty>
+               <gmd:organisationName>
+                  <gco:CharacterString>Wildlife Computers</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:contactInfo>
+                  <gmd:CI_Contact>
+                        <gmd:phone>
+                           <gmd:CI_Telephone>
+                              <gmd:voice>
+                                    <gco:CharacterString>+1 425 881 3048</gco:CharacterString>
+                              </gmd:voice>
+                           </gmd:CI_Telephone>
+                        </gmd:phone>
+                        <gmd:address>
+                           <gmd:CI_Address>
+                              <gmd:deliveryPoint>
+                                    <gco:CharacterString>
+                                       8310 154th Ave NE Suite 150, Redmond, WA 98052, United States
+                                    </gco:CharacterString>
+                              </gmd:deliveryPoint>
+                              <gmd:city>
+                                    <gco:CharacterString>Redmond</gco:CharacterString>
+                              </gmd:city>
+                              <gmd:administrativeArea>
+                                    <gco:CharacterString>Washington</gco:CharacterString>
+                              </gmd:administrativeArea>
+                              <gmd:postalCode>
+                                    <gco:CharacterString>98052</gco:CharacterString>
+                              </gmd:postalCode>
+                           </gmd:CI_Address>
+                        </gmd:address>
+                  </gmd:CI_Contact>
+               </gmd:contactInfo>
+               <gmd:role gco:nilReason="inapplicable"/>
+            </gmd:CI_ResponsibleParty>
+      </sml:contact>
+   </sml:ContactList>
+</sml:contacts>
+
+<!-- ============================ -->
+<!--       Documentation          -->
+<!-- ============================ -->
+<sml:documentation>
+   <sml:DocumentList>
+      <sml:document xlink:arcrole="http://sensorml.com/ont/swe/property/OperationsManual">
+            <gmd:CI_OnlineResource>
+               <gmd:linkage>
+                  <gmd:URL>https://static.wildlifecomputers.com/SPOT-User-Guide-2.pdf</gmd:URL>
+               </gmd:linkage>
+               <gmd:name>
+                  <gco:CharacterString>Wildlife Computers - SPOT User Guide</gco:CharacterString>
+               </gmd:name>
+               <gmd:description>
+                  <gco:CharacterString>Operation Manual for the Wildlife Computers MK10 SPOT tag. Provides settings, and calibration instructions.</gco:CharacterString>
+               </gmd:description>
+            </gmd:CI_OnlineResource>
+      </sml:document>
+   </sml:DocumentList>
+</sml:documentation>
+
+<!-- =============================== -->
+<!--   Natural Phenomena = Inputs    -->
+<!-- =============================== -->
+
+<!--
+<sml:inputs>
+      <sml:InputList>
+         <sml:input name="waterTemperature">
+               <sml:ObservableProperty definition="http://sensorml.com/ont/swe/property/Temperature">
+                  <swe:label>Temperature</swe:label>
+               </sml:ObservableProperty>
+         </sml:input>
+      </sml:InputList>
+   </sml:inputs> 
+-->
+
+<!-- ================================================= -->
+<!--             Observed Property = Output            -->
+<!-- ================================================= -->
+   <sml:outputs>
+      <sml:OutputList>
+         <sml:output name="temp">
+            <swe:Quantity definition="http://sweet.jpl.nasa.gov/2.2/quanTemperature.owl#Temperature">
+               <swe:uom code="Cel"/>
+            </swe:Quantity>
+         </sml:output>
+            <sml:output name="pressure">
+            <swe:Quantity definition="?????">
+               <swe:uom code="dbar"/>
+            </swe:Quantity>
+         </sml:output>
+         <sml:output name="light level">
+            <swe:Quantity definition="?????">
+               <swe:uom code="?????"/>
+            </swe:Quantity>
+         </sml:output>
+      </sml:OutputList>
+   </sml:outputs>
+
+<!-- ======================== -->
+<!--        Parameters        -->
+<!-- ======================== -->
+
+
+</sml:PhysicalComponent>  <!-- end description of this instrument -->
+</xml>
