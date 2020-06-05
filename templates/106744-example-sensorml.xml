@@ -3,12 +3,14 @@
      The examples at sensorml.com/sensorML-2.0/examples are very instructive, 
      but the namespaces and dependant .xsd files for sensorml, swe, and gml are outdated! Trying to fix. -->
 <sml:PhysicalComponent gml:id="[instrumentID]"  
-xmlns:sml="http://www.opengis.net/sensorML/2.0"
-xmlns:swe="http://www.opengis.net/sweCommon/2.0"
-xmlns:gml="http://www.opengis.net/gml/3.2.1"
+xmlns:sml="http://www.opengis.net/sensorml/2.0"
+xmlns:swe="http://www.opengis.net/swe/2.0"
+xmlns:gml="http://www.opengis.net/gml/3.2"
+xmlns:gmd="http://www.isotc211.org/2005/gmd"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:gco="http://www.isotc211.org/2005/gco"
 xmlns:xlink="http://www.w3.org/1999/xlink"
-xsi:schemaLocation="http://www.opengis.net/sensorML/2.0" "http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
 <!-- ================================================= -->
 <!--                  System Description               -->
 <!-- ================================================= -->
@@ -103,18 +105,6 @@ xsi:schemaLocation="http://www.opengis.net/sensorML/2.0" "http://schemas.opengis
             <sml:capability name="measurementProperties">
                 <swe:DataRecord definition="http://sensorml.com/ont/swe/property/MeasurementProperties">
                     <swe:label>Measurement Properties</swe:label>
-                    <swe:field name="Water Temperature">
-                        <swe:QuantityRange definition="http://sensorml.com/ont/swe/property/Temperature">
-                            <swe:uom code="Cel"/>
-                            <swe:value><!-- range of possible values --></swe:value>
-                        </swe:QuantityRange>
-                    </swe:field>
-                     <swe:field name="Pressure">
-                        <swe:QuantityRange definition="http://sensorml.com/ont/swe/property/Pressure">
-                            <swe:uom code="dbar"/>
-                            <swe:value><!-- range of possible values --></swe:value>
-                        </swe:QuantityRange>
-                    </swe:field>
                     <swe:field name="MeasurementOutputTime">  <!-- can record things like sampling period for oceanographic eq. -->
                         <swe:Quantity definition="http://sensorml.com/ont/swe/property/OutputPeriod">
                             <swe:uom code="s"/>
@@ -122,6 +112,13 @@ xsi:schemaLocation="http://www.opengis.net/sensorML/2.0" "http://schemas.opengis
                         </swe:Quantity>
                     </swe:field>
                 </swe:DataRecord>
+            </sml:capability>
+            <sml:capability name="Operating depth">
+               <sml:QuantityRange definition="http://vocab.nerc.ac.uk/collection/W04/current/CAPB0012/">
+                  <sml:label> Operating depth</label>
+                  <sml:uom href="http://vocab.nerc.ac.uk/collection/P06/current/ULAA/"/>
+                  <sml:value>10 1000</value>
+               </sml:QuantityRange>
             </sml:capability>
         </sml:CapabilityList>
     </sml:capabilities>
@@ -237,4 +234,3 @@ xsi:schemaLocation="http://www.opengis.net/sensorML/2.0" "http://schemas.opengis
 
 
 </sml:PhysicalComponent>  <!-- end description of this instrument -->
-</xml>
