@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?> <!-- VERIFY: tag serial number not currently available for this instrument?-->
-<!-- Lots of these fields are completely optional, but are included for demonstrative purposes. 
-     The examples at sensorml.com/sensorML-2.0/examples are very instructive, 
-     but the namespaces and dependant .xsd files for sensorml, swe, and gml are outdated! Trying to fix. -->
+<?xml version="1.0" encoding="UTF-8"?> <!-- VERIFY: tag serial number not currently available for this instrument, reqd for instrument ID ?-->
+<!-- Lots of the below fields are completely optional, but are included for demonstrative purposes. 
+     The examples at sensorml.com/sensorML-2.0/examples are very instructive. -->
 <sml:PhysicalComponent gml:id="[instrumentID]"  
 xmlns:sml="http://www.opengis.net/sensorml/2.0"
 xmlns:swe="http://www.opengis.net/swe/2.0"
@@ -20,32 +19,43 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
 <!--               Identifiers               -->
 <!-- ======================================= -->
 <sml:identification>
-        <sml:IdentifierList>
-              <sml:identifier>
-            <sml:Term definition="http://sensorml.com/ont/swe/property/LongName">
-                <sml:label>Long Name</sml:label>
-                <sml:value>Wildlife Computers Mk10 MiniPAT SPOT pop-up archival transmitting tag</sml:value>
-            </sml:Term>
-        </sml:identifier>
-        <sml:identifier>
-            <sml:Term definition="http://sensorml.com/ont/swe/property/ShortName">
-                <sml:label>Short Name</sml:label>
-                <sml:value>Mk10 SPOT tag</sml:value>
-            </sml:Term>
-        </sml:identifier>
-        <sml:identifier>
-            <sml:Term definition="http://sensorml.com/ont/swe/property/Manufacturer">
-                <sml:label>Manufacturer</sml:label>
-                <sml:value>Wildlife Computers</sml:value>
-            </sml:Term>
-        </sml:identifier>
-            <sml:identifier>
-                <sml:Term definition="https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L6">
-                    <sml:label>Instrument Model</sml:label>
-                    <sml:value>Mk10</sml:value>
-                </sml:Term>
-            </sml:identifier>
-       </sml:IdentifierList>
+   <sml:IdentifierList>
+      <sml:identifier>  
+         <sml:Term definition="http://vocab.nerc.ac.uk/collection/W07/current/IDEN0008/">  
+            <sml:label>Instrument ID</sml:label>  
+            <sml:value>[InstrumentID]</sml:value>  
+         </sml:Term>  
+      </sml:identifier>  
+      <sml:identifier>
+         <sml:Term definition="http://sensorml.com/ont/swe/property/LongName">
+            <sml:label>Long Name</sml:label>
+            <sml:value>Wildlife Computers Mk10 MiniPAT SPOT pop-up archival transmitting tag</sml:value>
+         </sml:Term>
+      </sml:identifier>
+      <sml:identifier>
+         <sml:Term definition="http://sensorml.com/ont/swe/property/ShortName">
+            <sml:label>Short Name</sml:label>
+            <sml:value>Mk10 SPOT tag</sml:value>
+         </sml:Term>
+      </sml:identifier>
+      <sml:identifier>
+         <sml:Term definition="http://vocab.nerc.ac.uk/collection/W07/current/IDEN0012/">
+            <sml:label>Manufacturer</sml:label>
+            <sml:value>Wildlife Computers</sml:value>
+         </sml:Term>
+      </sml:identifier>
+      <sml:identifier>
+         <sml:Term definition="https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L6">
+            <sml:label>Instrument Model</sml:label>
+            <sml:value>Mk10</sml:value>
+         </sml:Term>
+      </sml:identifier>
+         <sml:Term definition="http://vocab.nerc.ac.uk/collection/W07/current/IDEN0008/">  
+            <sml:label>Serial Number</sml:label>  
+            <sml:value>[Instrument Serial]</sml:value>  
+         </sml:Term>
+      </sml:identifier>  
+   </sml:IdentifierList>
  </sml:identification>
 
 <!-- ======================================= -->
@@ -55,17 +65,24 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
 <sml:classification>
         <sml:ClassifierList>
             <sml:classifier>
-                <sml:Term definition="https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L3">
-                    <sml:label>Instrument Type</sml:label>
-                    <sml:codeSpace xlink:href="urn:x-ceos:def:GCMD:sensors"></sml:codeSpace> <!-- TODO: what is appropriate here? -->
-                    <sml:value>satellite</sml:value>
-                </sml:Term>
+               <sml:Term definition="https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L3">
+                  <sml:label>Instrument Type</sml:label>
+                  <sml:codeSpace xlink:href="urn:x-ceos:def:GCMD:sensors"></sml:codeSpace> <!-- TODO: what is appropriate here? -->
+                  <sml:value>Argos satellite tag</sml:value> <!-- where's the eTag controlled vocab for this? -->
+               </sml:Term>
             </sml:classifier>
             <sml:classifier>
-                <sml:Term definition="http://sensorml.com/ont/swe/property/IntendedApplication">
-                    <sml:label>Intended Application</sml:label>
-                    <sml:value>Animal Tracking</sml:value>
-                </sml:Term>
+               <sml:Term definition="http://sensorml.com/ont/swe/property/IntendedApplication">
+                  <sml:label>Intended Application</sml:label>
+                  <sml:value>Animal Tracking</sml:value>
+               </sml:Term>
+            </sml:classifier>
+            <sml:classifier>
+               <sml:Term definition="http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/">
+                  <sml:label>sensor type</sml:label>
+                  <sml:codeSpace xlink:href="urn:x-ceos:def:GCMD:sensors"/>
+                  <sml:value>Argos Doppler shift</sml:value> <!-- Movebank controlled vocab for this type of instrument. -->
+               </sml:Term>
             </sml:classifier>
         </sml:ClassifierList>
 </sml:classification>
@@ -108,12 +125,12 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
                     <swe:field name="MeasurementOutputTime">  <!-- can record things like sampling period for oceanographic eq. -->
                         <swe:Quantity definition="http://sensorml.com/ont/swe/property/OutputPeriod">
                             <swe:uom code="s"/>
-                            <swe:value>???</swe:value>
+                            <swe:value>60</swe:value>
                         </swe:Quantity>
                     </swe:field>
                 </swe:DataRecord>
             </sml:capability>
-            <sml:capability name="Operating depth">
+            <sml:capability name="Operating depth"> <!-- example straight from ODIP, not recognized by the sml schema -->
                <sml:QuantityRange definition="http://vocab.nerc.ac.uk/collection/W04/current/CAPB0012/">
                   <sml:label> Operating depth</label>
                   <sml:uom href="http://vocab.nerc.ac.uk/collection/P06/current/ULAA/"/>
