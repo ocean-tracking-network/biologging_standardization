@@ -252,7 +252,7 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
         <sml:ParameterList>
             <sml:parameter name="settings">
                 <swe:DataRecord id="DEPLOYED_SETTINGS">
-                   <swe:field name="repetitionRate">
+                   <swe:field name="samplingRate">   <!-- this won't be in SWE as-is. Could re-purpose samplingRate as it's roughly equivalent? Or might need a new schema or different recording -->
                         <swe:Quantity definition="http://vocab.nerc.ac.uk/collection/MVB/current/MVB000086/" updatable="true">
                             <swe:label>Repetition Rate</swe:label>  <!-- interval at which the instrument duty cycles -->
                             <swe:uom code="s"/>
@@ -276,7 +276,7 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
          <sml:event>
             <sml:Event definition="http://sensorml.com/ont/swe/property/deploymentEvent">
                <swe:label>Deployment: [deploymentID]</swe:label>
-               <swe:description>Deployed 15U2175 w/ PTT 106744 attached to a blue shark Thorrold</swe:description>
+               <swe:description>Deployed 15U2175 w/ PTT 106744 attached to a blue shark (Thorrold)</swe:description>
                <sml:time>
                   <gml:TimeInstant gml:id="deploymentTime">2016-08-27T00:00:00Z
                   </gml:TimeInstant>

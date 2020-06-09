@@ -16,9 +16,9 @@
 ```xml
 <sml:classifier>
     <sml:Term definition="http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/">
-        <sml:label>Tracking device</sml:label>
+        <sml:label>sensor type</sml:label>
         <sml:codeSpace xlink:href="urn:x-ceos:def:GCMD:sensors"/>
-        <sml:value>gamma detector</sml:value>
+        <sml:value>Argos Doppler shift</sml:value>
     </sml:Term>
 </sml:classifier>
 ```
