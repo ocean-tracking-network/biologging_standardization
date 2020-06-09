@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?> <!-- VERIFY: tag serial number not currently available for this instrument, reqd for instrument ID ?-->
+<?xml version="1.0" encoding="UTF-8"?> 
 <!-- Lots of the below fields are completely optional, but are included for demonstrative purposes. 
      The examples at sensorml.com/sensorML-2.0/examples are very instructive. -->
-<sml:PhysicalComponent gml:id="[instrumentID]"  
+<sml:PhysicalComponent gml:id="WildlifeComputers:15U2175"  
 xmlns:sml="http://www.opengis.net/sensorml/2.0"
 xmlns:swe="http://www.opengis.net/swe/2.0"
 xmlns:gml="http://www.opengis.net/gml/3.2"
@@ -23,19 +23,19 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
       <sml:identifier>  
          <sml:Term definition="http://vocab.nerc.ac.uk/collection/W07/current/IDEN0008/">  
             <sml:label>Instrument ID</sml:label>  
-            <sml:value>[InstrumentID]</sml:value>  
+            <sml:value>WildlifeComputers:15U2175</sml:value>  
          </sml:Term>  
       </sml:identifier>  
       <sml:identifier>
          <sml:Term definition="http://sensorml.com/ont/swe/property/LongName">
             <sml:label>Long Name</sml:label>
-            <sml:value>Wildlife Computers Mk10 MiniPAT SPOT pop-up archival transmitting tag</sml:value>
+            <sml:value>Wildlife Computers Mk10 MiniPAT SPOT6 pop-up archival transmitting tag</sml:value>
          </sml:Term>
       </sml:identifier>
       <sml:identifier>
          <sml:Term definition="http://sensorml.com/ont/swe/property/ShortName">
             <sml:label>Short Name</sml:label>
-            <sml:value>Mk10 SPOT tag</sml:value>
+            <sml:value>Mk10 SPOT6 tag</sml:value>
          </sml:Term>
       </sml:identifier>
       <sml:identifier>
@@ -47,12 +47,12 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
       <sml:identifier>
          <sml:Term definition="https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L6">
             <sml:label>Instrument Model</sml:label>
-            <sml:value>Mk10</sml:value>
+            <sml:value>Mk10 SPOT6</sml:value>
          </sml:Term>
       </sml:identifier>
          <sml:Term definition="http://vocab.nerc.ac.uk/collection/W07/current/IDEN0008/">  
             <sml:label>Serial Number</sml:label>  
-            <sml:value>[Instrument Serial]</sml:value>  
+            <sml:value>15U2175</sml:value>  
          </sml:Term>
       </sml:identifier>  
    </sml:IdentifierList>
@@ -248,6 +248,56 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
 <!-- ======================== -->
 <!--        Parameters        -->
 <!-- ======================== -->
+<sml:parameters>
+        <sml:ParameterList>
+            <sml:parameter name="settings">
+                <swe:DataRecord id="DEPLOYED_SETTINGS">
+                   <swe:field name="repetitionRate">
+                        <swe:Quantity definition="http://vocab.nerc.ac.uk/collection/MVB/current/MVB000086/" updatable="true">
+                            <swe:label>Repetition Rate</swe:label>  <!-- interval at which the instrument duty cycles -->
+                            <swe:uom code="s"/>
+                            <swe:constraint>
+                                <swe:AllowedValues>
+                                    <swe:interval>1 157784630</swe:interval> <!-- going with 5 years as an upper bound example -->
+                                </swe:AllowedValues>
+                            </swe:constraint>
+                        </swe:Quantity>
+                    </swe:field>
+               </swe:DataRecord>
+            </sml:parameter>    
+         </sml:ParameterList>
+    </sml:parameters>    
+   <!-- ================================================== -->
+   <!--                       History                      -->
+   <!-- ================================================== -->
 
+   <sml:history>
+      <sml:EventList>
+         <sml:event>
+            <sml:Event definition="http://sensorml.com/ont/swe/property/deploymentEvent">
+               <swe:label>Deployment: [deploymentID]</swe:label>
+               <swe:description>Deployed 15U2175 w/ PTT 106744 attached to a blue shark Thorrold</swe:description>
+               <sml:time>
+                  <gml:TimeInstant gml:id="deploymentTime">2016-08-27T00:00:00Z
+                  </gml:TimeInstant>
+               </sml:time>
+               <sml:property>
+                  <swe:DataRecord>
+                     <swe:field name="EventType">
+                        <swe:Category definition="http://mmisw.org/ont/mvco/historyEventType"> <!-- example had http://mmisw.org/ont/mvco/historyEventType, could try other vocabs -->
+                           <swe:value>sensorDeployment</swe:value>
+                        </swe:Category>
+                     </swe:field>
+                     <swe:field name="FirmwareVersion">
+                        <swe:Category definition="http://sensorml.com/ont/swe/property/firmwareVersion">
+                           <swe:value>1.00a-4881</swe:value>
+                        </swe:Category>
+                     </swe:field>
+                  </swe:DataRecord>
+               </sml:property>
+            </sml:Event>
+         </sml:event>
 
+      </sml:EventList>
+   </sml:history>
 </sml:PhysicalComponent>  <!-- end description of this instrument -->
