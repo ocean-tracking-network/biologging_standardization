@@ -275,8 +275,8 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
       <sml:EventList>
          <sml:event>
             <sml:Event definition="http://sensorml.com/ont/swe/property/deploymentEvent">
-               <swe:label>Deployment: [deploymentID]</swe:label>
-               <swe:description>Deployed 15U2175 w/ PTT 106744 attached to a blue shark (Thorrold)</swe:description>
+               <swe:label>Factory settings</swe:label>
+               <swe:description>Delivery of sensor from manufacturer</swe:description>
                <sml:time>
                   <gml:TimeInstant gml:id="deploymentTime">2016-08-27T00:00:00Z
                   </gml:TimeInstant>
@@ -291,6 +291,11 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
                      <swe:field name="FirmwareVersion">
                         <swe:Category definition="http://sensorml.com/ont/swe/property/firmwareVersion">
                            <swe:value>1.00a-4881</swe:value>
+                        </swe:Category>
+                     </swe:field>
+                     <swe:field name="transmitterCode"> <!-- todo: find the right vocab code for this -->
+                        <swe:Category definition="http://sensorml.com/ont/swe/property/transmitterCode">
+                           <swe:value>106744</swe:value>
                         </swe:Category>
                      </swe:field>
                   </swe:DataRecord>
