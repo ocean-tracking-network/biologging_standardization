@@ -55,4 +55,4 @@
 | [Sensor Model](fields/sensorModel.md) | Name of specific sensor model | string|
 | [Axes](fields/axes.md) | Axes in which acceleration is logged | Categorical (combinations of x, y, and z)|
 | [Sampling frequency](fields/samplingFrequency.md) | How often the sensor records a measurement (and duty cycling if applicable) | Numerical|
-| [Calibrations, if applicable](fields/Calibrations.md) | Calibrations performed on physiological sensor | String (possible link to data via DOI or URL)|
+| [Calibrations, if applicable](fields/calibrations.md) | Calibrations performed on physiological sensor | String (possible link to data via DOI or URL)|

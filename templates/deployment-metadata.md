@@ -9,16 +9,16 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [DeploymentID](fields/DeploymentID.md) | Unique identifier for single deployment of device. |  | |
+| [DeploymentID](fields/deploymentID.md) | Unique identifier for single deployment of device. |  | |
 
 ### Instrument metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [InstrumentID](fields/InstrumentID.md) | Serial number of tag, unless manufacturer uses alternative system |  | alpha-numerical, eg. “09A0178”|
-| [PTT](fields/PTT.md) | Platform Transmitter Terminal for Argos transmission |  | numerical, eg. “178937”|
+| [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system |  | alpha-numerical, eg. “09A0178”|
+| [PTT](fields/ptt.md) | Platform Transmitter Terminal for Argos transmission |  | numerical, eg. “178937”|
 | [Owner name](fields/ownerName.md) | Name of person to contact regarding the instrument |  | String containing full name|
 | [Owner contact](fields/ownerContact.md) | Contact information for responsible person |  | string containing E-mail, Institutional address|
-| [License](fields/License.md) | Terms of use for the data in the study, provided by the study owner. If no license terms are specified by researcher, the General repository Terms of Use apply.|  | Categorical|
+| [License](fields/license.md) | Terms of use for the data in the study, provided by the study owner. If no license terms are specified by researcher, the General repository Terms of Use apply.|  | Categorical|
 | [Transmission settings](fields/transmissionSettings.md) | Step duration and location uplink limit (can add rows if needed) |  | String with duration in hours, followed by number of messages e.g. “24 hours, 200 messages”|
 | [Transmission mode](fields/transmissionMode.md) | User-defined conditions for entering and exiting Haul-Out mode (slower repetition rate) and transmission control in Haul-Out if applicable |  | Time settings in minutes e.g. “Haul-Out state entered after 10 consecutive dry minutes (40 seconds/minute), exited if wet for 30 seconds/minute” OR “disabled”|
 | [Duty cycle](fields/dutyCycle.md) | Description of programmed time period during which tag is operational if applicable |  | String in sentence, e.g. PTT active 12 hours, followed by 6 hours sleep-mode|
@@ -73,7 +73,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 ### Accelerometry data calibration
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [Position of accelerometer on animal](fields/PositionOfAccelerometerOnAnimal.md) | Where the accelerometer was placed on the animal and its orientation if applicable |  | string, eg. “head”|
+| [Position of accelerometer on animal](fields/positionOfAccelerometerOnAnimal.md) | Where the accelerometer was placed on the animal and its orientation if applicable |  | string, eg. “head”|
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file |  | DOI or URL|
 | [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected |  | Y/N|
 | [QC notes](fields/qcNotes.md) | Description of QC done, eg. codes used, # of cases flagged, description of problem |  | text field|
