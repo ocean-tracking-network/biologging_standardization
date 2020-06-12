@@ -1,10 +1,11 @@
 # Field Name
+Transmission settings
 
 ## Definition 
-
+Step duration and location uplink limit
 
 ## Format
-
+String with duration in hours, followed by number of messages e.g. “24 hours, 200 messages”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
