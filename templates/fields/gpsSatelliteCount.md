@@ -1,7 +1,7 @@
-# Field Name
+# GPS satellite count
 
 ## Definition 
-
+The number of GPS satellites used to estimate the location.
 
 ## Format
 
@@ -9,7 +9,7 @@
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-||||
+|GPS satellite count|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000120/|Movebank|
 
 ## SensorML example
 ```xml
