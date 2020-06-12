@@ -1,10 +1,11 @@
 # Field Name
+animal Size Measurement Time
 
 ## Definition 
-
+When the animal size measurement was taken
 
 ## Format
-
+Categorial: Deployment, Recovery, Other
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
