@@ -1,10 +1,10 @@
-# Field Name
+# Sensor manufacturer
 
 ## Definition 
-
+Name of the manufacturer of the sensor
 
 ## Format
-
+string, eg. “Valeport”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
