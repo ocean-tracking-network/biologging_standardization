@@ -2,7 +2,7 @@
 track Start Latitude
 
 ## Definition 
-Latitude at which track of animal begins (if different from deployment latitude)
+Latitude at which track of animal begins (may or may not be different from deployment latitude)
 
 ## Standard
 ISO 6709:2008
