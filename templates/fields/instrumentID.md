@@ -10,7 +10,7 @@ alpha-numerical, eg. “09A0178”
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
 |Unique ID|http://vocab.nerc.ac.uk/collection/W07/current/IDEN0008/|NERC/Sensor Web Enablement Marine Profiles/Sensor ML |
-|Tag local identifier/Tag ID|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000182/|NERC/MVB |
+|Tag local identifier/Tag ID|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000182/|Movebank |
 |instrument_name|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L2|Tagbase |
 
 ## SensorML example
