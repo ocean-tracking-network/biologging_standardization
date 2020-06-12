@@ -1,7 +1,8 @@
 # Field Name
+other Data Coowners
 
 ## Definition 
-
+Names of additional people to acknowledge for data
 
 ## Format
 
