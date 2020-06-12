@@ -32,7 +32,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Common name](fields/commonName.md) |  |  | String in sentence case, separated by space|
 | [Animal sex](fields/animalSex.md) | Sex of animal carrying instrument |  | Categorical: M, F, U|
 | [Animal mass](fields/animalMass.md) | Mass of animal carrying instrument (can be repeated for multiple mass measurements) |  | numerical in kg|
-| [When animal mass taken](fields/whenAnimalMassTaken.md) | When the animal mass was taken |  | Categorial: Deployment, Recovery, Other|
+| [Animal mass measurement time](fields/animalMassMeasurementTime.md) | When the animal mass was taken |  | Categorial: Deployment, Recovery, Other|
 | [Animal size](fields/animalSize.md) | Size of animal carrying instrument (can be repeated for multiple measurements) |  | numerical in m or unknown|
 | [Animal size measurement type](fields/animalSizeMeasurementType.md) | Type and description of method used for size measurement reported |  | String, e.g. total length (from shark snout to top tip of tail)|
 | [Animal size measurement time](fields/animalSizeMeasurementTime.md) | When the animal size measurement was taken |  | Categorial: Deployment, Recovery, Other|
@@ -82,7 +82,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Other relevant identifiers](fields/otherRelevantIdentifiers.md) | Other identifiers relevant to deployment (eg. WMO number for data contribution to GTS) |  | |
-| [Other data types associated with track](fields/otherDataTypesAssociatedWithTrack.md) | Additional data collected with tag deployment, eg. from ancillary sensors |  | string, eg. “light level”|
+| [Other data types associated with deployment](fields/otherDataTypesAssociatedWithDeployment.md) | Additional data collected with tag deployment, eg. from ancillary sensors |  | string, eg. “light level”|
 | [Other data co-owners](fields/otherDataCoowners.md) | Names of additional people to acknowledge for data |  | |
 | [References](fields/references.md) | Published or web-based references that describe the data or methods |  | DOI or URL|
 
