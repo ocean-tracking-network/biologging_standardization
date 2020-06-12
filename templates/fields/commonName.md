@@ -1,15 +1,16 @@
 # Field Name
+Common name
 
 ## Definition 
-
+One or more common name(s) of organism carrying instrument
 
 ## Format
-
+String in sentence case, separated by space
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-||||
+|vernacular Name|http://rs.tdwg.org/dwc/terms/vernacularName|Darwin Core|
 
 ## SensorML example
 ```xml
