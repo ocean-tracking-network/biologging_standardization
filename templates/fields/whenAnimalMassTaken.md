@@ -1,10 +1,11 @@
 # Field Name
+when Animal Mass Taken
 
 ## Definition 
-
+When the animal mass was taken
 
 ## Format
-
+Categorial: Deployment, Recovery, Other
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
