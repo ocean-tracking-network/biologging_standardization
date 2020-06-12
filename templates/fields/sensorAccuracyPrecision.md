@@ -1,15 +1,15 @@
-# Field Name
+# Sensor Accuracy/Precision
 
 ## Definition 
-
+Sensor accuracy in same unit specified for sensor
 
 ## Format
-
+numerical eg. “+/- 0.01”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-||||
+|measurementAccuracy|http://rs.tdwg.org/dwc/terms/version/measurementAccuracy-2009-04-24|Darwin Core|
 
 ## SensorML example
 ```xml
