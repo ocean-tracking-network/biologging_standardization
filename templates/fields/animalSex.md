@@ -1,15 +1,19 @@
 # Field Name
+animal Sex
 
 ## Definition 
-
+Sex of animal carrying instrument
 
 ## Format
+Categorical: M, F, U
 
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-||||
+|sex|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L88|Tagbase|
+|animal sex|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000023/|Movebank|
+|sex|http://rs.tdwg.org/dwc/terms/sex|Darwin Core|
 
 ## SensorML example
 ```xml
