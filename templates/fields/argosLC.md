@@ -1,15 +1,15 @@
-# Field Name
+# Argos LC
 
 ## Definition 
-
+Argos location class of position
 
 ## Format
-
+Categorial (G,3,2,1,0,A,B,Z)
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-||||
+|Argos LC|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000034/|Movebank|
 
 ## SensorML example
 ```xml
