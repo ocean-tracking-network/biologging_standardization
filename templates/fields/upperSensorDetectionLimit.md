@@ -1,10 +1,10 @@
-# Field Name
+# Upper sensor detection limits
 
 ## Definition 
-
+Upper detection limits for sensor in same unit specified for sensor
 
 ## Format
-
+numerical eg. “35”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
