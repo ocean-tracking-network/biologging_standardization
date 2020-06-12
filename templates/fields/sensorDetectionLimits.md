@@ -1,7 +1,7 @@
 # Sensor detection limits
 
 ## Definition 
-Maximum detection limits of sensor in same unit specified for sensor
+Maximum detection limits of depth sensor in same unit specified for sensor
 
 ## Format
 numerical. eg. “2500”
