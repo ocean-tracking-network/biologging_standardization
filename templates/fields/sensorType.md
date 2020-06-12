@@ -9,7 +9,7 @@ categorical, eg. “fluorometer”
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-||||
+|sensor type|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/|NERC/Movebank|
 
 ## SensorML example
 ```xml
