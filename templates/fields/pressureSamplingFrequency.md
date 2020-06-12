@@ -1,10 +1,10 @@
-# Field Name
+# Pressure Sampling Frequency
 
 ## Definition 
-
+Sampling frequency of depth measurements
 
 ## Format
-
+eg. “0.25 Hz”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
