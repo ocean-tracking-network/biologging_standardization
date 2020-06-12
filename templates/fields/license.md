@@ -1,15 +1,18 @@
 # Field Name
+License
 
 ## Definition 
-
+Terms of use for the data in the study, provided by the study owner
 
 ## Format
-
+Categorical
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-||||
+|license terms|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L7|Tagbase|
+|license|https://dublincore.org/specifications/dublin-core/dcmi-terms/#license|Darwin Core|
+|accessRights|https://dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights|Darwin Core|
 
 ## SensorML example
 ```xml
