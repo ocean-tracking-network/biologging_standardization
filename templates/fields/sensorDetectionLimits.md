@@ -1,10 +1,10 @@
-# Field Name
+# Sensor detection limits
 
 ## Definition 
-
+Maximum detection limits of sensor in same unit specified for sensor
 
 ## Format
-
+numerical. eg. “2500”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
