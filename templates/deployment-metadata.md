@@ -16,7 +16,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | ------------- | ----------- | -------- | ------ |
 | [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system |  | alpha-numerical, eg. “09A0178”|
 | [PTT](fields/ptt.md) | Platform Transmitter Terminal for Argos transmission |  | numerical, eg. “178937”|
-| [Owner name](fields/ownerName.md) | Name of person to contact regarding the instrument |  | String containing full name|
+| [Owner name](fields/ownerName.md) | Name of person to contact regarding the deployment |  | String containing full name|
 | [Owner contact](fields/ownerContact.md) | Contact information for responsible person |  | string containing E-mail, Institutional address|
 | [License](fields/license.md) | Terms of use for the data in the study, provided by the study owner. If no license terms are specified by researcher, the General repository Terms of Use apply.|  | Categorical|
 | [Transmission settings](fields/transmissionSettings.md) | Step duration and location uplink limit (can add rows if needed) |  | String with duration in hours, followed by number of messages e.g. “24 hours, 200 messages”|
@@ -43,17 +43,17 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 ### Movement metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [Latitude of deployment](fields/deploymentLatitude.md) | Latitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
-| [Longitude of deployment](fields/deploymentLongitude.md) | Longitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
+| [Deployment latitude](fields/deploymentLatitude.md) | Latitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
+| [Deployment longitude](fields/deploymentLongitude.md) | Longitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Detachment date and time](fields/detachmentDateTime.md) | Timestamp the instrument was recovered or otherwise detached from the animal (if known) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 | [Latitude of detachment](fields/detachmentLatitude.md) | Latitude in decimal degrees of tag recovery/detachment from animal (if known) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Longitude of detachment](fields/detachmentLongitude.md) | Longitude in decimal degrees of tag recovery/detachment from animal (if known) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
-| [Start time of track](fields/trackStartTime.md) | Timestamp at which animal track starts if different from deployment time (to, for example, cut out instrument tests done before deployment) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
-| [Latitude of track start](fields/trackStartLatitude.md) | Latitude at which track of animal begins (if different from deployment latitude) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
-| [Longitude of track start](fields/trackStartLongitude.md) | Longitude at which track of animal begins (if different from deployment longitude) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
-| [End time of track](fields/trackEndTime.md) | Timestamp at which track of animal ends | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
-| [Latitude of track end](fields/trackEndLatitude.md) | Latitude at which animal track ends | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
-| [Longitude of track end](fields/trackEndLongitude.md) | Longitude at which animal track ends | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
+| [Track start time](fields/trackStartTime.md) | Timestamp at which animal track starts if different from deployment time (to, for example, cut out instrument tests done before deployment) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [Track start latitude](fields/trackStartLatitude.md) | Latitude at which track of animal begins (may or may not be different from deployment latitude) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
+| [Track start longitude](fields/trackStartLongitude.md) | Longitude at which track of animal begins (may or may not be different from deployment longitude) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
+| [Track end time](fields/trackEndTime.md) | Timestamp at which track of animal ends | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [Track end latitude](fields/trackEndLatitude.md) | Latitude at which animal track ends | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
+| [Track end longitude](fields/trackEndLongitude.md) | Longitude at which animal track ends | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Deployment End Type](fields/deploymentEndType.md) | Classification of tag deployment end | Movebank | Categorical (eg. removal, equipment failure, fall off)|
 
 ### Environmental data calibration
@@ -61,12 +61,14 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | ------------- | ----------- | -------- | ------ |
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file |  | DOI or URL|
 | [QC done by](fields/qcDoneBy.md) | Provide name of the person who performed quality control |  | string|
+| [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected |  | Y/N|
 | [QC notes](fields/qcNotes.md) | Description of QC done, eg. “temperatures outside of xx range removed”, number of cases flagged |  | text field|
 
 ### Physiological data calibration
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file |  | DOI or URL|
+| [QC done by](fields/qcDoneBy.md) | Provide name of the person who performed quality control |  | string|
 | [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected |  | Y/N|
 | [QC notes](fields/qcNotes.md) | Description of QC done, eg. codes used, # of cases flagged, description of problem |  | text field|
 
@@ -75,6 +77,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | ------------- | ----------- | -------- | ------ |
 | [Position of accelerometer on animal](fields/positionOfAccelerometerOnAnimal.md) | Where the accelerometer was placed on the animal and its orientation if applicable |  | string, eg. “head”|
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file |  | DOI or URL|
+| [QC done by](fields/qcDoneBy.md) | Provide name of the person who performed quality control |  | string|
 | [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected |  | Y/N|
 | [QC notes](fields/qcNotes.md) | Description of QC done, eg. codes used, # of cases flagged, description of problem |  | text field|
 
