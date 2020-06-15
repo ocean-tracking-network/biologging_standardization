@@ -100,7 +100,7 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
 <sml:legalConstraints>
    <gmd:MD_LegalConstraints>
       <gmd:useLimitation>
-            <gco:CharacterString>
+            <gco:CharacterString>  <!-- a CC-BY might be too much for a manufacturer, but it may be appropriate when data is included. -->
                Data associated with this instrument deployment is released under a Creative Commons CC-BY license. 
                Citation of the data provider is necessary for any intended publication. 
                The provider takes no responsibility for any misunderstanding or misuse of the information. 
@@ -218,8 +218,13 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
                   <swe:label>Temperature</swe:label>
                </sml:ObservableProperty>
          </sml:input>
+         <sml:input name="pressure">
+               <sml:ObservableProperty definition="http://sensorml.com/ont/swe/property/Pressure">
+                  <swe:label>Pressure</swe:label>
+               </sml:ObservableProperty>
+         </sml:input>
       </sml:InputList>
-   </sml:inputs> 
+</sml:inputs> 
 -->
 
 <!-- ================================================= -->
@@ -245,6 +250,7 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
       </sml:OutputList>
    </sml:outputs>
 
+
 <!-- ======================== -->
 <!--        Parameters        -->
 <!-- ======================== -->
@@ -254,11 +260,11 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
                 <swe:DataRecord id="DEPLOYED_SETTINGS">
                    <swe:field name="samplingRate">   <!-- this won't be in SWE as-is. Could re-purpose samplingRate as it's roughly equivalent? Or might need a new schema or different recording -->
                         <swe:Quantity definition="http://vocab.nerc.ac.uk/collection/MVB/current/MVB000086/" updatable="true">
-                            <swe:label>Repetition Rate</swe:label>  <!-- interval at which the instrument duty cycles -->
+                            <swe:label>Repetition Rate</swe:label>  <!-- interval between successive transmission/communication attempts -->
                             <swe:uom code="s"/>
                             <swe:constraint>
                                 <swe:AllowedValues>
-                                    <swe:interval>1 157784630</swe:interval> <!-- going with 5 years as an upper bound example -->
+                                    <swe:interval>1 157784630</swe:interval> <!-- going with 5 years as an upper bound example, just some number of seconds here. -->
                                 </swe:AllowedValues>
                             </swe:constraint>
                         </swe:Quantity>
