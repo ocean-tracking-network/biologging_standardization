@@ -258,8 +258,8 @@ xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.n
         <sml:ParameterList>
             <sml:parameter name="settings">
                 <swe:DataRecord id="DEPLOYED_SETTINGS">
-                   <swe:field name="samplingRate">   <!-- this won't be in SWE as-is. Could re-purpose samplingRate as it's roughly equivalent? Or might need a new schema or different recording -->
-                        <swe:Quantity definition="http://vocab.nerc.ac.uk/collection/MVB/current/MVB000086/" updatable="true">
+                   <swe:field name="repetitionRate">   <!-- this won't be in SWE as-is. Could re-purpose samplingRate as it's roughly equivalent? Or might need a new schema or different recording -->
+                        <swe:Quantity definition="[communication interval? In Argos, literally Repetition Rate]" updatable="true">
                             <swe:label>Repetition Rate</swe:label>  <!-- interval between successive transmission/communication attempts -->
                             <swe:uom code="s"/>
                             <swe:constraint>
