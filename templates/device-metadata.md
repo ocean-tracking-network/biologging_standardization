@@ -1,9 +1,14 @@
 ## Table S1: Device metadata template
 
+
+| attributeName | description | standard | format | 
+| ------------- | ----------- | -------- | ------ |
+| [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system | alpha-numerical, eg. “09A0178”|
+
+
 ### Instrument specifications
 | attributeName | description | format | 
 | ------------- | ----------- | ------ |
-| [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system | alpha-numerical, eg. “09A0178”|
 | [Instrument type](fields/instrumentType.md) | Type of tag deployed (eg. archival, satellite, popup, acoustic tag, acoustic receiver) | categorical, eg. “satellite”|
 | [Instrument model](fields/instrumentModel.md) | Name of specific tag model deployed | string, eg. “Mk10”|
 | [Instrument Manufacturer](fields/instrumentManufacturer.md) | Manufacturer of the instrument (eg. Wildlife Computers, SMRU, Lotek, Little Leonardo, etc.) | string, eg. “Wildlife Computers”|

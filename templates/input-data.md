@@ -4,7 +4,12 @@ Data fields provided by the researcher upon submission of data to repository (i.
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
+| [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system | alpha-numerical, eg. “09A0178”|
 | [DeploymentID](fields/deploymentID.md) | Unique identifier for single deployment of device. |  | |
+| [OrganismID](fields/organismID.md) | Unique identifier for single deployment of device. |  | |
+
+| attributeName | description | standard | format | 
+| ------------- | ----------- | -------- | ------ |
 | [Time](fields/time.md) | Timestamp of data point  | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 | [Latitude](fields/latitude.md) | Latitude of data point | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Longitude](fields/longitude.md) | Longitude of data point | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
