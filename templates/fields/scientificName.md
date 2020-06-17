@@ -1,11 +1,8 @@
 # Field Name
-Species
+Scientific name
 
 ## Definition 
 Binomial species name of organism carrying instrument
-
-## Standard
-ITIS
 
 ## Format
 String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”
