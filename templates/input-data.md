@@ -21,8 +21,8 @@ Data fields provided by the researcher upon submission of data to repository (i.
 | [Argos orientation](fields/argosOrientation.md) | Orientation of error ellipse provided by CLS/Argos | CLS Argos  | degrees from North (heading east)|
 | [Argos GDOP](fields/argosGDOP.md) | Geometric Dilution of Precision provided by CLS/Argos | CLS Argos  | m/Hz|
 | [GPS satellite count](fields/gpsSatelliteCount.md) | The number of satellites used to estimate location |  | numerical eg. “4”|
-| [Residuals (fast-aquisition GPS)](fields/residualsFastLoc.md) |  |  | |
-| [Temperature (GLS)](fields/temperatureGls.md) |  |  | numerical in °C|
-| [Depth (GLS)](fields/depthGls.md) |  |  | |
-| [Sensor I type](fields/sensorIType.md) | Type of sensor contained in tag (eg. pressure sensor, thermistor, induction cell, etc) from Device metadata table. |  | Categorical. Must reference one-to-one to a sensor type listed in Device metadata table.|
+| [Residuals (fast-acquisition GPS)](fields/residualsFastLoc.md) |  |  | |
+| [Temperature (GLS)](fields/temperatureGls.md) | in situ temperature measured by instrument used to correct geolocation positions |  | numerical in °C|
+| [Depth (GLS)](fields/depthGls.md) | depth of in situ temperature measurements from instrument used to correct geolocation positions |  |numerical in m |
+| [Sensor I type](fields/sensorIType.md) | Type of sensor contained in tag (eg. pressure sensor, thermistor, induction cell, etc) from Device metadata table. Can be repeated for any number of sensors. |  | Categorical. Must reference one-to-one to a sensor type listed in Device metadata table.|
 | [Sensor I measurement](fields/sensorIMeasurement.md) | Measurement taken by a sensor at this time and location. Can be repeated for any number of sensors. Units of measurement and other relevant metadata documented in Device metadata table. |  | Unit as specified in Device metadata table for this sensor|
