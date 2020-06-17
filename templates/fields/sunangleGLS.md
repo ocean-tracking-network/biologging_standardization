@@ -1,7 +1,9 @@
 # Field Name
+Sun angle GLS
 
 ## Definition 
-
+*Under construction*
+Angle of the sun to determine twilight derived at the beginning of deployment
 
 ## Format
 
