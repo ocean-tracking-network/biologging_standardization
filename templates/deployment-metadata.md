@@ -55,6 +55,8 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Track end latitude](fields/trackEndLatitude.md) | Latitude at which animal track ends | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Track end longitude](fields/trackEndLongitude.md) | Longitude at which animal track ends | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Deployment End Type](fields/deploymentEndType.md) | Classification of tag deployment end | Movebank | Categorical (eg. removal, equipment failure, fall off)|
+| [Sun angle (GLS)](fields/sunangleGLS.md) | Angle of the sun to determine twilight derived at the beginning of deployment | | Numerical in degrees
+
 
 ### Environmental data calibration
 | attributeName | description | standard | format | 
