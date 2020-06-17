@@ -29,7 +29,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | ------------- | ----------- | -------- | ------ |
 | [Organism ID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal |  | Alpha-numerical|
 | [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
-| [Common name](fields/commonName.md) |  |  | String in sentence case, separated by space|
+| [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument |  | String in sentence case, separated by space|
 | [Animal sex](fields/animalSex.md) | Sex of animal carrying instrument |  | Categorical: M, F, U|
 | [Animal mass](fields/animalMass.md) | Mass of animal carrying instrument (can be repeated for multiple mass measurements) |  | numerical in kg|
 | [Animal mass measurement time](fields/animalMassMeasurementTime.md) | When the animal mass was taken |  | Categorial: Deployment, Recovery, Other|
