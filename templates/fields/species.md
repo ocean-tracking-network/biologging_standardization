@@ -2,7 +2,7 @@
 Species
 
 ## Definition 
-Binomial species epithet of organism carrying instrument
+Binomial species name of organism carrying instrument
 
 ## Standard
 ITIS
