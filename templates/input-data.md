@@ -6,7 +6,7 @@ Data fields provided by the researcher upon submission of data to repository (i.
 | ------------- | ----------- | -------- | ------ |
 | [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system | alpha-numerical, eg. “09A0178”|
 | [DeploymentID](fields/deploymentID.md) | Unique identifier for single deployment of device. |  | |
-| [OrganismID](fields/organismID.md) | Unique identifier for single deployment of device. |  | |
+| [OrganismID](fields/organismID.md) | Unique identifier for an individual organism that has been tracked w/ one or more devices. |  | |
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
