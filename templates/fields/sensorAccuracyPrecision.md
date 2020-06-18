@@ -1,10 +1,11 @@
-# Sensor Accuracy/Precision
+## Field Name
+Sensor Accuracy/Precision
 
 ## Definition 
-Sensor accuracy in same unit specified for sensor
+Sensor precision/accuracy in same unit specified for sensor.
 
 ## Format
-numerical eg. “+/- 0.01”
+numerical e.g. “+/- 0.01”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
