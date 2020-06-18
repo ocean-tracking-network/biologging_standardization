@@ -1,10 +1,10 @@
 # Sensor detection limits
 
 ## Definition 
-Maximum detection limits of depth sensor in same unit specified for sensor
+Maximum detection limit of vertical sensor in same unit specified for vertical sensor.
 
 ## Format
-numerical. eg. “2500”
+numerical e.g. “2500”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
