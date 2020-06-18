@@ -1,10 +1,11 @@
-# Sensor model
+## Field name 
+Sensor model
 
 ## Definition 
-Name of specific sensor model
+Name of specific sensor model.
 
 ## Format
-string, eg. “Cyclops 7”
+string, e.g. “Cyclops 7”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
