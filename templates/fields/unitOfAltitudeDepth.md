@@ -1,10 +1,10 @@
 # Unit of altitude/depth
 
 ## Definition 
- Unit of depth reported 
+ Unit of altitude/depth reported. 
 
 ## Format
- categorical eg. “meters”
+ categorical e.g. “meters”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
