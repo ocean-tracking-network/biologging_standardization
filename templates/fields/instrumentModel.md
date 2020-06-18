@@ -1,10 +1,10 @@
 # Instrument Model
 
 ## Definition 
-Name of specific tag model deployed
+Name of specific tag model deployed.
 
 ## Format
-string, eg. “Mk10”
+string, e.g. “Mk10”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
