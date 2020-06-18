@@ -1,7 +1,7 @@
 # Sensor detection limits
 
 ## Definition 
-Maximum detection limit of vertical sensor in same unit specified for vertical sensor.
+Maximum detection limit of vertical sensor (reported in same unit specified for vertical sensor).
 
 ## Format
 numerical e.g. “2500”
