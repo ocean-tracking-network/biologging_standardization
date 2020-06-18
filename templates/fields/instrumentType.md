@@ -1,10 +1,10 @@
 # Instrument Type
 
 ## Definition 
-Type of tag deployed (eg. archival, satellite, popup, acoustic tag, acoustic receiver)
+Type of tag deployed (e.g. archival, satellite, rapid-acquisition GPS, acoustic tag, acoustic receiver)
 
 ## Format
-categorical, eg. “satellite”
+categorical, e.g. “satellite”
 Similar controlled vocabularies: ? (Movebank, eTuff)
 
 ## Vocabularies
