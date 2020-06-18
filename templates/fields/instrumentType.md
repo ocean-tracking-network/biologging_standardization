@@ -1,7 +1,7 @@
 # Instrument Type
 
 ## Definition 
-Type of tag deployed (e.g. archival, satellite, rapid-acquisition GPS, acoustic tag, acoustic receiver)
+Type of tag deployed (e.g. archival, satellite, rapid-acquisition GPS, acoustic tag, acoustic receiver).
 
 ## Format
 categorical, e.g. “satellite”
