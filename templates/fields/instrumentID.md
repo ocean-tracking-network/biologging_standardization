@@ -4,7 +4,7 @@
 Unique tag ID. Can be the tag serial number or similar identification system used by the manufacturer.
 
 ## Format
-alpha-numerical, eg. “09A0178”
+alpha-numerical, e.g. “09A0178”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
