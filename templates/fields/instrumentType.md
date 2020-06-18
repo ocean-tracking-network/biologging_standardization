@@ -5,7 +5,6 @@ Type of tag deployed (e.g. archival, satellite, rapid-acquisition GPS, acoustic 
 
 ## Format
 categorical, e.g. “satellite”
-Similar controlled vocabularies: ? (Movebank, eTuff)
 
 ## Similar Terms
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
