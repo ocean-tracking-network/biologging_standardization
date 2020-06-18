@@ -1,7 +1,7 @@
 # Tracking device
 
 ## Definition 
-Type of tracking technology used (eg. Argos, rapid aqcuisition GPS, GLS, acoustic, etc). 
+Type of tracking technology used (eg. Argos, rapid aqcuisition GPS, GLS, acoustic). 
 
 ## Format
  categorial, e.g. “Argos”
