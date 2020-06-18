@@ -1,10 +1,11 @@
-# Calibration Details
+## Field Name
+Calibration details
 
 ## Definition 
-Link to data and/or methods when possible
+Full definition of the calibration done throuhg addition of a link to where the data and/or methods are described (e.g. peer-review publication).
 
 ## Format
- DOI or URL
+DOI or URL
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
