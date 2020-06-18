@@ -1,10 +1,11 @@
-# Sensor type
+## Field name 
+Sensor type
 
 ## Definition 
-Type of sensor contained in tag (eg. thermistor, induction cell, conductivity cell, fluorometer, optode, etc)
+Type of sensor contained in tag (e.g. thermistor, induction cell, conductivity cell, fluorometer, optode)
 
 ## Format
-categorical, eg. “fluorometer”
+categorical, e.g. “fluorometer”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
