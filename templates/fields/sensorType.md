@@ -2,7 +2,7 @@
 Sensor type
 
 ## Definition 
-Type of sensor contained in tag (e.g. thermistor, induction cell, conductivity cell, fluorometer, optode)
+Type of sensor contained in tag (e.g. thermistor, induction cell, conductivity cell, fluorometer, optode, heart rate monitor)
 
 ## Format
 categorical, e.g. “fluorometer”
