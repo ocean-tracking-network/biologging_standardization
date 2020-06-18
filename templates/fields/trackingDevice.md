@@ -10,7 +10,7 @@ Type of tracking technology used (eg. Argos, rapid aqcuisition GPS, GLS, acousti
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
 |Sensor type|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/|NERC/MVB|
-|waypoints_source (?)|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L124|Tagbase|
+|waypoints_source |https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L124|Tagbase|
 
 ## SensorML example
 ```xml
