@@ -2,10 +2,10 @@
 PTT
 
 ## Definition 
-Platform Transmitter Terminal for Argos transmission
+Platform transmitter terminal number for Argos transmission.
 
 ## Format
-numerical, eg. "178937"
+numerical, e.g. "178937"
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
