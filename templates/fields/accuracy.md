@@ -1,10 +1,10 @@
 # Accuracy
 
 ## Definition 
- Accuracy of depth measurements in same unit specified for depth sensor 
+Accuracy of altitude/depth measurements in same unit specified for vertical sensor.
 
 ## Format
- numerical, eg. “0.1”
+ numerical, e.g. “0.1”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
