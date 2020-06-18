@@ -1,10 +1,10 @@
 # Tracking device
 
 ## Definition 
- Type of tracking technology used (eg. Argos, FastLoc, GLS, acoustic, etc) 
+Type of tracking technology used (eg. Argos, rapid aqcuisition GPS, GLS, acoustic, etc). 
 
 ## Format
- categorial, eg. “Argos”
+ categorial, e.g. “Argos”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
