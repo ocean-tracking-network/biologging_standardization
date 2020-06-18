@@ -2,7 +2,7 @@
 Owner name
 
 ## Definition 
-Name of person to contact regarding deployment data
+Name of person to contact regarding deployment data.
 
 ## Format
 String containing full name
