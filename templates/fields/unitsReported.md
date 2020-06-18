@@ -1,10 +1,11 @@
-# Units reported
+## Field Name
+Units reported
 
 ## Definition 
-Unit of variable reported
+Unit of variable reported.
 
 ## Format
-string, eg. “degrees C”
+string, e.g. “degrees C”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
