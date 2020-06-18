@@ -7,9 +7,11 @@ Type of tag deployed (e.g. archival, satellite, rapid-acquisition GPS, acoustic 
 categorical, e.g. “satellite”
 Similar controlled vocabularies: ? (Movebank, eTuff)
 
-## Vocabularies
-* Movebank - "sensor type" - http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/
-* TagBase - "instrument_type" - https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L3
+## Similar Terms
+|Term|Definition URL|Source Vocabulary Publisher/Creator|
+|----|----------|-----------------|
+|sensor type| http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/ | Movebank|
+|instrument_type |https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L3 | Tagbase|
 
 ## SensorML example
 ```xml
