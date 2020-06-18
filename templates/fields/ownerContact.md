@@ -2,10 +2,10 @@
 Owner contact
 
 ## Definition 
-Contact information for responsible person
+Detailed contact information for person indicated under "Owner Name."
 
 ## Format
-String containing e-mail, institutional address
+String containing e-mail, institutional address, work phone
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
