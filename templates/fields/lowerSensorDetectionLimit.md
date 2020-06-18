@@ -1,10 +1,11 @@
-# Lower sensor detection limit
+## Field Name
+Lower sensor detection limit
 
 ## Definition 
-Bottom detection limits for sensor in same unit specified for sensor
+Bottom detection limits for sensor in same unit specified for sensor.
 
 ## Format
-numerical eg. “-2”
+numerical e.g. “-2”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
