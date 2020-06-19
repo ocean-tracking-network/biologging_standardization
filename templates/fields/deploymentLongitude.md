@@ -1,8 +1,8 @@
 # Field Name
-deployment Longitude
+Deployment longitude
 
 ## Definition 
-Longitude in decimal degrees of tag deployment
+Longitude in decimal degrees of instrument deployment.
 
 ## Standard
 ISO 6709:2008
