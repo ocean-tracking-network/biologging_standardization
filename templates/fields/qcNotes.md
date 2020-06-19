@@ -2,7 +2,7 @@
 QC notes
 
 ## Definition 
-Description of QC done, e.g. “temperatures outside of xx range removed”, number of cases flagged
+Description of QC done, e.g. “temperatures outside of xx range removed”, number of cases flagged.
 
 ## Format
 text field
