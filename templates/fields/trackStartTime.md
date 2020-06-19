@@ -1,14 +1,14 @@
 # Field Name
-track Start Time
+Track start time
 
 ## Definition 
-Timestamp at which animal track starts if different from deployment time (to, for example, cut out instrument tests done before deployment)
+Timestamp at which animal track starts if different from deployment time (this information is useful to cut out instrument tests done before deployment for example.)
 
 ## Standard
 ISO-8601
 
 ## Format
-Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”
+Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
