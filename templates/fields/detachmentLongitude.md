@@ -1,8 +1,8 @@
 # Field Name
-detachment Longitude
+Detachment longitude
 
 ## Definition 
-Longitude in decimal degrees of tag recovery/detachment from animal (if known)
+Longitude in decimal degrees of instrument recovery/detachment from animal (if known).
 
 ## Standard
 ISO 6709:2008
