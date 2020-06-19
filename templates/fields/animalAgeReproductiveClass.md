@@ -2,10 +2,10 @@
 animal Age Reproductive Class
 
 ## Definition 
-Age class of animal carrying instrument at the time the tag was attached
+Age class of animal carrying instrument at the time the tag was attached as adult (adu), sub-adult (sub), juvenile (juv), newborn or recently bron (new), or unknown (unk).
 
 ## Format
-Categorical: ad, juv, unk
+Categorical: adu, sub, juv, new, unk
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
