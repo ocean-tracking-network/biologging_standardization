@@ -1,8 +1,8 @@
 # Field Name
-deployment Latitude
+Deployment latitude
 
 ## Definition 
-Latitude in decimal degrees of tag deployment
+Latitude in decimal degrees of tag deployment.
 
 ## Standard
 ISO 6709:2008
