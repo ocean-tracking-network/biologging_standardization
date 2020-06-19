@@ -2,7 +2,7 @@
 track Start Longitude
 
 ## Definition 
-Longitude at which track of animal begins (may or may not be different from deployment longitude)
+Longitude at which track of animal begins (may or may not be different from deployment longitude).
 
 ## Standard
 ISO 6709:2008
