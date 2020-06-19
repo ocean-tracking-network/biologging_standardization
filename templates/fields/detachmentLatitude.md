@@ -2,7 +2,7 @@
 Detachment latitude
 
 ## Definition 
-Latitude in decimal degrees of tag recovery/detachment from animal (if known).
+Latitude in decimal degrees of instrument recovery/detachment from animal (if known).
 
 ## Standard
 ISO 6709:2008
