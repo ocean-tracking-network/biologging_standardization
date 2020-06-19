@@ -1,11 +1,11 @@
 # Field Name
-position Of Accelerometer on Animal
+Position of accelerometer on animal
 
 ## Definition 
-Where the accelerometer was placed on the animal and its orientation if applicable
+Where the accelerometer was placed on the animal and its orientation.
 
 ## Format
-string, eg. “head”
+string, e.g. “head”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
