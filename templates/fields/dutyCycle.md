@@ -2,7 +2,7 @@
 Duty cycle
 
 ## Definition 
-Description of programmed time period during which tag is operational, if applicable
+Description of programmed time period during which tag is operational.
 
 ## Format
 String in sentence, e.g. PTT active 12 hours, followed by 6 hours sleep-mode
