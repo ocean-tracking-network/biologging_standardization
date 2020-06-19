@@ -1,14 +1,14 @@
 # Field Name
-deployment Date Time
+Deployment date and time
 
 ## Definition 
-Timestamp the instrument was deployed on the animal
+Timestamp the instrument was deployed on the organism.
 
 ## Standard
 ISO-8601
 
 ## Format
-Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”
+Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
