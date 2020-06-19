@@ -2,10 +2,10 @@
 deployment End Type
 
 ## Definition 
-Classification of tag deployment end
+Classification of tag deployment end.
 
 ## Format
-Categorical (eg. removal, equipment failure, fall off)
+Categorical (e.g. removal, equipment failure, fall off)
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
