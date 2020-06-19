@@ -1,5 +1,5 @@
 # Field Name
-deployment End Type
+Deployment end type
 
 ## Definition 
 Classification of tag deployment end.
