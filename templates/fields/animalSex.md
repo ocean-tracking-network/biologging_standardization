@@ -1,8 +1,8 @@
 # Field Name
-animal Sex
+Animal xex
 
 ## Definition 
-Sex of animal carrying instrument
+Sex of animal carrying instrument as male (M), female (F), or unknown (U).
 
 ## Format
 Categorical: M, F, U
