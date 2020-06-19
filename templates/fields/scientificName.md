@@ -2,10 +2,10 @@
 Scientific name
 
 ## Definition 
-Binomial species name of organism carrying instrument
+Binomial species name of organism carrying instrument.
 
 ## Format
-String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”
+String of the format “Genus species”, genus capitalized, separated by one space, e.g. “Mirounga angustirostris”
 
 
 ## Similar Terms 
