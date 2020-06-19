@@ -24,7 +24,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Duty cycle](fields/dutyCycle.md) | Detailed instrument settings defined in a file (e.g. Wildlife Computers Report, htm file/URL, or screenshot of tag settings) |  | String in sentence, e.g. PTT active 12 hours, followed by 6 hours sleep-mode|
 | [Instrument Settings](fields/instrumentSettings.md) | Attach a file with detailed instrument settings (eg. Wildlife Computers Report .htm file or screenshot of tag settings) |  | File (.htm, .pdf)|
 
-### Deployment metadata
+### Organism metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Organism ID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal |  | Alpha-numerical|
