@@ -1,14 +1,14 @@
 # Field Name
-track End Time
+Track end time
 
 ## Definition 
-Timestamp at which track of animal ends
+Timestamp at which track of animal ends (may or may not be different from detachment data and time).
 
 ## Standard
 ISO-8601
 
 ## Format
-Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”
+Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
