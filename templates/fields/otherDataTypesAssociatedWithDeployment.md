@@ -1,8 +1,8 @@
 # Field Name
-other Data Types Associated With Deployment
+Other data types associated with deployment
 
 ## Definition 
-Additional data collected with tag deployment, eg. from ancillary sensors
+Additional data collected with tag deployment, e.g. from ancillary sensors, photo-ID, biopsy sample.
 
 ## Format
 string, eg. “light level”
