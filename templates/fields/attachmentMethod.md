@@ -1,11 +1,11 @@
 # Field Name
-attachment Method
+Attachment method
 
 ## Definition 
-Method by which tag was attached
+Method used to attach the instrumemnt to the organism.
 
 ## Format
-String, eg. “anchor”
+String, e.g. “anchor”, "glue", "suction cup"
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
