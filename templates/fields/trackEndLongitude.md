@@ -1,8 +1,8 @@
 # Field Name
-track End Longitude
+Track end longitude
 
 ## Definition 
-Longitude at which animal track ends
+Longitude at which animal track ends (may or may not be different from detachment data and time).
 
 ## Standard
 ISO 6709:2008
