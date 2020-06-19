@@ -1,11 +1,11 @@
 # Field Name
-other Data Coowners
+Other data co-owners
 
 ## Definition 
-Names of additional people to acknowledge for data
+Names of additional people to acknowledge for data.
 
 ## Format
-
+string
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
