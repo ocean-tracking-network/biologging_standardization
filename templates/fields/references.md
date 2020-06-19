@@ -1,8 +1,8 @@
 # Field Name
-references
+References
 
 ## Definition 
-Published or web-based references that describe the data or methods
+Published or web-based references that describe the data or methods.
 
 ## Format
 DOI or URL
