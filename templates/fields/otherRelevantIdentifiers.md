@@ -1,8 +1,8 @@
 # Field Name
-other Relevant Identifiers
+Other relevant identifiers
 
 ## Definition 
-Other identifiers relevant to deployment (eg. WMO number for data contribution to GTS)
+Other identifiers relevant to deployment (eg. WMO number for data contribution to GTS).
 
 ## Format
 
