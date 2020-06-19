@@ -1,8 +1,8 @@
 # Field Name
-QC Problems Found
+QC problems gound
 
 ## Definition 
-Data quality problem(s) detected
+Data quality problem(s) detected.
 
 ## Format
 Boolean Y/N
