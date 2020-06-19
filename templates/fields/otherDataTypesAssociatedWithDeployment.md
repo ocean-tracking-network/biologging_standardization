@@ -5,7 +5,7 @@ Other data types associated with deployment
 Additional data collected with tag deployment, e.g. from ancillary sensors, photo-ID, biopsy sample.
 
 ## Format
-string, eg. “light level”
+string, e.g. “light level”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
