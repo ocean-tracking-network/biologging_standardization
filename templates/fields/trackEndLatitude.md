@@ -1,8 +1,8 @@
 # Field Name
-track End Latitude
+Track end latitude
 
 ## Definition 
-Latitude at which animal track ends
+Latitude at which animal track ends (may or may not be different from detachment data and time).
 
 ## Standard
 ISO 6709:2008
