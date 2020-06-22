@@ -1,11 +1,11 @@
 # Field Name
-Owner contact
+Owner email contact
 
 ## Definition 
-Detailed contact information for person indicated under "Owner Name."
+Email contact for person indicated under ‘Owner name’.
 
 ## Format
-String containing e-mail, institutional address, work phone
+String containing e-mail
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
