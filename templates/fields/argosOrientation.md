@@ -1,7 +1,7 @@
 # Argos orientation
 
 ## Definition 
-Orientation of error ellipse provided by CLS/Argos
+Orientation of error ellipse provided by CLS/Argos.
 
 ## Format
 degrees from North (heading east)
