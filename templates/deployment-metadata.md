@@ -34,7 +34,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
 | [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
 | [Animal sex](fields/animalSex.md) | Sex of animal carrying instrument. |  | Categorical: M, F, U|
-| [Animal mass](fields/animalMass.md) | Mass of animal carrying instrument (can be repeated for multiple mass measurements). |  | numerical in kg|
+| [Organism mass](fields/organismMass.md) | Mass of organism carrying instrument (can be repeated for multiple mass measurements). |  | numerical in kg|
 | [Animal mass measurement time](fields/animalMassMeasurementTime.md) | When the animal mass was taken. |  | Categorial: Deployment, Recovery, Other|
 | [Animal size](fields/animalSize.md) | Size of animal carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
 | [Animal size measurement type](fields/animalSizeMeasurementType.md) | Type and description of method used for size measurement reported |  | String, e.g. total length (from shark snout to top tip of tail)|
