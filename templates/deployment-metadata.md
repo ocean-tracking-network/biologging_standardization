@@ -50,6 +50,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | ------------- | ----------- | -------- | ------ |
 | [Deployment latitude](fields/deploymentLatitude.md) | Latitude in decimal degrees of instrument deployment | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Deployment longitude](fields/deploymentLongitude.md) | Longitude in decimal degrees of instrument deployment. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
+| [Deployment End Type](fields/deploymentEndType.md) | Classification of instrument deployment end. | Movebank | Categorical (eg. removal, equipment failure, fall off)|
 | [Detachment date and time](fields/detachmentDateTime.md) | Timestamp the instrument was recovered or otherwise detached from the organism (if known). | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 | [Detachment details](fields/detachmentDetails.md) | Brief description of recovery/detachment if known (e.g., caught in fisheries, recaptured animal, predetermined detachment). |  | String in sentence case (e.g., caught in fisheries)|
 | [Latitude of detachment](fields/detachmentLatitude.md) | Latitude in decimal degrees of instrument recovery/detachment from organism (if known). | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
@@ -60,7 +61,6 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Track end time](fields/trackEndTime.md) | Timestamp at which track of organism ends | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 | [Track end latitude](fields/trackEndLatitude.md) | Latitude at which organism track ends. | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Track end longitude](fields/trackEndLongitude.md) | Longitude at which organism track ends. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
-| [Deployment End Type](fields/deploymentEndType.md) | Classification of instrument deployment end. | Movebank | Categorical (eg. removal, equipment failure, fall off)|
 | [Sun angle (GLS)](fields/sunangleGLS.md) | Angle of the sun to determine twilight derived at the beginning of deployment. | | Numerical in degrees
 
 
