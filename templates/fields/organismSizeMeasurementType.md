@@ -1,5 +1,5 @@
 # Field Name
-animal Size Measurement Type
+organism Size Measurement Type
 
 ## Definition 
 Type and description of method used for size measurement reported
