@@ -14,7 +14,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 ### Instrument metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system. |  | alpha-numerical, eg. “09A0178”|
+| [InstrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. |  | alpha-numerical, eg. “09A0178”|
 | [PTT](fields/ptt.md) | Platform Transmitter Terminal for Argos transmission. |  | numerical, eg. “178937”|
 | [Owner name](fields/ownerName.md) | Name of person to contact regarding the deployment. |  | String containing full name|
 | [Owner email contact](fields/ownerEmailContact.md) | Email contact for person indicated under ‘Owner name’. |  | String containing e-mail|
