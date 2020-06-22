@@ -1,7 +1,7 @@
 # Argos LC
 
 ## Definition 
-Argos location class of position
+Argos location class of data point's position.
 
 ## Format
 Categorial (G,3,2,1,0,A,B,Z)
