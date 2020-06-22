@@ -37,26 +37,26 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Organism mass](fields/organismMass.md) | Mass of organism carrying instrument (can be repeated for multiple mass measurements). |  | numerical in kg|
 | [Organism mass measurement time](fields/organismMassMeasurementTime.md) | When the organism mass was taken. |  | Categorial: Deployment, Recovery, Other|
 | [Organism size](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
-| [Animal size measurement type](fields/animalSizeMeasurementType.md) | Type and description of method used for size measurement reported |  | String, e.g. total length (from shark snout to top tip of tail)|
+| [Organism size measurement type](fields/organismSizeMeasurementType.md) | Type and description of method used for size measurement reported |  | String, e.g. total length (from shark snout to top tip of tail)|
 | [Organism size measurement time](fields/organismSizeMeasurementTime.md) | When the organism size measurement was taken |  | Categorial: Deployment, Recovery, Other|
-| [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of animal carrying instrument at the time the tag was attached |  | Categorical: ad, juv, unk|
+| [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the tag was attached |  | Categorical: ad, juv, unk|
 | [Attachment method ](fields/attachmentMethod.md) | Method with which tag was attached |  | String, eg. “anchor”|
-| [Deployment date and time](fields/deploymentDateTime.md) | Timestamp the instrument was deployed on the animal | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [Deployment date and time](fields/deploymentDateTime.md) | Timestamp the instrument was deployed on the organism | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 
 ### Movement metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Deployment latitude](fields/deploymentLatitude.md) | Latitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Deployment longitude](fields/deploymentLongitude.md) | Longitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
-| [Detachment date and time](fields/detachmentDateTime.md) | Timestamp the instrument was recovered or otherwise detached from the animal (if known) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
-| [Latitude of detachment](fields/detachmentLatitude.md) | Latitude in decimal degrees of tag recovery/detachment from animal (if known) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
-| [Longitude of detachment](fields/detachmentLongitude.md) | Longitude in decimal degrees of tag recovery/detachment from animal (if known) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
-| [Track start time](fields/trackStartTime.md) | Timestamp at which animal track starts if different from deployment time (to, for example, cut out instrument tests done before deployment) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
-| [Track start latitude](fields/trackStartLatitude.md) | Latitude at which track of animal begins (may or may not be different from deployment latitude) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
-| [Track start longitude](fields/trackStartLongitude.md) | Longitude at which track of animal begins (may or may not be different from deployment longitude) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
-| [Track end time](fields/trackEndTime.md) | Timestamp at which track of animal ends | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
-| [Track end latitude](fields/trackEndLatitude.md) | Latitude at which animal track ends | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
-| [Track end longitude](fields/trackEndLongitude.md) | Longitude at which animal track ends | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
+| [Detachment date and time](fields/detachmentDateTime.md) | Timestamp the instrument was recovered or otherwise detached from the organism (if known) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [Latitude of detachment](fields/detachmentLatitude.md) | Latitude in decimal degrees of tag recovery/detachment from organism (if known) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
+| [Longitude of detachment](fields/detachmentLongitude.md) | Longitude in decimal degrees of tag recovery/detachment from organism (if known) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
+| [Track start time](fields/trackStartTime.md) | Timestamp at which organism track starts if different from deployment time (to, for example, cut out instrument tests done before deployment) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [Track start latitude](fields/trackStartLatitude.md) | Latitude at which track of organism begins (may or may not be different from deployment latitude) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
+| [Track start longitude](fields/trackStartLongitude.md) | Longitude at which track of organism begins (may or may not be different from deployment longitude) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
+| [Track end time](fields/trackEndTime.md) | Timestamp at which track of organism ends | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [Track end latitude](fields/trackEndLatitude.md) | Latitude at which organism track ends | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
+| [Track end longitude](fields/trackEndLongitude.md) | Longitude at which organism track ends | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Deployment End Type](fields/deploymentEndType.md) | Classification of tag deployment end | Movebank | Categorical (eg. removal, equipment failure, fall off)|
 | [Sun angle (GLS)](fields/sunangleGLS.md) | Angle of the sun to determine twilight derived at the beginning of deployment | | Numerical in degrees
 
