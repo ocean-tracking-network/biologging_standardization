@@ -1,7 +1,7 @@
 # Sensor I Type
 
 ## Definition 
-Type of sensor contained in tag (eg. pressure sensor, thermistor, induction cell, etc) from Device metadata table.
+Type of sensor contained in tag (e.g. pressure sensor, thermistor, induction cell, etc) from Device metadata table. Can be repeated for any number of sensors, with Roman numeral representing sensor number.
 
 ## Format
 Categorical. Must reference one-to-one to a sensor type listed in Device metadata table.
