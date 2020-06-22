@@ -1,8 +1,8 @@
 # Field Name
-animal Size
+organism Size
 
 ## Definition 
-Size of animal carrying instrument (can be repeated for multiple measurements)
+Size of organism carrying instrument (can be repeated for multiple measurements)
 
 ## Format
 numerical in m or unknown
