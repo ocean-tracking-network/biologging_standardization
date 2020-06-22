@@ -81,7 +81,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 ### Accelerometry data calibration
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [Position of accelerometer on animal](fields/positionOfAccelerometerOnAnimal.md) | Where the accelerometer was placed on the animal and its orientation if applicable |  | string, eg. “head”|
+| [Position of accelerometer on organism](fields/positionOfAccelerometerOnOrganism.md) | Where the accelerometer was placed on the organism and its orientation if applicable |  | string, eg. “head”|
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file |  | DOI or URL|
 | [QC done by](fields/qcDoneBy.md) | Provide name of the person who performed quality control |  | string|
 | [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected |  | Y/N|
