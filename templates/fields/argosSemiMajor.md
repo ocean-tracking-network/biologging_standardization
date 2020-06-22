@@ -1,7 +1,7 @@
 # Argos semi major
 
 ## Definition 
-Length of semi-major axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data
+Length of semi-major axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data.
 
 ## Format
 Meters
