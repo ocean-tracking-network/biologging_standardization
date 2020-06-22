@@ -1,8 +1,8 @@
 # Field Name
-Animal sex
+Organism sex
 
 ## Definition 
-Sex of animal carrying instrument as male (M), female (F), or unknown (U).
+Sex of organism carrying instrument as male (M), female (F), or unknown (U).
 
 ## Format
 Categorical: M, F, U
