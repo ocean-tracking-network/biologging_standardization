@@ -1,5 +1,5 @@
 ## Field Name
-Date calibrated
+Sensor calibration date
 
 ## Definition 
 Date when sensor calibration was done.
