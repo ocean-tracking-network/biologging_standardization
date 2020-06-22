@@ -9,7 +9,7 @@
 ### Instrument specifications
 | attributeName | description | format | 
 | ------------- | ----------- | ------ |
-| [Instrument type](fields/instrumentType.md) | Type of tag deployed (e.g. archival, satellite, rapid-acquisition, pop-up, acoustic tag, acoustic receiver). | categorical, e.g. “satellite”|
+| [Instrument type](fields/instrumentType.md) | Type of tag deployed (e.g. archival, satellite, rapid-acquisition, acoustic tag, acoustic receiver). | categorical, e.g. “satellite”|
 | [Instrument model](fields/instrumentModel.md) | Name of specific tag model deployed. | string, e.g. “Mk10”|
 | [Instrument Manufacturer](fields/instrumentManufacturer.md) | Manufacturer of the instrument (e.g. Wildlife Computers, SMRU, Lotek, Little Leonardo). | string, e.g. “Wildlife Computers”|
 | [Instrument Serial Number](fields/instrumentSerialNumber.md) | Serial number of tag deployed. | alpha-numerical, e.g. “09A0178”|
