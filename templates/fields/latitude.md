@@ -1,7 +1,8 @@
-# Latitude
+## Field Name
+Latitude
 
 ## Definition 
-Latitude of data point
+Latitude of data point.
 
 ## Format
 Decimal degrees north, -90.0000 to 90.0000
