@@ -1,7 +1,7 @@
 # Argos filter method
 
 ## Definition 
-Filter method implemented by CLS/Argos to generate location
+Filter method implemented by CLS/Argos to generate location.
 
 ## Format
 Categorial: Least squares or Kalman
