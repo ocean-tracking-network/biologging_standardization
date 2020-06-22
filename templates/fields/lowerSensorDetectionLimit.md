@@ -2,7 +2,7 @@
 Lower sensor detection limit
 
 ## Definition 
-Bottom detection limits for sensor in same unit specified for sensor.
+Lower detection limit for sensor in same unit specified for sensor.
 
 ## Format
 numerical e.g. “-2”
