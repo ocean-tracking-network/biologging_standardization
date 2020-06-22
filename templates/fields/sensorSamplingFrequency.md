@@ -1,8 +1,8 @@
 ## Field Name
-Sensor Sampling Frequency
+Sensor sampling frequency
 
 ## Definition 
-Description of how often the sensor records a measurement.
+How often the sensor records a measurement.
 
 ## Format
 e.g. "1 Hz"
