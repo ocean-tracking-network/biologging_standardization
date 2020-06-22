@@ -1,10 +1,10 @@
 # GPS satellite count
 
 ## Definition 
-The number of GPS satellites used to estimate the location.
+The number of GPS satellites used to estimate the position (rapid acquisition).
 
 ## Format
-
+numerical, e.g. "4"
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
