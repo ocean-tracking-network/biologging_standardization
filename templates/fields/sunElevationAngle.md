@@ -1,12 +1,11 @@
 # Field Name
-Sun angle GLS
+Sun elevation anlge
 
 ## Definition 
-*Under construction*
-Angle of the sun to determine twilight derived at the beginning of deployment
+Angle of sun elevation as per geolocation tag calibrations at the beginning of deployment (used to determine twilight).
 
 ## Format
-
+Numerical in degrees
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
