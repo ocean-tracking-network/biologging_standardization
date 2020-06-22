@@ -1,5 +1,5 @@
 ## Field Name
-Calibration details
+Sensor calibration details
 
 ## Definition 
 Full definition of the calibration done throuhg addition of a link to where the data and/or methods are described (e.g. peer-review publication).
