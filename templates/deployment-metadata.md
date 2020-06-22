@@ -51,6 +51,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Deployment latitude](fields/deploymentLatitude.md) | Latitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Deployment longitude](fields/deploymentLongitude.md) | Longitude in decimal degrees of tag deployment | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Detachment date and time](fields/detachmentDateTime.md) | Timestamp the instrument was recovered or otherwise detached from the organism (if known) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [Detachment details](fields/detachmentDetails.md) | Brief description of recovery/detachment if known (e.g., caught in fisheries, recaptured animal, predetermined detachment). |  | String in sentence case (e.g., caught in fisheries)|
 | [Latitude of detachment](fields/detachmentLatitude.md) | Latitude in decimal degrees of tag recovery/detachment from organism (if known) | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Longitude of detachment](fields/detachmentLongitude.md) | Longitude in decimal degrees of tag recovery/detachment from organism (if known) | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Track start time](fields/trackStartTime.md) | Timestamp at which organism track starts if different from deployment time (to, for example, cut out instrument tests done before deployment) | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
