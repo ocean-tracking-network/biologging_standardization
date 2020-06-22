@@ -2,7 +2,7 @@
 Other data types associated with deployment
 
 ## Definition 
-Additional data collected with tag deployment, e.g. from ancillary sensors, photo-ID, biopsy sample.
+Additional data collected with instrument deployment, e.g. from ancillary sensors, photo-ID, biopsy sample for genetics.
 
 ## Format
 string, e.g. “light level”
