@@ -1,8 +1,8 @@
 # Field Name
-animal Mass
+organism Mass
 
 ## Definition 
-Mass of animal carrying instrument (can be repeated for multiple mass measurements taken, for example, at different times)
+Mass of organism carrying instrument (can be repeated for multiple mass measurements taken, for example, at different times)
 
 ## Format
 numerical in kg
