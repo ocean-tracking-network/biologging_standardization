@@ -33,7 +33,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [OrganismID source](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | e.g. EXAMPLE|
 | [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
 | [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
-| [Animal sex](fields/animalSex.md) | Sex of animal carrying instrument. |  | Categorical: M, F, U|
+| [Organism sex](fields/organismSex.md) | Sex of organism carrying instrument. |  | Categorical: M, F, U|
 | [Organism mass](fields/organismMass.md) | Mass of organism carrying instrument (can be repeated for multiple mass measurements). |  | numerical in kg|
 | [Organism mass measurement time](fields/organismMassMeasurementTime.md) | When the organism mass was taken. |  | Categorial: Deployment, Recovery, Other|
 | [Animal size](fields/animalSize.md) | Size of animal carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
