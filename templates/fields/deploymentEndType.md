@@ -2,7 +2,7 @@
 Deployment end type
 
 ## Definition 
-Classification of tag deployment end.
+Classification of instrument deployment end, i.e. what ended the collection of usable data, which may or may not be tag removal.
 
 ## Format
 Categorical (e.g. removal, equipment failure, fall off)
