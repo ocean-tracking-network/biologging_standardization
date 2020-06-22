@@ -1,8 +1,8 @@
 ## Field Name
-Upper sensor detection limits
+Upper sensor detection limit
 
 ## Definition 
-Upper detection limits for sensor in same unit specified for sensor.
+Upper detection limit for sensor in same unit specified for sensor.
 
 ## Format
 numerical e.g. “35”
