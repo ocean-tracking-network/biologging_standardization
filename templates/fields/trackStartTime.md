@@ -2,7 +2,7 @@
 Track start time
 
 ## Definition 
-Timestamp at which animal track starts if different from deployment time (this information is useful to cut out instrument tests done before deployment for example.)
+Timestamp at which animal track starts if different from deployment time.
 
 ## Standard
 ISO-8601
