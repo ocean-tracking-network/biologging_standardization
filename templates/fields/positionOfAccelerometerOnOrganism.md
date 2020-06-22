@@ -1,8 +1,8 @@
 # Field Name
-Position of accelerometer on animal
+Position of accelerometer on organism
 
 ## Definition 
-Where the accelerometer was placed on the animal and its orientation.
+Where the accelerometer was placed on the organism and its orientation.
 
 ## Format
 string, e.g. “head”
