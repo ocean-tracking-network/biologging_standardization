@@ -2,12 +2,10 @@
 QC done
 
 ## Definition 
-*Under construction*
-Yes/no as to whether quality control was performed. 
-
+Whether quality control was performed. 
 
 ## Format
-string
+Boolean Y/N
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
