@@ -1,6 +1,6 @@
 ## Table S2. Deployment metadata template 
 
-Deployment information, including instrument settings, animal metadata and tagging specifics to be provided by the researcher alongside data submission to repository. This table is linked to the Device Metadata table by the InstrumentID. All attributes are mandatory, but fields can be “unknown” or “NA” if data do not exist or are not applicable to a tagged animal or deployment. Animal mass and size measurement fields can be repeated to provide additional measurements applicable to the taxon, e.g. for shark: pre-caudal length, fork length, total length; for pinniped: standard length, curve length, axillary girth.
+Deployment information, including instrument settings, organism metadata and tagging specifics to be provided by the researcher alongside data submission to repository. This table is linked to the Device Metadata table by the InstrumentID. All attributes are mandatory, but fields can be “unknown” or “NA” if data do not exist or are not applicable to a tagged organism or deployment. Organism mass and size measurement fields can be repeated to provide additional measurements applicable to the taxon, e.g. for shark: pre-caudal length, fork length, total length; for pinniped: standard length, curve length, axillary girth.
 
 ITIS = Integrated Taxonomic Information System (https://www.itis.gov/)
 CF = Climate and Forecast Metadata Conventions 
