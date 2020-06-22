@@ -1,8 +1,8 @@
 # Field Name
-organism Mass Measurement Time
+organism Mass Measurement Details
 
 ## Definition 
-When the organism mass was taken
+Situation when the animal mass was taken (e.g., at tag deployment, tag recovery, recapture).
 
 ## Format
 Categorial: Deployment, Recovery, Other
