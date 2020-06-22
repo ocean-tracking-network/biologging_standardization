@@ -1,4 +1,4 @@
-## Table S4. Input data template 
+## Table S3. Input data template 
 
 Data fields provided by the researcher upon submission of data to repository (i.e. column headers). Alongside the completed Device Metadata table and Deployment Metadata table (linked by DeploymentID), this completes the submission to the repository. (CLS = Collecte Localisation Satellites)
 
