@@ -17,7 +17,9 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [InstrumentID](fields/instrumentID.md) | Serial number of tag, unless manufacturer uses alternative system |  | alpha-numerical, eg. “09A0178”|
 | [PTT](fields/ptt.md) | Platform Transmitter Terminal for Argos transmission |  | numerical, eg. “178937”|
 | [Owner name](fields/ownerName.md) | Name of person to contact regarding the deployment |  | String containing full name|
-| [Owner contact](fields/ownerContact.md) | Contact information for responsible person |  | string containing E-mail, Institutional address|
+| [Owner email contact](fields/ownerEmailContact.md) | Email contact for person indicated under ‘Owner name’ |  | string containing E-mail|
+| [Owner institutional contact](fields/ownerInstitutionalContact.md) | Institutional address for person indicated under ‘Owner name’. |  | string containing  Institutional address|
+| [Owner phone contact](fields/ownerPhoneContact.md) | Phone contact for person indicated under ‘Owner name’. |  | String containing contact phone|
 | [License](fields/license.md) | Terms of use for the data in the study, provided by the study owner. If no license terms are specified by researcher, the General repository Terms of Use apply.|  | Categorical|
 | [Transmission settings](fields/transmissionSettings.md) | Step duration and location uplink limit (can add rows if needed) |  | String with duration in hours, followed by number of messages e.g. “24 hours, 200 messages”|
 | [Transmission mode](fields/transmissionMode.md) | User-defined conditions for entering and exiting Haul-Out mode (slower repetition rate) and transmission control in Haul-Out if applicable |  | Time settings in minutes e.g. “Haul-Out state entered after 10 consecutive dry minutes (40 seconds/minute), exited if wet for 30 seconds/minute” OR “disabled”|
