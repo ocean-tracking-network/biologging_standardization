@@ -1,7 +1,7 @@
 # Instrument Model
 
 ## Definition 
-Name of specific tag model deployed.
+Name of specific instrument model deployed.
 
 ## Format
 string, e.g. “Mk10”
