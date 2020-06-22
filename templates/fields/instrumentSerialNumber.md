@@ -1,7 +1,7 @@
 # Instrument Serial Number
 
 ## Definition 
-Serial number of tag deployed (may or may not be different from InstrumentID).
+Serial number of instrument deployed (may or may not be different from InstrumentID).
 
 ## Format
  alpha-numerical, e.g. “09A0178”
