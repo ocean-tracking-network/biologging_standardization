@@ -23,10 +23,8 @@
 ### Vertical sensors
 | attributeName | description | format | 
 | ------------- | ----------- | ------ |
-| [Unit of altitude/depth ](fields/unitOfAltitudeDepth.md) | Unit of altitude/depth reported. | categorical e.g. “meters”|
-| [Accuracy](fields/accuracy.md) | Accuracy of altitude/depth measurements in same unit specified for vertical sensor. | numerical, e.g. “0.1”|
-| [Resolution](fields/resolution.md) | Resolution of altitude/depth measurements in same unit specified for vertical sensor. | numerical, e.g. “0.1”|
-| [Pressure sampling frequency](fields/pressureSamplingFrequency.md) | Sampling frequency of altitude/depth measurements. | e.g. “0.25 Hz”|
+| [Units reported](fields/unitsReported.md) | Unit of altidue/depth reported. | string, e.g. “meters”|
+| [Resolution](fields/resolution.md) | Resolution of altitude/depth measurements in same unit specified for vertical sensor. | numerical, e.g. “0.1”
 | [Lower sensor detection limit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | numerical e.g. “5”|
 | [Upper sensor detection limit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | numerical e.g. “2500”|
 | [Sensor accuracy/precision](fields/sensorAccuracyPrecision.md) | Sensor accuracy in same unit specified for sensor. | numerical e.g. “+/- 0.01”|
