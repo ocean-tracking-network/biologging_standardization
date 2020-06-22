@@ -1,7 +1,7 @@
 # InstrumentID
 
 ## Definition 
-Unique tag ID. Can be the tag serial number or similar identification system used by the manufacturer.
+Unique instrument ID. Can be the instrument serial number or similar identification system used by the manufacturer.
 
 ## Format
 alpha-numerical, e.g. “09A0178”
