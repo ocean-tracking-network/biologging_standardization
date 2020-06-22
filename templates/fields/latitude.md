@@ -1,5 +1,4 @@
-## Field Name
-Latitude
+# Latitude
 
 ## Definition 
 Latitude of data point.
