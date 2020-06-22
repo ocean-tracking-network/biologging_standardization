@@ -1,10 +1,10 @@
 # Argos error radius
 
 ## Definition 
-Error radius for location provided by CLS/Argos
+Error radius for location provided by CLS/Argos.
 
 ## Format
-Numerical, in meters
+meters
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
