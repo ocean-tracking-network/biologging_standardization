@@ -2,7 +2,7 @@
 
 ## Definition 
 Length of semi-minor axis of error ellipse provided by CLS/Argos.
-Defaults to NA if Least-Squares Data
+Defaults to NA if Least-Squares Data.
 
 ## Format
 Meters
