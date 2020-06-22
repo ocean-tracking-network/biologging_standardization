@@ -68,7 +68,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file |  | DOI or URL|
-| [QC done by](fields/qcDoneBy.md) | Provide name of the person who performed quality control |  | string|
+| [QC done](fields/qcDone.md) | Provide name of the person who performed quality control |  | string|
 | [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected |  | Y/N|
 | [QC notes](fields/qcNotes.md) | Description of QC done, eg. “temperatures outside of xx range removed”, number of cases flagged |  | text field|
 
