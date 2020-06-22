@@ -39,7 +39,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Animal size](fields/animalSize.md) | Size of animal carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
 | [Animal size measurement type](fields/animalSizeMeasurementType.md) | Type and description of method used for size measurement reported |  | String, e.g. total length (from shark snout to top tip of tail)|
 | [Animal size measurement time](fields/animalSizeMeasurementTime.md) | When the animal size measurement was taken |  | Categorial: Deployment, Recovery, Other|
-| [Animal age class/reproductive class](fields/animalAgeReproductiveClass.md) | Age class of animal carrying instrument at the time the tag was attached |  | Categorical: ad, juv, unk|
+| [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of animal carrying instrument at the time the tag was attached |  | Categorical: ad, juv, unk|
 | [Attachment method ](fields/attachmentMethod.md) | Method with which tag was attached |  | String, eg. “anchor”|
 | [Deployment date and time](fields/deploymentDateTime.md) | Timestamp the instrument was deployed on the animal | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 
