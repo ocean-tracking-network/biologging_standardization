@@ -1,7 +1,8 @@
-# Axes
+## Field Name
+Axes
 
 ## Definition 
-Axes in which acceleration is logged
+Axes in which acceleration is logged.
 
 ## Format
 Categorical (combinations of x, y, and z)
