@@ -1,8 +1,8 @@
 # Field Name
-animal Mass Measurement Time
+organism Mass Measurement Time
 
 ## Definition 
-When the animal mass was taken
+When the organism mass was taken
 
 ## Format
 Categorial: Deployment, Recovery, Other
