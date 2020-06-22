@@ -2,7 +2,7 @@
 License
 
 ## Definition 
-Terms of use for the data in the study, provided by the study owner (e.g. acknlowedgement, establish contact, request for contribution in outputs). IF this field is left unpopulated (i.e. no license terms are specified by researcher), the General repository Terms of Use apply.
+Terms of use for the data in the study, provided by the study owner (e.g. acknowledgement, additional data co-owners to acknowledge, establish contact, request for contribution in outputs). If this field is left unpopulated (i.e. no license terms are specified by researcher), the General repository Terms of Use apply.
 
 ## Format
 Categorical
