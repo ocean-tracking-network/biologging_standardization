@@ -3,7 +3,7 @@
 
 | attributeName | description |  format | 
 | ------------- | ----------- | -------- |
-| [InstrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the tag serial number, or other similar identification system used by the manufacturer. | alpha-numerical, eg. “09A0178”|
+| [InstrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. | alpha-numerical, eg. “09A0178”|
 
 
 ### Instrument specifications
