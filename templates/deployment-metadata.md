@@ -93,6 +93,5 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | ------------- | ----------- | -------- | ------ |
 | [Other relevant identifiers](fields/otherRelevantIdentifiers.md) | Other identifiers relevant to deployment (eg. WMO number for data contribution to GTS). |  | |
 | [Other data types associated with deployment](fields/otherDataTypesAssociatedWithDeployment.md) |Additional data collected with instrument deployment, e.g. from ancillary sensors, photo-ID, biopsy sample for genetics.|  | string, eg. “light level”|
-| [Other data co-owners](fields/otherDataCoowners.md) | Names of additional people to acknowledge for data. |  | |
 | [References](fields/references.md) | Published or web-based references that describe the data or methods. |  | DOI or URL|
 
