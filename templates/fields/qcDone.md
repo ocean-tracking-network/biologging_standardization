@@ -1,8 +1,10 @@
 # Field Name
-QC done by
+QC done
 
 ## Definition 
-Provide name of the person who performed quality control.
+*Under construction*
+Yes/no as to whether quality control was performed. 
+
 
 ## Format
 string
