@@ -3,16 +3,16 @@
 
 | attributeName | description |  format | 
 | ------------- | ----------- | -------- |
-| [InstrumentID](fields/instrumentID.md) | Unique tag ID. Can be the tag serial number, or other similar identification system used by the manufacturer. | alpha-numerical, eg. “09A0178”|
+| [InstrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the tag serial number, or other similar identification system used by the manufacturer. | alpha-numerical, eg. “09A0178”|
 
 
 ### Instrument specifications
 | attributeName | description | format | 
 | ------------- | ----------- | ------ |
-| [Instrument type](fields/instrumentType.md) | Type of tag deployed (e.g. archival, satellite, rapid-acquisition, acoustic tag, acoustic receiver). | categorical, e.g. “satellite”|
-| [Instrument model](fields/instrumentModel.md) | Name of specific tag model deployed. | string, e.g. “Mk10”|
+| [Instrument type](fields/instrumentType.md) | Type of instrument deployed (e.g. archival, satellite, rapid-acquisition, acoustic tag, acoustic receiver). | categorical, e.g. “satellite”|
+| [Instrument model](fields/instrumentModel.md) | Name of specific instrument model deployed. | string, e.g. “Mk10”|
 | [Instrument Manufacturer](fields/instrumentManufacturer.md) | Manufacturer of the instrument (e.g. Wildlife Computers, SMRU, Lotek, Little Leonardo). | string, e.g. “Wildlife Computers”|
-| [Instrument Serial Number](fields/instrumentSerialNumber.md) | Serial number of tag deployed. | alpha-numerical, e.g. “09A0178”|
+| [Instrument Serial Number](fields/instrumentSerialNumber.md) | Serial number of instrument deployed. | alpha-numerical, e.g. “09A0178”|
 
 ### Horizontal sensors
 | attributeName | description | format | 
@@ -36,7 +36,7 @@
 ### Environmental sensors
 | attributeName | description | format | 
 | ------------- | ----------- | ------ |
-| [Sensor type](fields/sensorType.md) | Type of sensor contained in tag (e.g. thermistor, induction cell, conductivity cell, fluorometer, optode). | categorical, e.g. “fluorometer”|
+| [Sensor type](fields/sensorType.md) | Type of sensor contained in instrument (e.g. thermistor, induction cell, conductivity cell, fluorometer, optode). | categorical, e.g. “fluorometer”|
 | [Sensor manufacturer](fields/sensorManufacturer.md) | Name of the manufacturer of the sensor (may or may not be the same as the instrument manufacturer). | string, e.g. “Valeport”|
 | [Sensor model](fields/sensorModel.md) | Name of specific sensor model. | string, e.g. “Cyclops 7”|
 | [Units reported](fields/unitsReported.md) | Unit of oceanographic variable reported. | string, e.g. “degrees C”|
@@ -50,7 +50,7 @@
 ### Physiological sensors
 | attributeName | description | format | 
 | ------------- | ----------- | ------ |
-| [Sensor Type](fields/sensorType.md) | Type of sensor in tag. | string, e.g. “heart rate monitor”|
+| [Sensor Type](fields/sensorType.md) | Type of sensor in instrument (e.g. heart oxygen probe, blood oxygen probe). | string, e.g. “heart rate monitor”|
 | [Sensor Manufacturer](fields/sensorManufacturer.md) | Name of the manufacturer of the sensor (may or may not be the same as the instrument manufacturer). | string |
 | [Sensor Model](fields/sensorModel.md) | Name of specific sensor model. | string |
 | [Sensor units](fields/sensorUnits.md) | Unit of physiological variable reported. | categorical|
