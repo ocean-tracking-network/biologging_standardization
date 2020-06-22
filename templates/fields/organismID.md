@@ -2,7 +2,7 @@
 Organism ID
 
 ## Definition 
-Unique identifier for an individual, link data from different deployments or instruments on the same animal
+Unique identifier for an individual, links data from different deployments or instruments on the same animal.
 
 ## Format
 Alpha-numerical
