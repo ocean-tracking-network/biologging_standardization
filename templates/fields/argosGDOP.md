@@ -1,7 +1,7 @@
 # Argos GDOP
 
 ## Definition 
-Geometric Dilution of Precision provided by CLS/Argos
+Geometric Dilution of Precision provided by CLS/Argos.
 
 ## Format
 m/Hz
