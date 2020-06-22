@@ -1,8 +1,8 @@
 # Field Name
-animal Size Measurement Time
+organism Size Measurement Time
 
 ## Definition 
-When the animal size measurement was taken
+When the organism size measurement was taken
 
 ## Format
 Categorial: Deployment, Recovery, Other
