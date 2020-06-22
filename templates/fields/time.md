@@ -1,5 +1,4 @@
-## Field Name
-Time
+## Time
 
 ## Definition 
 Timestamp of data point.
