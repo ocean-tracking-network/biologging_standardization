@@ -29,7 +29,7 @@
 | [Upper sensor detection limit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | numerical e.g. “2500”|
 | [Sensor accuracy/precision](fields/sensorAccuracyPrecision.md) | Sensor accuracy in same unit specified for sensor. | numerical e.g. “+/- 0.01”|
 | [Sensor sampling frequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | e.g. “1 Hz”|
-| [Sensor duty cycling] (field/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
+| [Sensor duty cycling] (fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
 | [Sensor calibration date](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
 | [Sensor calibration details](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g. peer-reviewed publication). | DOI or URL|
 
@@ -44,7 +44,7 @@
 | [Upper sensor detection limit](fields/upperSensorDetectionLimit.md) | Upper detection limits for sensor in same unit specified for sensor. | numerical e.g. “35”|
 | [Sensor accuracy/precision](fields/sensorAccuracyPrecision.md) | Sensor accuracy in same unit specified for sensor. | numerical e.g. “+/- 0.01”|
 | [Sensor sampling frequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | e.g. “1 Hz”|
-| [Sensor duty cycling] (field/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
+| [Sensor duty cycling] (fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
 | [Sensor calibration date](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
 | [Sensor calibration details](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g. peer-reviewed publication). | DOI or URL|
 ### Physiological sensors
@@ -58,7 +58,7 @@
 | [Upper sensor detection limit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | numerical|
 | [Sensor precision/accuracy](fields/sensorPrecisionAccuracy.md) | Sensor accuracy in same unit specified for sensor. | numerical|
 | [Sensor sampling frequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | numerical, e.g. “4 Hz”|
-| [Sensor duty cycling] (field/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
+| [Sensor duty cycling] (fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
 | [Sensor calibration details](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g., peer-reviewed publication). | DOI or URL |
 ### Accelerometry sensors
 | attributeName | description | format | 
@@ -67,5 +67,5 @@
 | [Sensor Model](fields/sensorModel.md) | Name of specific sensor model. | string|
 | [Axes](fields/axes.md) | Axes in which acceleration is logged. | Categorical (combinations of x, y, and z)|
 | [Sensor sampling frequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | Numerical|
-| [Sensor duty cycling] (field/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
+| [Sensor duty cycling] (fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | string|
 | [Sensor calibration details](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g., peer-reviewed publication). | DOI or URL|
