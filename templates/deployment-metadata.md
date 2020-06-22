@@ -29,13 +29,14 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 ### Organism metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [Organism ID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal |  | Alpha-numerical|
-| [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
-| [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument |  | String in sentence case, separated by space|
-| [Animal sex](fields/animalSex.md) | Sex of animal carrying instrument |  | Categorical: M, F, U|
-| [Animal mass](fields/animalMass.md) | Mass of animal carrying instrument (can be repeated for multiple mass measurements) |  | numerical in kg|
-| [Animal mass measurement time](fields/animalMassMeasurementTime.md) | When the animal mass was taken |  | Categorial: Deployment, Recovery, Other|
-| [Animal size](fields/animalSize.md) | Size of animal carrying instrument (can be repeated for multiple measurements) |  | numerical in m or unknown|
+| [OrganismID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal. |  | Alpha-numerical|
+| [OrganismID source](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | e.g. EXAMPLE|
+| [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
+| [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
+| [Animal sex](fields/animalSex.md) | Sex of animal carrying instrument. |  | Categorical: M, F, U|
+| [Animal mass](fields/animalMass.md) | Mass of animal carrying instrument (can be repeated for multiple mass measurements). |  | numerical in kg|
+| [Animal mass measurement time](fields/animalMassMeasurementTime.md) | When the animal mass was taken. |  | Categorial: Deployment, Recovery, Other|
+| [Animal size](fields/animalSize.md) | Size of animal carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
 | [Animal size measurement type](fields/animalSizeMeasurementType.md) | Type and description of method used for size measurement reported |  | String, e.g. total length (from shark snout to top tip of tail)|
 | [Animal size measurement time](fields/animalSizeMeasurementTime.md) | When the animal size measurement was taken |  | Categorial: Deployment, Recovery, Other|
 | [Animal age class/reproductive class](fields/animalAgeReproductiveClass.md) | Age class of animal carrying instrument at the time the tag was attached |  | Categorical: ad, juv, unk|
