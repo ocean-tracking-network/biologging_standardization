@@ -36,7 +36,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Organism sex](fields/organismSex.md) | Sex of organism carrying instrument. |  | Categorical: M, F, U|
 | [Organism mass](fields/organismMass.md) | Mass of organism carrying instrument (can be repeated for multiple mass measurements). |  | numerical in kg|
 | [Organism mass measurement time](fields/organismMassMeasurementTime.md) | When the organism mass was taken. |  | Categorial: Deployment, Recovery, Other|
-| [Animal size](fields/animalSize.md) | Size of animal carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
+| [Organism size](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
 | [Animal size measurement type](fields/animalSizeMeasurementType.md) | Type and description of method used for size measurement reported |  | String, e.g. total length (from shark snout to top tip of tail)|
 | [Animal size measurement time](fields/animalSizeMeasurementTime.md) | When the animal size measurement was taken |  | Categorial: Deployment, Recovery, Other|
 | [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of animal carrying instrument at the time the tag was attached |  | Categorical: ad, juv, unk|
