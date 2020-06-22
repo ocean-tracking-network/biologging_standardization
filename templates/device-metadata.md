@@ -1,8 +1,8 @@
 ## Table S1: Device metadata template
 
 
-| attributeName | description | standard | format | 
-| ------------- | ----------- | -------- | ------ |
+| attributeName | description |  format | 
+| ------------- | ----------- | -------- |
 | [InstrumentID](fields/instrumentID.md) | Unique tag ID. Can be the tag serial number, or other similar identification system used by the manufacturer. | alpha-numerical, eg. “09A0178”|
 
 
