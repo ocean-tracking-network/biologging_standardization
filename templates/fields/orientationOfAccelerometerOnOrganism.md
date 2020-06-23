@@ -2,10 +2,10 @@
 Orientation of accelerometer on organism
 
 ## Definition 
-The orientation of the tag on the organism. 
+The orientation of the accelerometer on the organism. 
 
 ## Format
-string, e.g. “antennae facing 45 degrees towards front of head”
+string, e.g. “facing 45 degrees towards front of head”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
