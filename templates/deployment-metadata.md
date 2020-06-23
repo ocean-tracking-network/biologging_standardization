@@ -38,7 +38,8 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Organism mass measurement details](fields/organismMassMeasurementDetails.md) | Situation when the animal mass was taken (e.g., at instrument deployment, instrument recovery, recapture).|  | Categorial: Deployment, Recovery, Other|
 | [Organism mass measurement time](fields/organismMassMeasurementTime.md) | Date when the organism mass was taken of animal mass. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 | [Organism size](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
-| [Organism size measurement type](fields/organismSizeMeasurementType.md) | Type and description of method used for size measurement reported. |  | String, e.g. total length (from shark snout to top tip of tail)|
+| [Organism size measurement type](fields/organismSizeMeasurementType.md) | Type of method used for size measurement reported. |  | String, e.g. total length|
+| [Organism size measurement description](fields/organismSizeMeasurementDescription.md) | Description of method used for size measurement reported. |  | String, e.g. from shark snout to top tip of tail|
 | [Organism size measurement time](fields/organismSizeMeasurementTime.md) | When the organism size measurement was taken. |  | Categorial: Deployment, Recovery, Other|
 | [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: ad, juv, unk|
 | [Attachment method ](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, eg. “anchor”|
