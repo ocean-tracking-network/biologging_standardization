@@ -84,7 +84,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Position of accelerometer on organism](fields/positionOfAccelerometerOnOrganism.md) | Where the accelerometer was placed on the organism. |  | string, eg. “head”|
-| [Orientation of accelerometer on organism](fields/orientationOfAccelerometerOnOrganism.md) | The orientation of the tag on the organism, if applicable. |  | string, e.g. “antennae facing 45 degrees towards front of head” |
+| [Orientation of accelerometer on organism](fields/orientationOfAccelerometerOnOrganism.md) | The orientation of the accelertometer on the organism, if applicable. |  | string, e.g. “facing 45 degrees towards front of head” |
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file. |  | DOI or URL|
 | [QC done](fields/qcDone.md) | Whether quality control was performed. |  | Y/N|
 | [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected. |  | Y/N|
