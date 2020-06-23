@@ -2,10 +2,10 @@
 organism Size Measurement Type
 
 ## Definition 
-Type and description of method used for size measurement reported
+Type of method used for size measurement reported
 
 ## Format
-String, e.g. total length (from shark snout to top tip of tail)
+String, e.g. total length
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
