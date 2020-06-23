@@ -2,7 +2,7 @@
 Position of accelerometer on organism
 
 ## Definition 
-Where the accelerometer was placed on the organism and its orientation.
+Where the accelerometer was placed on the organism. 
 
 ## Format
 string, e.g. “head”
