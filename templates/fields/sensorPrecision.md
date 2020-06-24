@@ -1,8 +1,8 @@
 ## Field Name
-Sensor Accuracy/Precision
+Sensor precision
 
 ## Definition 
-Sensor precision/accuracy in same unit specified for sensor.
+Sensor precision in same unit specified for sensor.
 
 ## Format
 numerical e.g. “+/- 0.01”
