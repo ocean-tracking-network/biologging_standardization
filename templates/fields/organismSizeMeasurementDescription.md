@@ -5,7 +5,7 @@ organism Size Measurement Description
 Details of method used for size measurement reported.
 
 ## Format
-String, e.g. from shark snout to top tip of tail
+String, e.g. "from shark snout to top tip of tail"
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
