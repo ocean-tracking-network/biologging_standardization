@@ -81,7 +81,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Position of accelerometer on organism](fields/positionOfAccelerometerOnOrganism.md) | Where the accelerometer was placed on the organism. |  | string, e.g. “head”|
-| [Orientation of accelerometer on organism](fields/orientationOfAccelerometerOnOrganism.md) | The orientation of the accelertometer on the organism, if applicable. |  | string, e.g. “facing 45 degrees towards front of head” |
+| [Orientation of accelerometer on organism](fields/orientationOfAccelerometerOnOrganism.md) | The orientation of the accelertometer on the organism, if applicable. |  | string, e.g. “facing towards front of head” |
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file. |  | DOI or URL|
 | [QC done](fields/qcDone.md) | Whether quality control was performed. |  | Y/N|
 | [QC problems found](fields/qcProblemsFound.md) | Whether data quality problem(s) were detected. |  | Y/N|
@@ -91,9 +91,9 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Owner name](fields/ownerName.md) | Name of person to contact regarding the deployment. |  | String containing full name|
-| [Owner email contact](fields/ownerEmailContact.md) | Email contact for person indicated under ‘Owner name’. |  | String containing e-mail|
-| [Owner institutional contact](fields/ownerInstitutionalContact.md) | Institutional address for person indicated under ‘Owner name’. |  | String containing institutional address|
-| [Owner phone contact](fields/ownerPhoneContact.md) | Phone contact for person indicated under ‘Owner name’. |  | String containing contact phone|
+| [Owner email contact](fields/ownerEmailContact.md) | Email contact for person indicated under "Owner name". |  | String containing e-mail|
+| [Owner institutional contact](fields/ownerInstitutionalContact.md) | Institutional address for person indicated under "Owner name". |  | String containing institutional address|
+| [Owner phone contact](fields/ownerPhoneContact.md) | Phone contact for person indicated under "Owner name". |  | String containing contact phone|
 | [License](fields/license.md) | Terms of use for the data in the study, provided by the study owner. If no license terms are specified by researcher, the General repository Terms of Use apply.|  | Categorical|
 | [Other relevant identifiers](fields/otherRelevantIdentifiers.md) | Other identifiers relevant to deployment (e.g. WMO number for data contribution to GTS). |  | |
 | [Other data types associated with deployment](fields/otherDataTypesAssociatedWithDeployment.md) |Additional data collected with instrument deployment, e.g. from ancillary sensors, photo-ID, biopsy sample for genetics.|  | string, e.g. “light level”|
