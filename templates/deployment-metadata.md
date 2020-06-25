@@ -30,7 +30,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [OrganismID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal. |  | Alpha-numerical|
-| [OrganismID source](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | e.g. EXAMPLE|
+| [OrganismID source](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | urn:catalog:[repository]:[institution]:[projectcode]:[OrganismID], e.g., urn:catalog:otn:Dalhousie:NSBS:Brandy-release|
 | [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
 | [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
 | [Organism sex](fields/organismSex.md) | Sex of organism carrying instrument. |  | Categorical: M, F, U|
