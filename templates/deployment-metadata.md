@@ -67,33 +67,33 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 ### Environmental data calibration
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file |  | DOI or URL|
+| [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file. |  | DOI or URL|
 | [QC done](fields/qcDone.md) | Whether quality control was performed. |  | Y/N|
-| [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected |  | Y/N|
-| [QC notes](fields/qcNotes.md) | Description of QC done, eg. “temperatures outside of xx range removed”, number of cases flagged |  | text field|
+| [QC problems found](fields/qcProblemsFound.md) | Whether data quality problem(s) were detected. |  | Y/N|
+| [QC notes](fields/qcNotes.md) | Description of QC done, e.g. “temperatures outside of xx range removed”, number of cases flagged. |  | text field|
 
 ### Physiological data calibration
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file. |  | DOI or URL|
 | [QC done](fields/qcDone.md) | Whether quality control was performed. |  | Y/N|
-| [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected. |  | Y/N|
-| [QC notes](fields/qcNotes.md) | Description of QC done, eg. codes used, # of cases flagged, description of problem. |  | text field|
+| [QC problems found](fields/qcProblemsFound.md) | Whether data quality problem(s) were detected. |  | Y/N|
+| [QC notes](fields/qcNotes.md) | Description of QC done, e.g. codes used, # of cases flagged, description of problem. |  | text field|
 
 ### Accelerometry data calibration
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [Position of accelerometer on organism](fields/positionOfAccelerometerOnOrganism.md) | Where the accelerometer was placed on the organism. |  | string, eg. “head”|
+| [Position of accelerometer on organism](fields/positionOfAccelerometerOnOrganism.md) | Where the accelerometer was placed on the organism. |  | string, e.g. “head”|
 | [Orientation of accelerometer on organism](fields/orientationOfAccelerometerOnOrganism.md) | The orientation of the accelertometer on the organism, if applicable. |  | string, e.g. “facing 45 degrees towards front of head” |
 | [Calibrations done](fields/calibrationsDone.md) | Provide link to calibration file. |  | DOI or URL|
 | [QC done](fields/qcDone.md) | Whether quality control was performed. |  | Y/N|
-| [QC problems found](fields/qcProblemsFound.md) | Data quality problem(s) detected. |  | Y/N|
-| [QC notes](fields/qcNotes.md) | Description of QC done, eg. codes used, # of cases flagged, description of problem. |  | text field|
+| [QC problems found](fields/qcProblemsFound.md) | Whether data quality problem(s) were detected. |  | Y/N|
+| [QC notes](fields/qcNotes.md) | Description of QC done, e.g. codes used, # of cases flagged, description of problem. |  | text field|
 
 ### Other data
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [Other relevant identifiers](fields/otherRelevantIdentifiers.md) | Other identifiers relevant to deployment (eg. WMO number for data contribution to GTS). |  | |
-| [Other data types associated with deployment](fields/otherDataTypesAssociatedWithDeployment.md) |Additional data collected with instrument deployment, e.g. from ancillary sensors, photo-ID, biopsy sample for genetics.|  | string, eg. “light level”|
+| [Other relevant identifiers](fields/otherRelevantIdentifiers.md) | Other identifiers relevant to deployment (e.g. WMO number for data contribution to GTS). |  | |
+| [Other data types associated with deployment](fields/otherDataTypesAssociatedWithDeployment.md) |Additional data collected with instrument deployment, e.g. from ancillary sensors, photo-ID, biopsy sample for genetics.|  | string, e.g. “light level”|
 | [References](fields/references.md) | Published or web-based references that describe the data or methods. |  | DOI or URL|
 
