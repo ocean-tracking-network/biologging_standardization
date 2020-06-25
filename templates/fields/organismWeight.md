@@ -1,8 +1,8 @@
 # Field Name
-organism Mass
+Organism weight
 
 ## Definition 
-Mass of organism carrying instrument (can be repeated for multiple mass measurements taken, for example, at different times)
+Wass of organism carrying instrument (can be repeated for multiple weight measurements taken, for example, at different times).
 
 ## Format
 numerical in kg
