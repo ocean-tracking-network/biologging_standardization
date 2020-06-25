@@ -2,7 +2,7 @@
 QC problems found
 
 ## Definition 
-Whether data quality problem(s) wewer detected.
+Whether data quality problem(s) were detected.
 
 ## Format
 Boolean Y/N
