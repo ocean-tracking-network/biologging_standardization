@@ -1,11 +1,14 @@
 # Field Name
-Organism weight measurement time
+Organism weight re-measurement time
 
 ## Definition 
-Date when the organism weight was taken. 
+Timestamp when the additional measurement of organism weight was taken. 
+
+## Standard
+ISO-8601
 
 ## Format
-ISO-8601
+Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
