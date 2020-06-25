@@ -1,7 +1,7 @@
-# Repetition rate
+# Minimum uplink interval
 
 ## Definition 
-Interval of time between two consecutive message dispatches
+Minimum interval of time between two consecutive message dispatches. 
 
 ## Format
 Seconds
@@ -9,7 +9,7 @@ Seconds
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
 |----|----------|-----------------|
-<!-- |Duty cycle|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000086/|Movebank|  <!-- This isn't the right definition, duty cycle is the power cycle timing of instruments.  -->
+
 
 ## SensorML example
 ```xml
