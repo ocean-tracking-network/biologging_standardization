@@ -33,11 +33,11 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Organism weight at deployment](fields/organismWeightAtDeployment.md) | Weight of organism carrying instrument measured at tag deployment. |  | numerical in kg|
 | [Organism weight re-measurement](fields/organismWeightRemeasurement.md) | Weight of organism carrying instrument at another time (specified in "Organism weight re-measurement time") than deployment.|  | numerical in kg|
 | [Organism weight re-measurement time](fields/organismWeightRemeasurementTime.md) | Timestamp when the additional measurement of organism weight was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
-| [Organism size](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
-| [Organism size measurement type](fields/organismSizeMeasurementType.md) | Type of method used for size measurement reported. |  | String, e.g. total length|
-| [Organism size measurement description](fields/organismSizeMeasurementDescription.md) | Description of method used for size measurement reported. |  | String, e.g. from shark snout to top tip of tail|
-| [Organism size measurement time](fields/organismSizeMeasurementTime.md) | When the organism size measurement was taken. |  | Categorial: Deployment, Recovery, Other|
-| [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: ad, juv, unk|
+| [Organism size (1-3)](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for up to three measurements). |  | numerical in m or unknown|
+| [Organism size measurement (1-3) type](fields/organismSizeMeasurementType.md) | Type of method used for size measurement reported. |  | String, e.g. "total length"|
+| [Organism size measurement (1-3) description](fields/organismSizeMeasurementDescription.md) | Description of method used for size measurement reported. |  | String, e.g. "from shark snout to top tip of tail"|
+| [Organism size measurement (1-3) time](fields/organismSizeMeasurementTime.md) | Timestamp when the organism size measurement was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
+| [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: adu, sub, juv, new, unk|
 | [Attachment method ](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, eg. “anchor”|
 
 
