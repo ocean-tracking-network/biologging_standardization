@@ -1,8 +1,8 @@
 # Field Name
-Organism weight
+Organism weight at deployment
 
 ## Definition 
-Wass of organism carrying instrument (can be repeated for multiple weight measurements taken, for example, at different times).
+Weight of organism carrying instrument measured at tag deployment.
 
 ## Format
 numerical in kg
