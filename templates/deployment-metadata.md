@@ -31,7 +31,8 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | ------------- | ----------- | -------- | ------ |
 | [OrganismID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal. |  | Alpha-numerical|
 | [OrganismID source](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | urn:catalog:[repository]:[institution]:[projectcode]:[OrganismID], e.g., urn:catalog:otn:Dalhousie:NSBS:Brandy-release|
-| [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
+| [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
+| [Scientific name source](fields/scientificNameSource.md) | URN denoting the authority from which the species identification is defined | ITIS / WoRMS / other | e.g. for 'blue shark': urn:lsid:marinespecies.org:taxname:105801, TSN 160424 , (Linnaeus, 1758)|
 | [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
 | [Organism sex](fields/organismSex.md) | Sex of organism carrying instrument. |  | Categorical: M, F, U|
 | [Organism weight at deployment](fields/organismWeightAtDeployment.md) | Weight of organism carrying instrument measured at tag deployment. |  | numerical in kg|
