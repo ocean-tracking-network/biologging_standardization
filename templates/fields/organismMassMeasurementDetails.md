@@ -1,8 +1,8 @@
 # Field Name
-organism Mass Measurement Details
+Organism weight measurement details
 
 ## Definition 
-Situation when the animal mass was taken (e.g., at tag deployment, tag recovery, recapture).
+Situation when the animal weight was taken (e.g., at tag deployment, tag recovery, recapture).
 
 ## Format
 Categorial: Deployment, Recovery, Other
