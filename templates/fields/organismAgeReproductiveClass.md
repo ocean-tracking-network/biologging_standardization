@@ -2,7 +2,7 @@
 organism Age Reproductive Class
 
 ## Definition 
-Age class of organism carrying instrument at the time the tag was attached as adult (adu), sub-adult (sub), juvenile (juv), newborn or recently bron (new), or unknown (unk).
+Age class of organism carrying instrument at the time the tag was attached as adult (adu), sub-adult (sub), juvenile (juv), newborn or recently born (new), or unknown (unk).
 
 ## Format
 Categorical: adu, sub, juv, new, unk
