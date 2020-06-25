@@ -1,6 +1,8 @@
 ## Table S1: Device metadata template
 
+Metadata describing instrument specifications and included sensors, such as those providing horizontal, vertical, environmental, physiological, and accelerometry data. The Device metadata template is to be completed by the instrument manufacturer and should be provided to the researcher using the device or, in cases where data uploading to a compliant repository is done directly by the manufacturer, should be uploaded with the data. All attributes are mandatory, but fields can be “unknown” or “NA” if data do not exist or are not applicable to a specific device. Sensor metadata can be repeated for any number of separate sensors on a device, with separate sensors assigned Roman numerals (Sensor I, Sensor II, Sensor III, etc.). 
 
+ISO: International Organization for Standardization
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
