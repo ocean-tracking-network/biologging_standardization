@@ -21,26 +21,6 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Duty cycle](fields/dutyCycle.md) | Detailed instrument settings defined in a file (e.g. Wildlife Computers Report, htm file/URL, or screenshot of tag settings). |  | String e.g. "PTT active 12 hours, followed by 6 hours sleep-mode"|
 | [Instrument Settings](fields/instrumentSettings.md) | Attach a file with detailed instrument settings (eg. Wildlife Computers Report .htm file or screenshot of tag settings). |  | File (.htm, .pdf)|
 
-### Organism metadata
-| attributeName | description | standard | format | 
-| ------------- | ----------- | -------- | ------ |
-| [OrganismID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal. |  | Alpha-numerical|
-| [OrganismID source](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | urn:catalog:[repository]:[institution]:[projectcode]:[OrganismID], e.g., urn:catalog:otn:Dalhousie:NSBS:Brandy-release|
-| [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
-| [Scientific name source](fields/scientificNameSource.md) | URN denoting the authority from which the species identification is defined | ITIS / WoRMS / other | e.g. for 'blue shark': urn:lsid:marinespecies.org:taxname:105801, TSN 160424 , (Linnaeus, 1758)|
-| [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
-| [Organism sex](fields/organismSex.md) | Sex of organism carrying instrument. |  | Categorical: M, F, U|
-| [Organism weight at deployment](fields/organismWeightAtDeployment.md) | Weight of organism carrying instrument measured at tag deployment. |  | numerical in kg|
-| [Organism weight re-measurement](fields/organismWeightRemeasurement.md) | Weight of organism carrying instrument at another time (specified in "Organism weight re-measurement time") than deployment.|  | numerical in kg|
-| [Organism weight re-measurement time](fields/organismWeightRemeasurementTime.md) | Timestamp when the additional measurement of organism weight was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
-| [Organism size (1-3)](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for up to three measurements). |  | numerical in m or unknown|
-| [Organism size measurement (1-3) type](fields/organismSizeMeasurementType.md) | Type of method used for size measurement reported. |  | String, e.g. "total length"|
-| [Organism size measurement (1-3) description](fields/organismSizeMeasurementDescription.md) | Description of method used for size measurement reported. |  | String, e.g. "from shark snout to top tip of tail"|
-| [Organism size measurement (1-3) time](fields/organismSizeMeasurementTime.md) | Timestamp when the organism size measurement was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
-| [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: adu, sub, juv, new, unk|
-| [Attachment method ](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, eg. “anchor”|
-
-
 ### Movement metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
@@ -60,6 +40,24 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Track end longitude](fields/trackEndLongitude.md) | Longitude at which organism track ends. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Sun angle (GLS)](fields/sunangleGLS.md) | Angle of the sun to determine twilight derived at the beginning of deployment. | | Numerical in degrees
 
+### Organism metadata
+| attributeName | description | standard | format | 
+| ------------- | ----------- | -------- | ------ |
+| [OrganismID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal. |  | Alpha-numerical|
+| [OrganismID source](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | urn:catalog:[repository]:[institution]:[projectcode]:[OrganismID], e.g., urn:catalog:otn:Dalhousie:NSBS:Brandy-release|
+| [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
+| [Scientific name source](fields/scientificNameSource.md) | URN denoting the authority from which the species identification is defined | ITIS / WoRMS / other | e.g. for 'blue shark': urn:lsid:marinespecies.org:taxname:105801, TSN 160424 , (Linnaeus, 1758)|
+| [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
+| [Organism sex](fields/organismSex.md) | Sex of organism carrying instrument. |  | Categorical: M, F, U|
+| [Organism weight at deployment](fields/organismWeightAtDeployment.md) | Weight of organism carrying instrument measured at tag deployment. |  | numerical in kg|
+| [Organism weight re-measurement](fields/organismWeightRemeasurement.md) | Weight of organism carrying instrument at another time (specified in "Organism weight re-measurement time") than deployment.|  | numerical in kg|
+| [Organism weight re-measurement time](fields/organismWeightRemeasurementTime.md) | Timestamp when the additional measurement of organism weight was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
+| [Organism size (1-3)](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for up to three measurements). |  | numerical in m or unknown|
+| [Organism size measurement (1-3) type](fields/organismSizeMeasurementType.md) | Type of method used for size measurement reported. |  | String, e.g. "total length"|
+| [Organism size measurement (1-3) description](fields/organismSizeMeasurementDescription.md) | Description of method used for size measurement reported. |  | String, e.g. "from shark snout to top tip of tail"|
+| [Organism size measurement (1-3) time](fields/organismSizeMeasurementTime.md) | Timestamp when the organism size measurement was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
+| [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: adu, sub, juv, new, unk|
+| [Attachment method ](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, eg. “anchor”|
 
 ### Environmental data calibration
 | attributeName | description | standard | format | 
