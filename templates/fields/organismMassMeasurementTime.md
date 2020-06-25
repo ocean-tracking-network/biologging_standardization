@@ -1,8 +1,8 @@
 # Field Name
-organism Mass Measurement Time
+Organism weight measurement time
 
 ## Definition 
-Date when the organism mass was taken of animal mass. 
+Date when the organism weight was mass was taken. 
 
 ## Format
 ISO-8601
