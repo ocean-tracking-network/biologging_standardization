@@ -44,11 +44,12 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Organism size measurement time](fields/organismSizeMeasurementTime.md) | When the organism size measurement was taken. |  | Categorial: Deployment, Recovery, Other|
 | [Organism age class/reproductive class](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: ad, juv, unk|
 | [Attachment method ](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, eg. “anchor”|
-| [Deployment date and time](fields/deploymentDateTime.md) | Timestamp the instrument was deployed on the organism. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+
 
 ### Movement metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
+| [Deployment date and time](fields/deploymentDateTime.md) | Timestamp the instrument was deployed on the organism. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
 | [Deployment latitude](fields/deploymentLatitude.md) | Latitude in decimal degrees of instrument deployment. | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [Deployment longitude](fields/deploymentLongitude.md) | Longitude in decimal degrees of instrument deployment. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [Deployment end type](fields/deploymentEndType.md) | Classification of instrument deployment end, i.e. what ended teh collection of usable data, which may or may not be tag removal. | Movebank | Categorical (eg. removal, equipment failure, fall off)|
