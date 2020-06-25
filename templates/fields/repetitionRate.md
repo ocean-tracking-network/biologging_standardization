@@ -1,7 +1,7 @@
 # Repetition rate
 
 ## Definition 
-Interval of time between two consecutive message dispatches 
+Interval of time between two consecutive message dispatches
 
 ## Format
 Seconds
