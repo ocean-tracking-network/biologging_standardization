@@ -74,4 +74,5 @@
 | [Sensor precision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | |numerical|
 | [Sensor sampling frequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | |numerical|
 | [Sensor duty cycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string|
+| [Sensor calibration date](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
 | [Sensor calibration details](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g., peer-reviewed publication). | | DOI or URL|
