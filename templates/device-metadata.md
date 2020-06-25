@@ -21,12 +21,12 @@ ISO: International Organization for Standardization
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
 | [Tracking device](fields/trackingDevice.md) | Type of tracking technology used (e.g. Argos, fast-acquisition GPS, GLS, acoustic). || categorial, e.g. “Argos”|
-| [Repetition rate](fields/repetitionRate.md) | Interval of time between two consecutive message dispatche.s | | Seconds|
+| [Repetition rate](fields/repetitionRate.md) | Interval of time between two consecutive message dispatches. | | Seconds|
 
 ### Vertical sensors
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
-| [Units reported](fields/unitsReported.md) | Unit of altidue/depth reported. | CF | string, e.g. “meters”|
+| [Units reported](fields/unitsReported.md) | Unit of altidue/depth reported. | | string, e.g. “meters”|
 | [Resolution](fields/resolution.md) | Resolution of altitude/depth measurements in same unit specified for vertical sensor. | |numerical, e.g. “0.1”
 | [Lower sensor detection limit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | |numerical e.g. “5”|
 | [Upper sensor detection limit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | | numerical e.g. “2500”|
