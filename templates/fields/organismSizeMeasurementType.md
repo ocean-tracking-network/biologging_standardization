@@ -5,7 +5,7 @@ organism Size Measurement Type
 Type of method used for size measurement reported
 
 ## Format
-String, e.g. total length
+String, e.g. "total length"
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
