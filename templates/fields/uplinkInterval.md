@@ -1,7 +1,7 @@
-# Minimum uplink interval
+# Uplink interval
 
 ## Definition 
-Minimum interval of time between two consecutive message dispatches. 
+Interval of time between two consecutive message dispatches. 
 
 ## Format
 Seconds
