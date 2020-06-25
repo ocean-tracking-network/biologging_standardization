@@ -34,8 +34,8 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [Scientific name](fields/scientificName.md) | Binomial species name of organism carrying instrument. | ITIS | String of the format “Genus species”, genus capitalized, separated by one space, eg. “Mirounga angustirostris”|
 | [Common name](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|
 | [Organism sex](fields/organismSex.md) | Sex of organism carrying instrument. |  | Categorical: M, F, U|
-| [Organism weight at deployment](fields/organismWeight.md) | Weight of organism carrying instrument measured at tag deployment. |  | numerical in kg|
-| [Organism weight re-measurement](fields/organismWeightRemeasurement.md) | Weight of organism carrying instrument at another time (specified in "Organism weight re-measurement time") than deployment.|  | numberical in kg|
+| [Organism weight at deployment](fields/organismWeightAtDeployment.md) | Weight of organism carrying instrument measured at tag deployment. |  | numerical in kg|
+| [Organism weight re-measurement](fields/organismWeightRemeasurement.md) | Weight of organism carrying instrument at another time (specified in "Organism weight re-measurement time") than deployment.|  | numbrical in kg|
 | [Organism weight re-measurement time](fields/organismWeightRemeasurementTime.md) | Timestamp when the additional measurement of organism weight was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
 | [Organism size](fields/organismSize.md) | Size of organism carrying instrument (can be repeated for multiple measurements). |  | numerical in m or unknown|
 | [Organism size measurement type](fields/organismSizeMeasurementType.md) | Type of method used for size measurement reported. |  | String, e.g. total length|
