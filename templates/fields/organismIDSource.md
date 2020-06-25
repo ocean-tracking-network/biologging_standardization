@@ -5,7 +5,7 @@ Organism ID source
 URN denoting the authority from which the species identification is defined.
 
 ## Format
-EXAMPLE
+e.g. urn:catalog:otn:Dalhousie:NSBS:Brandy-release
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
