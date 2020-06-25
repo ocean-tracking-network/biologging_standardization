@@ -2,7 +2,7 @@
 Organism weight measurement time
 
 ## Definition 
-Date when the organism weight was mass was taken. 
+Date when the organism weight was taken. 
 
 ## Format
 ISO-8601
