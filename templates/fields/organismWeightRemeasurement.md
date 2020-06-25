@@ -1,11 +1,11 @@
 # Field Name
-Organism weight measurement details
+Organism weight re-measurement
 
 ## Definition 
-Situation when the animal weight was taken (e.g., at tag deployment, tag recovery, recapture).
+Weight of organism carrying instrument at another time (specified in "Organism weight re-measurement time") than deployment.
 
 ## Format
-Categorial: Deployment, Recovery, Other
+numerical in kg
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
