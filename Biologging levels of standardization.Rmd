@@ -1,0 +1,235 @@
+---
+title: "Biologging levels of standardization"
+output: github_document
+---
+
+html_document:
+    df_print: paged
+  
+```{r setup, eval = TRUE, message = FALSE}
+library(sp)
+library(tidyverse)
+library(raster)
+library(lubridate)
+library(fields)
+library(foieGras)
+
+```
+
+
+The data used here are a published set of ... from DataOne at DOI: xxx
+
+## Level 1 -> 2
+
+
+```{r 1to2, eval = TRUE}
+
+fList <- list.files('./data_level1/', full.names = TRUE, recursive = TRUE)
+loc_files <- fList[grep('Locations', fList)]
+
+## this metadata is from the DataOne repo at doi: xxx
+meta <- read.table('Braun_atn_tag_deployment_metadata.csv', sep = ',', header = TRUE, stringsAsFactors = FALSE)
+meta$Deployment.Start.Datetime <- as.POSIXct(meta$Deployment.Start.Datetime, format = '%m/%d/%y %H:%M', tz = 'UTC')
+meta$Deployment.Stop.Datetime <- as.POSIXct(meta$Deployment.Stop.Datetime, format = '%m/%d/%y %H:%M', tz = 'UTC')
+
+for (i in 1:length(loc_files)){
+  
+  ## read and format raw location data
+  track <- read.table(loc_files[i], sep = ',', header = TRUE)
+  track <- track[,c('Ptt','Date','Type','Quality','Latitude','Longitude')]
+  track <- track[which(track$Quality != 'Z' & track$Quality != ' '),]
+  track$Date <- lubridate::parse_date_time(track$Date, orders = c('HMS dbY', 'mdy HM', 'Ymd HMS'), tz = 'UTC')
+  
+  ## removes duplicate POSIXct timestamps (not duplicate DAYS)
+  track <- track[which(!duplicated(track$Date)),]
+
+  ## identify metadata row
+  meta_idx <- which(meta$PTT %in% track$Ptt[1])
+  
+  ## identify start stop timestamps
+  start <- meta$Deployment.Start.Datetime[meta_idx]
+  stop <- meta$Deployment.Stop.Datetime[meta_idx]
+
+  ## add tagging location to track dataframe
+  tag <- as.data.frame(cbind(track$Ptt[1], NA, NA, 3, meta$geospatial_lat_start[meta_idx], meta$geospatial_lon_start[meta_idx]))
+  colnames(tag) <- names(track)
+  tag$Date <- start
+  track <- track[which(track$Date >= tag$Date),]
+  track <- rbind(tag, track)
+  track <- track[order(track$Date),]
+  track <- track[which(track$Date >= start & track$Date <= stop),]
+
+  ## create spatial points for filtering
+  tr <- track
+  coordinates(tr) <- ~Longitude + Latitude
+  proj4string(tr) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84")
+
+  ## then to trip object
+  tr <- trip::trip(tr, c('Date','Ptt'))
+  
+  ## filter at 4 m/s or 14.4 km/hr
+  ## speed filter decision based on Fig S1 in Braun CD, Galuardi B, Thorrold SR (2018) HMMoce: An R package for improved geolocation of archival-tagged fishes using a hidden Markov method. Methods Ecol Evol 9:1212–1220
+  sf2 <- trip::speedfilter(tr, max.speed = 14.4)
+  
+  
+  ## subset track based on logical output of speed filter
+  df <- data.frame(tr[sf2,])[,c(2,4:6)]
+  names(df) <- tolower(names(df))
+  names(df) <- c('date','argos_lc','lat','lon')
+  df$deploy_id <- meta$Deployment.ID[meta_idx]
+  df <- df[,c(5,1:2,4,3)]
+  
+  ## plot to compare
+  
+  
+  ## write level 2 data results
+  write.table(df, paste('./data_level2/', meta$Deployment.ID[meta_idx], 'pnas_atn.csv', sep=''), sep=',', col.names = TRUE, row.names = FALSE)
+  
+  print(paste(meta$Deployment.ID[meta_idx], 'complete.', sep = ' '))
+  
+}
+
+```
+
+
+## Level 2 -> 3
+
+```{r level2to3, eval = TRUE, cache = TRUE}
+
+fList <- list.files('./data_level2/', full.names = TRUE, recursive = TRUE)
+loc_files <- fList[grep('pnas_atn.csv', fList)]
+
+for (i in 1:length(loc_files)){
+  
+  track <- read.table(loc_files[i], sep = ',', header = TRUE)
+  
+  if (i == 1){
+    all_tracks <- track
+  } else{
+    all_tracks <- rbind(all_tracks, track)
+  }
+  
+}
+ 
+names(all_tracks) <- c('id','date','lc','lon','lat') # req'd names for fit_ssm
+all_tracks$date <- lubridate::parse_date_time(all_tracks$date, orders = 'Ymd HMS', tz='UTC')
+ssm_fit <- foieGras::fit_ssm(all_tracks, model = 'crw', time.step = 24, vmax = 4)
+## this takes ~ 1 min on a Macbook Air with 1.6 GHz Intel Core i5 and 16 GB 2133 MHz LPDDR3
+
+## throw an error if anything did not converge
+if (any(!ssm_fit$converged)) stop('Not all models converged. Please check fit_ssm and try again.')
+
+## grab predicted locations output from fit_ssm and group by id
+plocs <- foieGras::grab(ssm_fit, what = "p", as_sf = FALSE) %>% 
+  tbl_df() %>%
+  mutate(id = as.character(id)) %>% group_by(id)
+
+## take a look, for example, at # of standardized locations per individual
+plocs %>% summarise(n = n())
+
+## output level2 results
+write.table(plocs, file = './data_level3/blue_sharks_level3.csv', sep = ',', col.names = TRUE, row.names = FALSE)
+
+head(plocs)
+
+```
+
+
+Here's an example of the fits for one of the individuals.
+```{r level3_example, eval = TRUE, message = FALSE, echo = FALSE}
+
+ex_fit <- foieGras::fit_ssm(all_tracks[which(all_tracks$id == all_tracks$id[1]),], model = 'crw', time.step = 24, vmax = 4)
+
+plot(ex_fit, what = 'predicted', type = 2)
+plot(ex_fit, what = 'predicted', type = 1)
+
+```
+
+
+## Level 3 -> 4
+
+```{r level3to4, eval = TRUE}
+
+## grid to 1 month and 1deg x 1 deg as an example
+
+## read level3 data
+locs <- read.table('./data_level3/blue_sharks_level3.csv', sep = ',', header = TRUE)
+locs$date <- lubridate::parse_date_time(locs$date, orders = c('Ymd'), tz = 'UTC')
+locs$month <- lubridate::month(locs$date)
+
+## built base raster as template for monthly grids
+ex <- raster::extent(min(locs$lon) - 2, max(locs$lon) + 2,
+                     min(locs$lat) - 2, max(locs$lat) + 2)
+r0 <- raster::raster(ex, res = 1)
+
+## iterate by month to built a raster brick of monthly gridded counts per cell
+for (i in 1:12){
+  ## this summarizes the observation count per cell for month_i
+  r <- raster::rasterize(cbind(locs$lon[which(locs$month == i)], locs$lat[which(locs$month == i)]), r0, fun = 'count')
+  
+  if (i == 1){
+    ## create the output brick if month == 1
+    month_grids <- raster::brick(r)
+  } else{
+    ## otherwise add to the existing output brick
+    month_grids <- raster::addLayer(month_grids, r)
+  }
+}
+
+writeRaster(month_grids, './data_level4/blue_shark_month_grids.grd', overwrite = TRUE)
+
+```
+
+
+```{r plot_grids, eval = TRUE, fig.width=12, fig.asp=1, echo = FALSE}
+names(month_grids) <- format(seq(as.Date('2000-01-01'), as.Date('2000-12-01'), by='month'), '%b')
+par(mfrow=c(4,3))
+for (i in 1:12){
+  plot(month_grids[[i]], main=names(month_grids[[i]]))
+  world(add = T, fill = TRUE)
+
+}
+
+par(mfrow=c(1,1))
+plot(sum(month_grids, na.rm = T), main='Sum of counts')
+world(add = T, fill = TRUE)
+
+
+```
+
+
+
+
+
+
+
+
+
+This is what it would look like if you wanted to go get the data from DataOne but don't need to do that here.
+```{r eval=FALSE}
+## get the data from DataOne -> doi:10.24431/rw1k329
+url <- 'https://dataone.researchworkspace.com/mn/v2/packages/application%2Fbagit-097/67b3d819-ce1e-4081-bdd9-1269dc5cda3d'
+
+setwd('./data_level2/')
+download.file(url, 'myzip.zip')
+unzip('myzip.zip')
+dir <- './67b3d819-ce1e-4081-bdd9-1269dc5cda3d/'
+fList <- list.files(dir, full.names = T, recursive = T)
+
+file.copy(fList[grep('data', fList)], '.', recursive=T)
+unlink(dir, recursive=T)
+
+```
+
+
+
+
+
+## JUNK
+
+```{r junk, eval = FALSE}
+## this csv was generated manually to cut very erroneous positions or remove portions of a dataset after the tagged individual was captured by a fishing vessel
+cut_dates <- read.table('./data_level2/cut_dates_atn.csv', sep=',', header=T)
+
+```
+
