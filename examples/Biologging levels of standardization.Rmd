@@ -2,9 +2,6 @@
 title: "Biologging levels of standardization"
 output: github_document
 ---
-
-html_document:
-    df_print: paged
   
 ```{r setup, eval = TRUE, message = FALSE}
 library(sp)
