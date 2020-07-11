@@ -1,5 +1,4 @@
-## Field Name 
-Sensor detection limits
+# sensorDetectionLimits 
 
 ## Definition 
 Maximum detection limit of vertical sensor (reported in same unit specified for vertical sensor).
@@ -12,13 +11,4 @@ numerical e.g. “2500”
 |----|----------|-----------------|
 |maximumDepthInMeters|http://rs.tdwg.org/dwc/terms/version/maximumDepthInMeters-2009-04-24|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

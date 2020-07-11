@@ -1,8 +1,7 @@
-## Field Name
-Axes
+# axes 
 
 ## Definition 
-Axes in which acceleration is logged.
+axes  in which acceleration is logged.
 
 ## Format
 Categorical (combinations of x, y, and z)
@@ -12,13 +11,4 @@ Categorical (combinations of x, y, and z)
 |----|----------|-----------------|
 |acceleration axes|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000001/|Movebank|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

@@ -1,5 +1,4 @@
-# Field Name
-Deployment longitude
+# deploymentLongitude
 
 ## Definition 
 Longitude in decimal degrees of instrument deployment.
@@ -17,13 +16,4 @@ Decimal degrees east, -180.0000 to 180.0000
 |deploy on longitude|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000079/|Movebank|
 |decimal_Longitude|https://dwc.tdwg.org/terms/#dwc:decimalLongitude|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

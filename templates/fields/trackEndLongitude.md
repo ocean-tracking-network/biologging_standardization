@@ -1,5 +1,4 @@
-# Field Name
-Track end longitude
+# TrackEndLongitude
 
 ## Definition 
 Longitude at which animal track ends (may or may not be different from detachment data and time).
@@ -16,13 +15,4 @@ Decimal degrees east, -180.0000 to 180.0000
 |geospatial_lon_end|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L104|Tagbase|
 |decimal_Longitude|https://dwc.tdwg.org/terms/#dwc:decimalLongitude|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

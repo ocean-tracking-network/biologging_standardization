@@ -1,4 +1,4 @@
-# Instrument Serial Number
+# instrumentSerialNumber 
 
 ## Definition 
 Serial number of instrument deployed (may or may not be different from InstrumentID).

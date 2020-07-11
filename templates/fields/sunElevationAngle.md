@@ -1,5 +1,4 @@
-# Field Name
-Sun elevation anlge
+# sunElevationAngle
 
 ## Definition 
 Angle of sun elevation as per geolocation tag calibrations at the beginning of deployment (used to determine twilight).
@@ -12,13 +11,4 @@ Numerical in degrees
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

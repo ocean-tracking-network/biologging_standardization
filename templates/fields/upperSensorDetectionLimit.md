@@ -1,5 +1,4 @@
-## Field Name
-Upper sensor detection limit
+# upperSensorDetectionLimit 
 
 ## Definition 
 Upper detection limit for sensor in same unit specified for sensor.
@@ -12,13 +11,4 @@ numerical e.g. “35”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

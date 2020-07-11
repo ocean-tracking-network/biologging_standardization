@@ -1,5 +1,4 @@
-## Field Name
-Units reported
+# unitsReported 
 
 ## Definition 
 Unit of variable reported.
@@ -12,13 +11,4 @@ string, e.g. “degrees C”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

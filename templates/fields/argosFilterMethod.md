@@ -1,4 +1,4 @@
-# Argos filter method
+# argosFilterMethod 
 
 ## Definition 
 Filter method implemented by CLS/Argos to generate location.
@@ -11,13 +11,3 @@ Categorial: Least squares or Kalman
 |----|----------|-----------------|
 |Argos valid location algorithm|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000050/|Movebank|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```

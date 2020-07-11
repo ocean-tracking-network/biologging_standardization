@@ -1,5 +1,4 @@
-# Field Name
-Track end latitude
+# trackEndLatitude
 
 ## Definition 
 Latitude at which animal track ends (may or may not be different from detachment data and time).
@@ -16,13 +15,4 @@ Decimal degrees north, -90.0000 to 90.0000
 |geospatial_lat_end|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L103|Tagbase|
 |decimal_Latitude|http://rs.tdwg.org/dwc/terms/decimalLatitude|DarwinCore|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

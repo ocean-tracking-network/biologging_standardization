@@ -1,5 +1,4 @@
-# Field Name
-Owner name
+# ownerName 
 
 ## Definition 
 Name of person to contact regarding deployment data.
@@ -15,13 +14,4 @@ String containing full name
 |rightsHolder|https://dublincore.org/specifications/dublin-core/dcmi-terms/#rightsHolder|DarwinCore|
 
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

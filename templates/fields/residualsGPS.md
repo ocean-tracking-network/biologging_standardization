@@ -1,4 +1,4 @@
-# Residuals GPS
+# residualsGPS
 
 ## Definition 
 Measure of how well the solution provided for the location estimate matched the observed data.
@@ -11,13 +11,4 @@ numerical e.g. “45.5”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

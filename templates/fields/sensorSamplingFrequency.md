@@ -1,5 +1,4 @@
-## Field Name
-Sensor sampling frequency
+# sensorSamplingFrequency 
 
 ## Definition 
 How often the sensor records a measurement.
@@ -12,13 +11,4 @@ e.g. "1 Hz"
 |----|----------|-----------------|
 |seconds_sampling|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L106|Tagbase|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

@@ -1,5 +1,4 @@
-# Field Name
-Sensor duty cycling
+# sensorDutyCycling
 
 ## Definition 
 Description of any duty cycling assigned to sensor.
@@ -12,13 +11,4 @@ string
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

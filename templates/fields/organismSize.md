@@ -1,5 +1,4 @@
-# Field Name
-organism Size
+# organismSize
 
 ## Definition 
 Size of organism carrying instrument (can be repeated for multiple measurements)
@@ -13,13 +12,4 @@ numerical in m or unknown
 |length_capture|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L64|Tagbase|
 |length_recapture|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L73|Tagbase|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

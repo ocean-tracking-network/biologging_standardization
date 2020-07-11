@@ -1,5 +1,4 @@
-# Field Name
-track Start Longitude
+# trackStartLongitude
 
 ## Definition 
 Longitude at which track of animal begins (may or may not be different from deployment longitude).
@@ -15,13 +14,4 @@ Decimal degrees east, -180.0000 to 180.0000
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

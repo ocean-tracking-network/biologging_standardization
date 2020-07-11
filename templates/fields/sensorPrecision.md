@@ -1,5 +1,4 @@
-## Field Name
-Sensor precision
+# sensorPrecision
 
 ## Definition 
 Sensor precision in same unit specified for sensor.
@@ -12,13 +11,4 @@ numerical e.g. “+/- 0.01”
 |----|----------|-----------------|
 |measurementAccuracy|http://rs.tdwg.org/dwc/terms/version/measurementAccuracy-2009-04-24|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

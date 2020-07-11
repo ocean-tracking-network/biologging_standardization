@@ -1,4 +1,4 @@
-# Pressure Sampling Frequency
+# pressureSamplingFrequency
 
 ## Definition 
 Sampling frequency of altidue/depth measurements.
@@ -11,13 +11,4 @@ e.g. “0.25 Hz”
 |----|----------|-----------------|
 |seconds_sampling|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L106|Tagbase|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

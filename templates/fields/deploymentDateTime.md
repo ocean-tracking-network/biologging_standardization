@@ -1,5 +1,4 @@
-# Field Name
-Deployment date and time
+# deploymentDateTime 
 
 ## Definition 
 Timestamp the instrument was deployed on the organism.
@@ -17,13 +16,4 @@ Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”
 |deploy on timestamp|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000081|Movebank|
 |eventDate|https://dwc.tdwg.org/terms/#dwc:eventDate/|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

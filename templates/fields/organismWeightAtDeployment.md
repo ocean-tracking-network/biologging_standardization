@@ -1,5 +1,4 @@
-# Field Name
-Organism weight at deployment
+# organismWeightAtDeployment
 
 ## Definition 
 Weight of organism carrying instrument measured at tag deployment.
@@ -14,13 +13,4 @@ numerical in kg
 |weight_capture|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L95|Tagbase|
 |weight_recapture|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L97|Tagbase|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

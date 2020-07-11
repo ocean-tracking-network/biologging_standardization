@@ -1,5 +1,4 @@
-## Field name 
-Sensor model
+# sensorModel 
 
 ## Definition 
 Name of specific sensor model.
@@ -12,13 +11,4 @@ string, e.g. “Cyclops 7”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

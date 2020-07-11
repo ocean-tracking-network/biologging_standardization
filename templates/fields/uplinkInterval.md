@@ -1,4 +1,4 @@
-# Uplink interval
+# uplinkInterval
 
 ## Definition 
 Interval of time between two consecutive message dispatches. 
@@ -11,13 +11,4 @@ Seconds
 |----|----------|-----------------|
 
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

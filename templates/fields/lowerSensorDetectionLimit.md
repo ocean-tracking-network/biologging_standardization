@@ -1,5 +1,4 @@
-## Field Name
-Lower sensor detection limit
+# lowerSensorDetectionLimit 
 
 ## Definition 
 Lower detection limit for sensor in same unit specified for sensor.
@@ -12,13 +11,4 @@ numerical e.g. “-2”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

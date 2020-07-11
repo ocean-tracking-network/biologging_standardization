@@ -1,5 +1,4 @@
-# Field Name
-Deployment latitude
+# deploymentlatitude
 
 ## Definition 
 Latitude in decimal degrees of tag deployment.
@@ -17,13 +16,4 @@ Decimal degrees north, -90.0000 to 90.0000
 |deploy on latitude|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000078/|Movebank|
 |decimal_Latitude|http://rs.tdwg.org/dwc/terms/decimalLatitude|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

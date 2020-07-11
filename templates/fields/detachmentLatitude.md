@@ -1,5 +1,4 @@
-# Field Name
-Detachment latitude
+# detachmentLatitude
 
 ## Definition 
 Latitude in decimal degrees of instrument recovery/detachment from animal (if known).
@@ -15,13 +14,4 @@ Decimal degrees north, -90.0000 to 90.0000
 |----|----------|-----------------|
 |deploy off latitude|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000074/|Movebank|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

@@ -1,5 +1,4 @@
-# Field Name
-Organism ID source
+# organismIDSource
 
 ## Definition 
 URN denoting the authority from which the species identification is defined.
@@ -12,14 +11,4 @@ urn:catalog:[repository]:[institution]:[projectcode]:[OrganismID], e.g., urn:cat
 |----|----------|-----------------|
 
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
-
+ 

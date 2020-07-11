@@ -1,4 +1,4 @@
-# InstrumentID
+# instrumentID 
 
 ## Definition 
 Unique instrument ID. Can be the instrument serial number or similar identification system used by the manufacturer.

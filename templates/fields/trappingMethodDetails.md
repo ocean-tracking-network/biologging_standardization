@@ -1,5 +1,4 @@
-# Field Name
-Trapping method details
+# trappingMethodDetails
 
 ## Definition 
 Method used to trap the organism for instrumentation, or to deploy the instrument without trapping.
@@ -15,13 +14,4 @@ String, e.g. "trapped with hand-net on nest in breeding colony",  "tag attached 
 |----|----------|-----------------|
 
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

@@ -1,5 +1,4 @@
-# Field Name
-Organism size measurement time
+# organismSizeMeasurementTime
 
 ## Definition 
 Timestamp when the organism size measurement was taken.
@@ -15,13 +14,4 @@ Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

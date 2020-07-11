@@ -1,5 +1,4 @@
-# Field Name
-References
+# references 
 
 ## Definition 
 Published or web-based references that describe the data or methods.
@@ -13,13 +12,4 @@ DOI or URL
 |references|https://dublincore.org/specifications/dublin-core/dcmi-terms/#references|Darwin Core|
 |bibliographicCitation|http://purl.org/dc/terms/bibliographicCitation|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

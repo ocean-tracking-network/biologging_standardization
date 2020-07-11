@@ -1,5 +1,4 @@
-# Field Name
-Organism sex
+# organismSex
 
 ## Definition 
 Sex of organism carrying instrument as male (M), female (F), or unknown (U).
@@ -15,13 +14,4 @@ Categorical: M, F, U
 |animal sex|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000023/|Movebank|
 |sex|http://rs.tdwg.org/dwc/terms/sex|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

@@ -1,5 +1,4 @@
-# Field Name
-Scientific name
+# scientificName
 
 ## Definition 
 Binomial species name of organism carrying instrument.
@@ -15,13 +14,4 @@ String of the format “Genus species”, genus capitalized, separated by one sp
 |genus|https://dwc.tdwg.org/terms/#dwc:genus|Darwin Core|
 |specific Epithet|https://dwc.tdwg.org/terms/#dwc:specificEpithet|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

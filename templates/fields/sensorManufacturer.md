@@ -1,5 +1,4 @@
-## Field Name 
-Sensor manufacturer
+# sensorManufacturer 
 
 ## Definition 
 Name of the manufacturer of the sensor (may or may not be the same as the instrument manufacturer).
@@ -12,13 +11,4 @@ string, e.g. “Valeport”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

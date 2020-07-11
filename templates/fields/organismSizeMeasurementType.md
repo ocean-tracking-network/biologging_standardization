@@ -1,5 +1,4 @@
-# Field Name
-organism Size Measurement Type
+# organismSizeMeasurementType
 
 ## Definition 
 Type of method used for size measurement reported
@@ -13,13 +12,4 @@ String, e.g. "total length"
 |length_type_capture|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L66|Tagbase|
 |length_type_recapture|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L74|Tagbase|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

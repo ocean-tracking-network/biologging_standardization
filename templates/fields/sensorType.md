@@ -1,5 +1,4 @@
-## Field Name 
-Sensor type
+# sensorType 
 
 ## Definition 
 Type of sensor contained in instrument (e.g. thermistor, induction cell, conductivity cell, fluorometer, optode, heart rate monitor).
@@ -12,13 +11,4 @@ categorical, e.g. “fluorometer”
 |----|----------|-----------------|
 |sensor type|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/|NERC/Movebank|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

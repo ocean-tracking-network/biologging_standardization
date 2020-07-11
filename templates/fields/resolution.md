@@ -1,7 +1,7 @@
-# Resolution
+# resolution 
 
 ## Definition 
- Resolution of altidue/depth measurements in same unit specified for vertical sensor. 
+ resolution  of altidue/depth measurements in same unit specified for vertical sensor. 
 
 ## Format
 numerical, e.g. “0.1”
@@ -11,13 +11,4 @@ numerical, e.g. “0.1”
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

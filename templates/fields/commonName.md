@@ -1,5 +1,4 @@
-# Field Name
-Common name
+# commonName 
 
 ## Definition 
 One or more common name(s) of organism carrying instrument.
@@ -12,13 +11,4 @@ String in sentence case separated by space (semi-colons should separate more tha
 |----|----------|-----------------|
 |vernacular Name|http://rs.tdwg.org/dwc/terms/vernacularName|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

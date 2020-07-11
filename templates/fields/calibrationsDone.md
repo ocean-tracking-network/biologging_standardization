@@ -1,5 +1,4 @@
-# Field Name
-calibrations Done
+# calibrationsDone
 
 ## Definition 
 Provide link to calibration file
@@ -12,13 +11,4 @@ DOI or URL
 |----|----------|-----------------|
 |calibration_file|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L143|Tagbase|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

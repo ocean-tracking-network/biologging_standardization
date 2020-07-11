@@ -1,4 +1,4 @@
-# Instrument Manufacturer
+# instrumentManufacturer 
 
 ## Definition 
 Manufacturer of the instrument (e.g. Wildlife Computers, SMRU, Lotek, Little Leonardo).

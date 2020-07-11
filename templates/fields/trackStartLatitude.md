@@ -1,5 +1,4 @@
-# Field Name
-Track start latitude
+# trackStartLatitude
 
 ## Definition 
 Latitude at which track of animal begins (may or may not be different from deployment latitude).
@@ -15,13 +14,4 @@ Decimal degrees north, -90.0000 to 90.0000
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

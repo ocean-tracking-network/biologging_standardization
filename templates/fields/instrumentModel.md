@@ -1,4 +1,4 @@
-# Instrument Model
+# instrumentModel
 
 ## Definition 
 Name of specific instrument model deployed.

@@ -1,4 +1,4 @@
-# Depth GLS
+# depthGLS
 
 ## Definition 
 Depth of in situ temperature measurements in "Temperature GLS." 
@@ -11,13 +11,4 @@ numerical in meters
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

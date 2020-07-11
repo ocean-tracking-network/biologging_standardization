@@ -1,5 +1,4 @@
-# Field Name
-Other data co-owners
+# otherDataCoowners 
 
 ## Definition 
 Names of additional people to acknowledge for data.
@@ -12,13 +11,4 @@ string
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

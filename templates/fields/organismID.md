@@ -1,5 +1,4 @@
-# Field Name
-Organism ID
+# organismID 
 
 ## Definition 
 Unique identifier for an individual, links data from different deployments or instruments on the same animal.
@@ -13,13 +12,4 @@ Alpha-numerical
 |animal ID|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000016/|Movebank|
 |organismID|https://dwc.tdwg.org/terms/#dwc:organismID|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

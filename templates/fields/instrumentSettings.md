@@ -1,5 +1,4 @@
-## Field Name
-Instrument settings
+# instrumentSettings
 
 ## Definition 
 Detailed instrument settings defined in a file (e.g. Wildlife Computers Report, htm file/URL, or screenshot of tag settings).
@@ -12,13 +11,4 @@ File (.htm, .pdf, screenshot image) or URL
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

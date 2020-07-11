@@ -1,5 +1,4 @@
-# Field Name
-Scientific name source
+# scientificNameSource
 
 ## Definition 
 URN denoting the authority from which the species identification is defined.

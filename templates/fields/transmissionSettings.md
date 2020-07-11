@@ -1,5 +1,4 @@
-# Field Name
-Transmission settings
+# transmissionSettings 
 
 ## Definition 
 Settings defined on the instrument regarding step duration and location up link limit.
@@ -12,13 +11,4 @@ String with duration in hours, followed by number of messages e.g. “24 hours, 
 |----|----------|-----------------|
 ||||
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

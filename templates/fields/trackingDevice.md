@@ -1,4 +1,4 @@
-# Tracking device
+# trackingDevice 
 
 ## Definition 
 Type of tracking technology used (eg. Argos, rapid aqcuisition GPS, GLS, acoustic). 
@@ -26,5 +26,5 @@ Type of tracking technology used (eg. Argos, rapid aqcuisition GPS, GLS, acousti
 ```csv
 # measurementOrFact.csv
 eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "Tracking device", "http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/", "gamma detector"
+institutionId:tagDeployment:XYZ, "trackingDevice ", "http://vocab.nerc.ac.uk/collection/MVB/current/MVB000170/", "gamma detector"
 ```

@@ -1,5 +1,4 @@
-# Field Name
-Detachment longitude
+# detachmentLongitude
 
 ## Definition 
 Longitude in decimal degrees of instrument recovery/detachment from animal (if known).
@@ -15,13 +14,4 @@ Decimal degrees east, -180.0000 to 180.0000
 |----|----------|-----------------|
 |deploy off longitude|http://vocab.nerc.ac.uk/collection/MVB/current/MVB000075/|Movebank|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 

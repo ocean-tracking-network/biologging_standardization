@@ -1,5 +1,4 @@
-# Field Name
-organism Age Reproductive Class
+# organismAgeReproductiveClass
 
 ## Definition 
 Age class of organism carrying instrument at the time the tag was attached as adult (adu), sub-adult (sub), juvenile (juv), newborn or recently born (new), or unknown (unk).
@@ -15,13 +14,4 @@ Categorical: adu, sub, juv, new, unk
 |lifestage_recapture|https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L77|Tagbase|
 |lifeStage|https://dwc.tdwg.org/terms/#dwc:lifeStage|Darwin Core|
 
-## SensorML example
-```xml
-
-```
-## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+ 
