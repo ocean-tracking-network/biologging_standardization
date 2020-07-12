@@ -6,7 +6,7 @@ ISO: International Organization for Standardization
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
-| [InstrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. | | alpha-numerical, eg. “09A0178”|
+| [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. | | alpha-numerical, eg. “09A0178”|
 
 
 ### Instrument specifications
