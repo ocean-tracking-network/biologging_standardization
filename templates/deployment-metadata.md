@@ -38,7 +38,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [trackEndTime](fields/trackEndTime.md) | Timestamp at which track of organism ends. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 
 | [trackEndLatitude](fields/trackEndLatitude.md) | Latitude at which organism track ends. | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|   
 | [trackEndLongitude](fields/trackEndLongitude.md) | Longitude at which organism track ends. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|   
-| [sunangleGLS](fields/sunangleGLS.md) | Angle of the sun to determine twilight derived at the beginning of deployment. | | Numerical in degrees  
+| [sunElevationAngle](fields/sunElevationAngle.md) | Angle of the sun to determine twilight derived at the beginning of deployment. | | Numerical in degrees  
 
 ### Organism metadata
 | attributeName | description | standard | format | 
