@@ -1,0 +1,12 @@
+DeployID,Ptt,Instr,SW,PercentDecoded,Passes,PercentArgosLoc,MsgPerPass,DS,DI,MinPower,AvgPower,MaxPower,MinInterval,EarliestXmitTime,LatestXmitTime,XmitDays,EarliestDataTime,LatestDataTime,DataDays,ReleaseDate,ReleaseType,DeployDate
+106744,106744,UT,,,,,,,,,,,,,,,,,,,,
+106745,106745,UT,1.00a,82,968,57,3,3077,589,-138,-128,-114,-615,22:47:03 17-Aug-2016,13:40:00 30-May-2017,286,22:47:02 17-Aug-2016,13:40:00 30-May-2017,286,,,17:00:00 28-Aug-2016
+106746,106746,UT,,,,,,,,,,,,,,,,,,,,
+106747,106747,UT,,,,,,,,,,,,,,,,,,,,
+106748,106748,UT,,,,,,,,,,,,,,,,,,,,
+106749,106749,UT,,,,,,,,,,,,,,,,,,,,
+141254,141254,MiniPAT,,,,,,,,,,,,,,,10:08:45 22-Oct-2015,22:13:45 08-Feb-2016,110,,,
+141257,141257,MiniPAT,,,,,,,,,,,,,,,09:57:30 16-Oct-2015,00:25:00 16-Apr-2016,183,,,
+141259,141259,MiniPAT,,,,,,,,,,,,,,,09:55:00 14-Oct-2015,22:12:30 13-Apr-2016,183,,,
+165927,165927,UT,,,,,,,,,,,,,,,,,,,,
+165928,165928,UT,,,,,,,,,,,,,,,,,,,,
