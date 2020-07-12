@@ -1,13 +1,13 @@
 [general]
 creator=R package 'raster'
-created=2020-04-20 11:59:12
+created=2020-07-12 14:32:47
 [georeference]
-nrows=42
+nrows=39
 ncols=51
-xmin=-81.7334805672727
-ymin=8.4071153612529
-xmax=-30.7334805672727
-ymax=50.4071153612529
+xmin=-81.7338435432328
+ymin=7.5491748213514
+xmax=-30.7338435432328
+ymax=46.5491748213514
 projection=NA
 [data]
 datatype=FLT4S
@@ -15,7 +15,7 @@ byteorder=little
 nbands=12
 bandorder=BIL
 minvalue=1:1:1:1:1:1:1:1:1:1:1:1
-maxvalue=13:17:13:8:16:10:12:23:55:32:23:13
+maxvalue=14:19:11:10:15:13:9:21:63:35:17:9
 nodatavalue=-3.4e+38
 [legend]
 legendtype=

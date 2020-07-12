@@ -1,10 +1,4 @@
 base
-methods
-datasets
-utils
-grDevices
-graphics
-stats
 sp
 tidyverse
 ggplot2
@@ -18,7 +12,6 @@ forcats
 raster
 lubridate
 dotCall64
-grid
 spam
 maps
 fields
