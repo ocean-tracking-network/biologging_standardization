@@ -12,7 +12,7 @@ Inside the Templates folder you can also find a [Fields](../biologging_Standardi
 ### [Examples](examples/braun-blueshark)
 The framework includes the description of an automated procedure to be created at the compliant repositories to translate ingested data and metadata into four levels of data standardisation. The objective of this step is to maximize interoperability and facilitate scientific discovery, conservation management, and policy development.
 This automated procedure and the four data levels are exemplified in the [examples](examples/braun-blueshark) folder using a blue shark dataset ([Braun et al 2019, PNAS]), and include:
--	[Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardisation.md): automated procedure to translate data from level 1 to level 4
+-	[Blue-shark-standardisation.md](biologging_standardization/examples/braun-blueshark/Blue-shark-standardization.md): automated procedure to translate data from level 1 to level 4
 - [Blue-shark-standardisation.Rmd](examples/braun-blueshark/Blue-shark-standardisation.Rmd): automated procedure to translate data from level 1 to level 4 in R
 - [braun_blues_deployment-metadata.csv](examples/braun-blueshark/braun_blues_deployment-metadata.csv): Example of a filled deployment metadata template for the example data provided here
 - [braun_blues_device-metadata.csv](examples/braun-blueshark/braun_blues_device-metadata.csv): Example of a filled device metadata template for the example data provided here
