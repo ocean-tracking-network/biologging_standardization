@@ -6,7 +6,7 @@ ISO: International Organization for Standardization
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
-| [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. | | alpha-numerical, eg. “09A0178”|
+| [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. | | alpha-numerical, e.g. “09A0178”|
 
 
 ### Instrument specifications
@@ -31,8 +31,8 @@ ISO: International Organization for Standardization
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | |numerical e.g. “5”| 
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | | numerical e.g. “2500”| 
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | | numerical e.g. “+/- 0.01”| 
-| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numercial in Hz| 
-| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string, eg. "records data only on deepest dive in 6 hr period"| 
+| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numerical in Hz| 
+| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string, e.g. "records data only on deepest dive in 6 hr period"| 
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601| Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g. peer-reviewed publication). | | DOI or URL| 
 
@@ -47,7 +47,7 @@ ISO: International Organization for Standardization
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limits for sensor in same unit specified for sensor. | | numerical e.g. “35”|  
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | | numerical e.g. “+/- 0.01”|  
 | [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numercial in Hz|  
-| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. |  | string, eg. "records data only on deepest dive in 6 hr period"|  
+| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. |  | string, e.g. "records data only on deepest dive in 6 hr period"|  
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 	
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g. peer-reviewed publication). | | DOI or URL|  
 
@@ -61,8 +61,8 @@ ISO: International Organization for Standardization
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | | numerical|  
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | | numerical|  
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | | numerical|  
-| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numercial in Hz| 	
-| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string, eg. "records data only on deepest dive in 6 hr period"|  
+| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numerical in Hz| 	
+| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string, e.g. "records data only on deepest dive in 6 hr period"|  
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g., peer-reviewed publication). | | DOI or URL | 	
 
@@ -76,8 +76,8 @@ ISO: International Organization for Standardization
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | |numerical|  
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | |numerical|  
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | |numerical|  
-| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | |Numercial in Hz|  
-| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string, eg. "records data only on deepest dive in 6 hr period"|  
+| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | |Numerical in Hz|  
+| [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string, e.g. "records data only on deepest dive in 6 hr period"|  
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g., peer-reviewed publication). | | DOI or URL| 	
 
