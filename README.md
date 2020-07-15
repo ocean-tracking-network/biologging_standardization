@@ -9,7 +9,7 @@ The framework includes the use of three templates, which can be found in the tem
 All three templates include definitions for each attribute name and links to other similar terms used in other vocabularies, as well as SensorML and DarwinCore examples so they can be readily used by manufacturers and researchers alike.
 Inside the Templates folder you can also find a [Fields](../biologging_Standardisation/master/Templates/Fields) folder, including all the details from all fields used in the three templates.
 
-### [Examples](..master/examples)
+### [Examples](..blob/master/examples)
 The framework includes the description of an automated procedure to be created at the compliant repositories to translate ingested data and metadata into four levels of data standardisation. The objective of this step is to maximize interoperability and facilitate scientific discovery, conservation management, and policy development.
 This automated procedure and the four data levels are exemplified in the [examples](../biologging_Standardisation/master/Examples) folder using a blue shark dataset ([Braun et al 2019, PNAS]), and include:
 -	[Blue-shark-standardisation.md](../biologging_Standardisation/master/Examples/Blue-shark-standardisation.md): automated procedure to translate data from level 1 to level 4
