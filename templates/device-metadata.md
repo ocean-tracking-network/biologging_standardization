@@ -31,7 +31,7 @@ ISO: International Organization for Standardization
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | |numerical e.g. “5”| 
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | | numerical e.g. “2500”| 
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | | numerical e.g. “+/- 0.01”| 
-| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | e.g. “1 Hz”| 
+| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numercial in Hz| 
 | [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string| 
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601| Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g. peer-reviewed publication). | | DOI or URL| 
@@ -46,7 +46,7 @@ ISO: International Organization for Standardization
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | | numerical e.g. “-2”|  
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limits for sensor in same unit specified for sensor. | | numerical e.g. “35”|  
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | | numerical e.g. “+/- 0.01”|  
-| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | e.g. “1 Hz”|  
+| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numercial in Hz|  
 | [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. |  | string|  
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 	
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g. peer-reviewed publication). | | DOI or URL|  
@@ -61,7 +61,7 @@ ISO: International Organization for Standardization
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | | numerical|  
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | | numerical|  
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | | numerical|  
-| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | numerical, e.g. “4 Hz”| 	
+| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | | Numercial in Hz| 	
 | [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string|  
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g., peer-reviewed publication). | | DOI or URL | 	
@@ -76,7 +76,7 @@ ISO: International Organization for Standardization
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | |numerical|  
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | |numerical|  
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | |numerical|  
-| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | |numerical|  
+| [sensorSamplingFrequency](fields/sensorSamplingFrequency.md) | How often the sensor records a measurement. | |Numercial in Hz|  
 | [sensorDutyCycling](fields/sensorDutyCycling.md) | Description of any duty cycling assigned to sensor. | | string|  
 | [sensorCalibrationDate](fields/sensorCalibrationDate.md) | Date when sensor calibration was done. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 
 | [sensorCalibrationDetails](fields/sensorCalibrationDetails.md) | Full definition of the calibration done through addition of a link to where the data and/or methods are described (e.g., peer-reviewed publication). | | DOI or URL| 	
