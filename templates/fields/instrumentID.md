@@ -27,8 +27,4 @@ alpha-numerical, e.g. “09A0178”
 </sml:identification>
 ```
 ## Darwin Core example
-```csv
-# measurementOrFact.csv
-eventId, measurementType, measurementTypeID, measurementValue
-institutionId:tagDeployment:XYZ, "fieldName", "http://urlToDefinitionOf/field", "value"
-```
+
