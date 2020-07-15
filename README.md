@@ -21,8 +21,8 @@ This automated procedure and the four data levels are exemplified in the [exampl
 -	[data-level3](examples/braun-blueshark/data_level3/): Interpolated data, i.e., processed bio-logging data that includes smoothed and interpolated locations.
 -	[data-level4](examples/braun-blueshark/data_level4): Gridded data, i.e., bio-logging data presented in a grid format with a specific grid-cell size and temporal resolution.
 -	[sensorml-example](examples/braun-blueshark/sensorml-example): a SensorML example for the device used in the blue shark dataset
-Our objective is to contribute to standardising bio-logging datasets across all taxa and ecosystems, which is one of the stated goals of the [International Bio-Logging Society](www.bio-logging.net "Bio-logging Society's homepage").
--	[wildlife_computers_raw](examples/braun-blueshark/wildlife_computers_raw): Original decoded sensor data provided by the manufacturer. Translation of these decoded data into Level 1 format is provided in the [Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardisation.md) example.
+Our objective is to contribute to standardising bio-logging datasets across all taxa and ecosystems, which is one of the stated goals of the [International Bio-Logging Society](https://www.bio-logging.net "Bio-logging Society's homepage").
+-	[wildlife_computers_raw](examples/braun-blueshark/wildlife_computers_raw): Original decoded sensor data provided by the manufacturer. Translation of these decoded data into Level 1 format is provided in the [Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardization.md) example.
 
 ### Questions?
 * You can use the "issues" tab to ask new questions
