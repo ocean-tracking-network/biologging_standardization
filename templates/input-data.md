@@ -23,6 +23,6 @@ Data fields provided by the researcher upon submission of data to repository (i.
 | [gpsSatelliteCount](fields/gpsSatelliteCount.md) | The number of satellites used to estimate location (rapid acquisition GPS). |  | numerical eg. “4”|
 | [residualsGPS (rapid acquisition GPS)](fields/residualsGPS.md) | Measure of how well the solution provided for the location estimate matched the observed data. |  | Numerical e.g. "45.5" |
 | [temperatureGLS](fields/temperatureGLS.md) | iIn situ temperature measured by instrument (can be used to correct geolocation positions). Associated with depth in "Depth GLS". |  | numerical in °C|
-| [depthGLS)](fields/depthGLS.md) | Depth of in situ temperature measurements in “Temperature GLS”.  |  |numerical in m |
+| [depthGLS](fields/depthGLS.md) | Depth of in situ temperature measurements in “Temperature GLS”.  |  |numerical in m |
 | [sensorIType](fields/sensorIType.md) | Type of sensor contained in tag (e.g. pressure sensor, thermistor, induction cell) from Device metadata table. Can be repeated for any number of sensors, with Roman numeral representing sensor number. |  | Categorical. Must reference one-to-one to a sensor type listed in Device metadata table.|
 | [sensorIMeasurement](fields/sensorIMeasurement.md) | Measurement taken by a sensor at this time and location. Units of measurement and other relevant metadata documented in Device metadata table. Can be repeated for any number of sensors, with Roman numeral representing sensor number. |  | Unit as specified in Device metadata table for this sensor|
