@@ -7,7 +7,7 @@ The framework includes the use of three templates, which can be found in the tem
 -	the [deployment-metadata.md](templates/deployment-metadata.md) containing all information pertaining to the attachment of the bio-logging device to the animal (i.e., deployment procedure), and
 -	the [input-data.md](templates/input-data.md) containing all bio-logging data collected by one deployment of the bio-logging device
 All three templates include definitions for each attribute name and links to other similar terms used in other vocabularies, as well as SensorML and DarwinCore examples so they can be readily used by manufacturers and researchers alike.
-Inside the Templates folder you can also find a [Fields](templates/Fields/) folder, including all the details from all fields used in the three templates.
+Inside the Templates folder you can also find a [Fields](templates/fields) folder, including all the details from all fields used in the three templates.
 
 ### [Examples](examples/braun-blueshark)
 The framework includes the description of an automated procedure to be created at the compliant repositories to translate ingested data and metadata into four levels of data standardisation. The objective of this step is to maximize interoperability and facilitate scientific discovery, conservation management, and policy development.
