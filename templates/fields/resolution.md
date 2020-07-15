@@ -1,7 +1,7 @@
 # resolution 
 
 ## Definition 
- resolution  of altidue/depth measurements in same unit specified for vertical sensor. 
+Resolution of altitude/depth measurements in same unit specified for vertical sensor. 
 
 ## Format
 numerical, e.g. “0.1”
