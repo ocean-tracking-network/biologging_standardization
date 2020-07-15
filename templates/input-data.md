@@ -4,23 +4,23 @@ Data fields provided by the researcher upon submission of data to repository (i.
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer.| | alpha-numerical, eg. “09A0178”|
+| [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer.| | alpha-numerical, e.g. “09A0178”|
 | [deploymentID](fields/deploymentID.md) | Unique identifier for single deployment of device. |  | |
 | [organismID](fields/organismID.md) | Unique identifier for an individual, links data from different deployments or instruments on the same animal. |  | |
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [time](fields/time.md) | Timestamp of data point. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”|
+| [time](fields/time.md) | Timestamp of data point. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”|
 | [latitude](fields/latitude.md) | Latitude of data point. | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [longitude](fields/longitude.md) | Longitude of data point. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [argosLC](fields/argosLC.md) | Argos location class of data point's position. | CLS Argos  | Categorial (G,3,2,1,0,A,B,Z)|
-| [argosFilterMethod](fields/argosFilterMethod.md) | Filter method implemented by CLS/Argos to generate location. | CLS Argos  | Categorial: Least squares or Kalman|
+| [argosFilterMethod](fields/argosFilterMethod.md) | Filter method implemented by CLS/Argos to generate location. | CLS Argos  | Categorical: Least squares or Kalman|
 | [argosErrorRadius](fields/argosErrorRadius.md) | Error radius for location provided by CLS/Argos. | CLS Argos  | meters|
 | [argosSemiMajor](fields/argosSemiMajor.md) | Length of semi-major axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data. | CLS Argos  | meters|
 | [argosSemiMinor](fields/argosSemiMinor.md) | Length of semi-minor axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data. | CLS Argos  | meters|
 | [argosOrientation](fields/argosOrientation.md) | Orientation of error ellipse provided by CLS/Argos. | CLS Argos  | degrees from North (heading east)|
 | [argosGDOP](fields/argosGDOP.md) | Geometric Dilution of Precision provided by CLS/Argos. | CLS Argos  | m/Hz|
-| [gpsSatelliteCount](fields/gpsSatelliteCount.md) | The number of satellites used to estimate location (rapid acquisition GPS). |  | numerical eg. “4”|
+| [gpsSatelliteCount](fields/gpsSatelliteCount.md) | The number of satellites used to estimate location (rapid acquisition GPS). |  | numerical e.g. “4”|
 | [residualsGPS (rapid acquisition GPS)](fields/residualsGPS.md) | Measure of how well the solution provided for the location estimate matched the observed data. |  | Numerical e.g. "45.5" |
 | [temperatureGLS](fields/temperatureGLS.md) | In situ temperature measured by instrument (can be used to correct geolocation positions). Associated with depth in "Depth GLS". |  | numerical in °C|
 | [depthGLS](fields/depthGLS.md) | Depth of the in situ temperature measurements taken and recorded in "Temperature GLS" field.  |  |numerical in m |
