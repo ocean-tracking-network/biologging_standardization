@@ -1,5 +1,5 @@
 ## A standardisation framework for bio-logging data
-This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al superscript^1^ (in prep for submission to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
+This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al ^1^ (in prep for submission to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
 
 ### [Templates](templates)
 The framework includes the use of three templates, which can be found in the templates folder, each specifying how to format all data and metadata needed. Inside the templates folder you can also find a [templates.md](templates/templates.md) file providing a brief description of the three templates:
