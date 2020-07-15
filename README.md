@@ -11,18 +11,18 @@ Inside the Templates folder you can also find a [Fields](../biologging_Standardi
 
 ### [Examples](examples/braun-blueshark)
 The framework includes the description of an automated procedure to be created at the compliant repositories to translate ingested data and metadata into four levels of data standardisation. The objective of this step is to maximize interoperability and facilitate scientific discovery, conservation management, and policy development.
-This automated procedure and the four data levels are exemplified in the [examples](../biologging_Standardisation/master/Examples) folder using a blue shark dataset ([Braun et al 2019, PNAS]), and include:
--	[Blue-shark-standardisation.md](../biologging_Standardisation/master/Examples/Blue-shark-standardisation.md): automated procedure to translate data from level 1 to level 4
-- [Blue-shark-standardisation.Rmd](../biologging_Standardisation/master/Examples/Blue-shark-standardisation.Rmd): automated procedure to translate data from level 1 to level 4 in R
-- [braun_blues_deployment-metadata.csv](../biologging_Standardisation/master/Examples/braun_blues_deployment-metadata.csv): Example of a filled deployment metadata template for the example data provided here
-- [braun_blues_device-metadata.csv](../biologging_Standardisation/master/Examples/braun_blues_device-metadata.csv): Example of a filled device metadata template for the example data provided here
--	[data-level1](../biologging_Standardisation/master/Examples/data-level1): Formatted decoded sensor data, i.e., decrypted low-level information obtained directly from sensors after decoding data collected.
--	[data-level2](../biologging_Standardisation/master/Examples/data-level2): Curated bio-logging data, i.e., a quality-controlled dataset after removal of invalid, inconsistent or erroneous data points.
--	[data-level3](../biologging_Standardisation/master/Examples/data-level3): Interpolated data, i.e., processed bio-logging data that includes smoothed and interpolated locations.
--	[data-level4](../biologging_Standardisation/master/Examples/data-level4): Gridded data, i.e., bio-logging data presented in a grid format with a specific grid-cell size and temporal resolution.
--	[sensorml-example](../biologging_Standardisation/master/Examples/sensorml-example): a SensorML example for the device used in the blue shark dataset
+This automated procedure and the four data levels are exemplified in the [examples](examples/braun-blueshark) folder using a blue shark dataset ([Braun et al 2019, PNAS]), and include:
+-	[Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardisation.md): automated procedure to translate data from level 1 to level 4
+- [Blue-shark-standardisation.Rmd](examples/braun-blueshark/Blue-shark-standardisation.Rmd): automated procedure to translate data from level 1 to level 4 in R
+- [braun_blues_deployment-metadata.csv](examples/braun-blueshark/braun_blues_deployment-metadata.csv): Example of a filled deployment metadata template for the example data provided here
+- [braun_blues_device-metadata.csv](examples/braun-blueshark/braun_blues_device-metadata.csv): Example of a filled device metadata template for the example data provided here
+-	[data-level1](examples/braun-blueshark/data-level1): Formatted decoded sensor data, i.e., decrypted low-level information obtained directly from sensors after decoding data collected.
+-	[data-level2](examples/braun-blueshark/data-level2): Curated bio-logging data, i.e., a quality-controlled dataset after removal of invalid, inconsistent or erroneous data points.
+-	[data-level3](examples/braun-blueshark/data-level3): Interpolated data, i.e., processed bio-logging data that includes smoothed and interpolated locations.
+-	[data-level4](examples/braun-blueshark/data-level4): Gridded data, i.e., bio-logging data presented in a grid format with a specific grid-cell size and temporal resolution.
+-	[sensorml-example](examples/braun-blueshark/sensorml-example): a SensorML example for the device used in the blue shark dataset
 Our objective is to contribute to standardising bio-logging datasets across all taxa and ecosystems, which is one of the stated goals of the [International Bio-Logging Society](www.bio-logging.net "Bio-logging Society's homepage").
--	[wildlife_computers_raw](../biologging_Standardisation/master/Examples/wildlife_computers_raw): Original decoded sensor data provided by the manufacturer. Translation of these decoded data into Level 1 format is provided in the [Blue-shark-standardisation.md](../biologging_Standardisation/master/Examples/Blue-shark-standardisation.md) example.
+-	[wildlife_computers_raw](examples/braun-blueshark/wildlife_computers_raw): Original decoded sensor data provided by the manufacturer. Translation of these decoded data into Level 1 format is provided in the [Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardisation.md) example.
 
 ### Questions?
 * You can use the "issues" tab to ask new questions
