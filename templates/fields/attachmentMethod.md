@@ -1,7 +1,7 @@
 # attachmentMethod
 
 ## Definition 
-Method used to attach the instrumemnt to the organism.
+Method used to attach the instrument to the organism.
 
 ## Format
 String, e.g. “anchor”, "glue", "suction cup"
