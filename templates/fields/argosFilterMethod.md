@@ -4,7 +4,7 @@
 Filter method implemented by CLS/Argos to generate location.
 
 ## Format
-Categorial: Least squares or Kalman
+Categorical: Least squares or Kalman
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
