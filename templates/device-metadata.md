@@ -21,7 +21,7 @@ ISO: International Organization for Standardization
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
 | [trackingDevice](fields/trackingDevice.md) | Type of tracking technology used (e.g. Argos, fast-acquisition GPS, GLS, acoustic). || categorial, e.g. “Argos”|
-| [uplinkInterval](fields/uplinkInterval.md) | Interval of time between two consecutive message dispatches. | | Seconds| 	
+| [uplinkInterval](fields/uplinkInterval.md) | Interval of time between two consecutive message dispatches. | | Numerical in seconds| 	
 
 ### Vertical sensors
 | attributeName | description | standard | format | 
