@@ -12,7 +12,7 @@ ISO: International Organization for Standardization
 ### Instrument specifications
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
-| [instrumentType](fields/instrumentType.md) | Type of instrument deployed (e.g. archival, satellite, rapid-acquisition, acoustic tag, acoustic receiver). | | categorical, e.g. “satellite”|	
+| [instrumentType](fields/instrumentType.md) | Type of instrument deployed (e.g. archival, Argos, GSM, radio telemetry, rapid-acquisition GPS, acoustic tag, acoustic receiver). | | categorical, e.g. “Argos”|	
 | [instrumentModel](fields/instrumentModel.md) | Name of specific instrument model deployed. | | string, e.g. “Mk10”|  
 | [instrumentManufacturer](fields/instrumentManufacturer.md) | Manufacturer of the instrument (e.g. Wildlife Computers, SMRU, Lotek, Little Leonardo). | | string, e.g. “Wildlife Computers”| 
 | [instrumentSerialNumber](fields/instrumentSerialNumber.md) | Serial number of instrument deployed. | | alpha-numerical, e.g. “09A0178”|  
