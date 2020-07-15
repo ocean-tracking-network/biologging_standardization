@@ -4,7 +4,7 @@
 Argos location class of data point's position.
 
 ## Format
-Categorial (G,3,2,1,0,A,B,Z)
+Categorical (G,3,2,1,0,A,B,Z)
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
