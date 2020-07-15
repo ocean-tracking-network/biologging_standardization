@@ -95,5 +95,5 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [ownerPhoneContact](fields/ownerPhoneContact.md) | Phone contact for person indicated under "Owner name". |  | String containing contact phone|  
 | [license](fields/license.md) | Terms of use for the data in the study, provided by the study owner. If no license terms are specified by researcher, the General repository Terms of Use apply.|  | Categorical| 
 | [otherRelevantIdentifiers](fields/otherRelevantIdentifiers.md) | Other identifiers relevant to deployment (e.g. WMO number for data contribution to GTS). |  | string |  
-| [otherDataTypesAssociatedWithDeployment](fields/otherDataTypesAssociatedWithDeployment.md) |Additional data collected with instrument deployment, e.g. from ancillary sensors, photo-ID 
+| [otherDataTypesAssociatedWithDeployment](fields/otherDataTypesAssociatedWithDeployment.md) |Any additional data collected with instrument deployment that is not entered in other fields in deployment template, e.g. from ancillary sensors, photo-ID, biopsy sample for genetics.| |string, e.g. "light level", "fin clip biopsy sample"|
 | [references](fields/references.md) | Published or web-based references that describe the data or methods. |  | DOI or URL|  
