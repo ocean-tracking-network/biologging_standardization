@@ -1,7 +1,7 @@
 # depthGLS
 
 ## Definition 
-Depth of in situ temperature measurements in "Temperature GLS." 
+Depth of the in situ temperature measurements taken and recorded in "Temperature GLS" field.  
 
 ## Format
 numerical in meters
