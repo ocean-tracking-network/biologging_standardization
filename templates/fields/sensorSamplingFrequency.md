@@ -4,7 +4,7 @@
 How often the sensor records a measurement.
 
 ## Format
-e.g. "1 Hz"
+Numercial in Hz
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
