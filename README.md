@@ -1,5 +1,5 @@
 ## A standardisation framework for bio-logging data
-This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al (in prep for submission to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
+This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al* (in prep for submission to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
 
 ### [Templates](templates)
 The framework includes the use of three templates, which can be found in the templates folder, each specifying how to format all data and metadata needed. Inside the templates folder you can also find a [templates.md](templates/templates.md) file providing a brief description of the three templates:
@@ -34,3 +34,6 @@ Our objective is to contribute to standardising bio-logging datasets across all 
 
 ### License
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0)
+
+
+* Ana M.M. Sequeira, Malcolm O’Toole, Theresa R. Keates, Laura H. McDonnell, Camrin D. Braun, Xavier Hoenner, Fabrice R. A. Jaine, Ian D. Jonsen, Peggy D. Newman, Jonathan Pye, Steven J. Bograd, Graeme C. Hays, Elliott L Hazen, Melinda Holland, Vardis Tsontos, Clint Blight, Francesca Cagnacci, Sarah C. Davidson, Holger Dettki, Carlos M. Duarte, Daniel C. Dunn, Victor M. Eguíluz, Michael Fedak, Adrian C. Gleiss, Neil Hammerschlag, Mark A. Hindell, Kim Holland, Ivica Janekovic, Megan K. McKinzie, Mônica M.C.Muelbert, Chari Pattiaratchi, Christian Rutz, David W. Sims, Samantha E. Simmons, Brendal Townsend, Frederick Whoriskey, Bill Woodward, Daniel P. Costa, Michelle R. Heupel, Clive R. McMahon, Rob Harcourt, Michael Weise. #A standardisation framework for bio-logging data to advance ecological research and conservation#. Submitted to Scientific Data
