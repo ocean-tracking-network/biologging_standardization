@@ -4,7 +4,7 @@
 Other identifiers relevant to deployment (eg. WMO number for data contribution to GTS).
 
 ## Format
-
+string
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
