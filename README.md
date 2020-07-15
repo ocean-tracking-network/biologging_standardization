@@ -2,12 +2,12 @@
 This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al (in prep for submission to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
 
 ### [Templates](templates)
-The framework includes the use of three templates, which can be found in the templates folder, each specifying how to format all data and metadata needed. Inside the templates folder you can also find a [templates.md](../biologging_Standardisation/master/Templates/templates.md) file providing a brief description of the three templates:
--	the [device-metadata.md](../biologging_Standardisation/master/Templates/device-metadata.md) containing all information pertaining to the bio-logging instrument used to collect data,
--	the [deployment-metadata.md](../biologging_Standardisation/master/Templates/deployment-metadata.md) containing all information pertaining to the attachment of the bio-logging device to the animal (i.e., deployment procedure), and
--	the [input-data.md](../biologging_Standardisation/master/Templates/input-data.md) containing all bio-logging data collected by one deployment of the bio-logging device
+The framework includes the use of three templates, which can be found in the templates folder, each specifying how to format all data and metadata needed. Inside the templates folder you can also find a [templates.md](templates/templates.md) file providing a brief description of the three templates:
+-	the [device-metadata.md](templates/device-metadata.md) containing all information pertaining to the bio-logging instrument used to collect data,
+-	the [deployment-metadata.md](templates/deployment-metadata.md) containing all information pertaining to the attachment of the bio-logging device to the animal (i.e., deployment procedure), and
+-	the [input-data.md](templates/input-data.md) containing all bio-logging data collected by one deployment of the bio-logging device
 All three templates include definitions for each attribute name and links to other similar terms used in other vocabularies, as well as SensorML and DarwinCore examples so they can be readily used by manufacturers and researchers alike.
-Inside the Templates folder you can also find a [Fields](../biologging_Standardisation/master/Templates/Fields) folder, including all the details from all fields used in the three templates.
+Inside the Templates folder you can also find a [Fields](templates/Fields) folder, including all the details from all fields used in the three templates.
 
 ### [Examples](examples/braun-blueshark)
 The framework includes the description of an automated procedure to be created at the compliant repositories to translate ingested data and metadata into four levels of data standardisation. The objective of this step is to maximize interoperability and facilitate scientific discovery, conservation management, and policy development.
