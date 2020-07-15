@@ -14,8 +14,8 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 ### Instrument metadata
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
-| [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. |  | alpha-numerical, eg. “09A0178”|	
-| [ptt](fields/ptt.md) | Platform Transmitter Terminal for Argos transmission. |  | numerical, eg. “178937”|		
+| [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer. |  | alpha-numerical, e.g. “09A0178”|	
+| [ptt](fields/ptt.md) | Platform Transmitter Terminal for Argos transmission. |  | numerical, e.g. “178937”|		
 | [transmissionSettings](fields/transmissionSettings.md) | Step duration and location uplink limit (can add rows if needed) |  | String with duration in hours, followed by number of messages e.g. “24 hours, 200 messages”|	
 | [transmissionMode](fields/transmissionMode.md) | User-defined conditions for entering and exiting power-saving mode (i.e. slower sampling rate) and transmission control, if applicable. |  | Time settings in minutes e.g. “Haul-Out state entered after 10 consecutive dry minutes (40 seconds/minute), exited if wet for 30 seconds/minute” OR “disabled”|	
 | [dutyCycle](fields/dutyCycle.md) | Detailed instrument settings defined in a file (e.g. Wildlife Computers Report, htm file/URL, or screenshot of tag settings). |  | String e.g. "PTT active 12 hours, followed by 6 hours sleep-mode"|
@@ -27,7 +27,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [deploymentDateTime](fields/deploymentDateTime.md) | Timestamp the instrument was deployed on the organism. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”| 
 | [deploymentLatitude](fields/deploymentLatitude.md) | Latitude in decimal degrees of instrument deployment. | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|   
 | [deploymentLongitude](fields/deploymentLongitude.md) | Longitude in decimal degrees of instrument deployment. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|   
-| [deploymentEndType](fields/deploymentEndType.md) | Classification of instrument deployment end, i.e. what ended teh collection of usable data, which may or may not be tag removal. | Movebank | Categorical (eg. removal, equipment failure, fall off)|
+| [deploymentEndType](fields/deploymentEndType.md) | Classification of instrument deployment end, i.e. what ended the collection of usable data, which may or may not be tag removal. | Movebank | Categorical (e.g. removal, equipment failure, fall off)|
 | [detachmentDateTime](fields/detachmentDateTime.md) | Timestamp the instrument was recovered or otherwise detached from the organism (if known). | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, eg. “2020-03-29T 17:56:10.000Z”| 
 | [detachmentDetails](fields/detachmentDetails.md) | Brief description of recovery/detachment if known (e.g., caught in fisheries, recaptured animal, predetermined detachment). |  | String in sentence case (e.g., caught in fisheries)|
 | [detachmentLatitude](fields/detachmentLatitude.md) | Latitude in decimal degrees of instrument recovery/detachment from organism (if known). | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|   
@@ -58,7 +58,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [organismSizeMeasurementTime](fields/organismSizeMeasurementTime.md) | Timestamp when the organism size measurement was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 
 | [organismAgeReproductiveClass](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: adu, sub, juv, new, unk|
 | [trappingMethodDetails](fields/trappingMethodDetails.md) | Method used to trap the organism for instrumentation, or to deploy the instrument without trapping. | | String, eg.  "trapped with hand-net on nest in breeding colony", "tag attached with pole onto organism feeding on bait, from vessel"|
-| [attachmentMethod](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, eg. “anchor”|  
+| [attachmentMethod](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, e.g. “anchor”|  
 
 ### Environmental data calibration  
 | attributeName | description | standard | format |   
@@ -80,7 +80,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format |   
 | ------------- | ----------- | -------- | ------ |  
 | [positionOfAccelerometerOnOrganism](fields/positionOfAccelerometerOnOrganism.md) | Where the accelerometer was placed on the organism. |  | string, e.g. “head”|   
-| [orientationOfAccelerometerOnOrganism](fields/orientationOfAccelerometerOnOrganism.md) | The orientation of the accelertometer on the organism, if applicable. |  | string, e.g. “facing towards front of head” | 
+| [orientationOfAccelerometerOnOrganism](fields/orientationOfAccelerometerOnOrganism.md) | The orientation of the accelerometer on the organism, if applicable. |  | string, e.g. “facing towards front of head” | 
 | [calibrationsDone](fields/calibrationsDone.md) | Provide link to calibration file. |  | DOI or URL|  
 | [qcDone](fields/qcDone.md) | Whether quality control was performed. |  | Y/N|  
 | [qcProblemsFound](fields/qcProblemsFound.md) | Whether data quality problem(s) were detected. |  | Y/N|  
