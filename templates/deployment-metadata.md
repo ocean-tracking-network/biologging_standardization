@@ -58,7 +58,7 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | [organismSizeMeasurementTime](fields/organismSizeMeasurementTime.md) | Timestamp when the organism size measurement was taken. | ISO-8601 | Datetime in UTC, yyyy-MM-ddT HH:mm:ss.SSSZ, e.g. “2020-03-29T 17:56:10.000Z”| 
 | [organismAgeReproductiveClass](fields/organismAgeReproductiveClass.md) | Age class of organism carrying instrument at the time the instrument was attached. |  | Categorical: adu, sub, juv, new, unk|
 | [trappingMethodDetails](fields/trappingMethodDetails.md) | Method used to trap the organism for instrumentation, or to deploy the instrument without trapping. | | String, eg.  "trapped with hand-net on nest in breeding colony", "tag attached with pole onto organism feeding on bait, from vessel"|
-| [attachmentMethod](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, e.g. “anchor”|  
+| [attachmentMethod](fields/attachmentMethod.md) | Method with which instrument was attached. |  | String, e.g. “anchor”, "glue", "suction cup"|  
 
 ### Environmental data calibration  
 | attributeName | description | standard | format |   
