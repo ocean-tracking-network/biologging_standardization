@@ -72,7 +72,7 @@ ISO: International Organization for Standardization
 | [sensorManufacturer](fields/sensorManufacturer.md) | Name of the manufacturer of the sensor (may or may not be the same as the instrument manufacturer). | | string, e.g. “Little Leonardo”| 	
 | [sensorModel](fields/sensorModel.md) | Name of specific sensor model. | |string|  
 | [axes](fields/axes.md) | Axes in which acceleration is logged. | |Categorical (combinations of x, y, and z)| 
-| [sensorUnits](fields/sensorUnits.md) | Unit of physiological variable reported. | |categorical|  
+| [unitsReported](fields/unitsReported.md) | Unit of physiological variable reported. | |categorical|  
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | |numerical|  
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | |numerical|  
 | [sensorPrecision](fields/sensorPrecision.md) | Sensor precision in same unit specified for sensor. | |numerical|  
