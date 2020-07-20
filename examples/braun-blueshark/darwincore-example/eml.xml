@@ -1,0 +1,150 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="https://doi.org/10.24431/rw1k329" system="https://dataone.org" scope="system"
+         xml:lang="eng">
+<dataset>
+  <title xml:lang="eng"> Movements of blue sharks in the North Atlantic Ocean using satellite telemetry, 2014-2017</title>
+  <contact>
+    <individualName>
+      <givenName>Camrin</givenName>
+      <surName>Braun</surName>
+    </individualName>
+    <organizationName>School of Aquatic and Fisheries Sciences University of Washington</organizationName>
+    <positionName>Assistant Professor</positionName>
+    <role>principalInvestigator</role>
+    <address>
+      <city>Seattle</city>
+      <administrativeArea>WA</administrativeArea>
+      <postalCode>98105</postalCode>
+      <country>USA</country>
+    </address>
+    <electronicMailAddress>cdbraun@uw.edu</electronicMailAddress>
+  </contact>
+  <contact>
+    <individualName>
+        <givenName>Peter</givenName>
+      <surName>Gaube</surName>
+    </individualName>
+    <organizationName>Applied Physics Laboratory, University of Washington</organizationName>
+    <positionName>Senior Oceanographer</positionName>
+    <role>author</role>
+    <address>
+        <city>Seattle</city>
+        <administrativeArea>WA</administrativeArea>
+        <postalCode>98105</postalCode>
+        <country>USA</country>
+    </address>
+    <electronicMailAddress>pgaube@uw.edu</electronicMailAddress>
+  </contact>
+  <contact>
+    <individualName>
+        <givenName>Tane</givenName>
+      <surName>Sinclair-Taylor</surName>
+    </individualName>
+    <positionName>Independent scholar</positionName>
+    <role>author</role>
+    <electronicMailAddress>t.sinclairtaylor@gmail.com</electronicMailAddress>
+  </contact>
+ <contact>
+    <individualName>
+        <givenName>Gregory</givenName>
+      <surName>Skomal</surName>
+    </individualName>
+    <organizationName>Massachusetts Division of Marine Fisheries</organizationName>
+    <role>author</role>
+    <address>
+        <city>New Bedford</city>
+        <administrativeArea>MA</administrativeArea>
+        <country>USA</country>
+    </address>
+    <electronicMailAddress>gregory.skomal@state.ma.us</electronicMailAddress>
+  </contact>
+   <contact>
+    <individualName>
+        <givenName>Simon</givenName>
+      <surName>Thorrold</surName>
+    </individualName>
+    <organizationName>Woods Hole Oceanographic Institution</organizationName>
+    <positionName>Senior Scientist</positionName>
+    <role>author</role>
+    <address>
+        <city>Woods Hole</city>
+        <administrativeArea>MA</administrativeArea>
+        <country>USA</country>
+    </address>
+    <electronicMailAddress>sthorrold@whoi.edu</electronicMailAddress>
+  </contact>
+  <metadataProvider>
+    <organizationName>Axiom Data Science</organizationName>
+    <positionName>Metadata Specialist</positionName>
+    <address>
+    	<deliveryPoint>Suite 105, 1016 W 6th Avenue</deliveryPoint>
+        <city>Anchorage</city>
+        <administrativeArea>AK</administrativeArea>
+        <postalCode>99501</postalCode>
+        <country>USA</country>
+    </address>
+    <electronicMailAddress>metadata@axiomdatascience.com</electronicMailAddress>
+  </metadataProvider>
+  <pubDate>
+      2019-07-01
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+This dataset contains Argos-based position estimates that represent the movements of a pelagic predator, the blue shark (Prionace glauca), in the Gulf Stream region and broader North Atlantic Ocean using electronic tags. We collected &gt;2,000 tracking days recorded by 15 instrumented individuals over a three year period. Each individual shark was assigned a unique identification number that includes Taxononomic Serial Number (TSN) from Integrated Taxonomic Information System, tagging year and satellite tag Platform Terminal Transmission (PTT) number as "TSN_YR_PTT". We include one data file (.csv) per individual, a metadata table that provides additional information on size, sex and other metrics, and a metadata table that indicates the date range for data that was manually removed prior to archiving: 160424_2013_132346pnas_atn.csv 160424_2014_141195pnas_atn.csv 160424_2015_141261pnas_atn.csv 160424_2015_141264pnas_atn.csv 160424_2015_141268pnas_atn.csv 160424_2015_141270pnas_atn.csv 160424_2016_106744pnas_atn.csv 160424_2016_106745pnas_atn.csv 160424_2016_106746pnas_atn.csv 160424_2016_106747pnas_atn.csv 160424_2016_106748pnas_atn.csv 160424_2016_141262pnas_atn.csv 160424_2016_141263pnas_atn.csv 160424_2016_141265pnas_atn.csv 160424_2016_141266pnas_atn.csv 160424_2016_165927pnas_atn.csv 160424_2016_165928pnas_atn.csv Braun_atn_tag_deployment_metadata.csv cut_dates_atn.csv
+  </abstract>
+  <purpose>This dataset was collected to test the influence of mesoscale eddies on a model pelagic predator.</purpose>
+  <keywordSet>
+        <keyword>OCEAN &gt; ATLANTIC OCEAN</keyword>
+    <keywordThesaurus>GCMD Locations Keywords version 8.4.1</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+        <keyword>Prionace glauca</keyword>
+        <keyword>blue shark, requin bleu, tiburón azul</keyword>
+    <keywordThesaurus>ITIS</keywordThesaurus>
+  </keywordSet>
+       <keywordSet>
+        <keyword>EARTH SCIENCE &gt; AGRICULTURE &gt; ANIMAL SCIENCE &gt; ANIMAL ECOLOGY AND BEHAVIOR</keyword>
+        <keyword>EARTH SCIENCE &gt; OCEANS</keyword>
+    <keywordThesaurus>GCMD Science Keywords version 8.4.1</keywordThesaurus>
+   </keywordSet>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>Western North Atlantic, including one individual that moved into the Caribbean.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-90</westBoundingCoordinate>
+          <eastBoundingCoordinate>-25</eastBoundingCoordinate>
+          <northBoundingCoordinate>50</northBoundingCoordinate>
+          <southBoundingCoordinate>0</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+          <temporalCoverage>
+              <rangeOfDates>
+                  <beginDate>
+                    <calendarDate>2014-07-12</calendarDate>
+                  </beginDate>
+                <endDate>
+                  <calendarDate>2017-01-06</calendarDate>
+                </endDate>
+              </rangeOfDates>
+          </temporalCoverage>
+          <taxonomicCoverage>
+              <taxonomicClassification>
+                  <taxonRankName>species</taxonRankName>
+                <taxonRankValue>Prionace glauca</taxonRankValue>
+                  <commonName>blue shark</commonName>
+              </taxonomicClassification>
+          </taxonomicCoverage>
+  </coverage>
+</dataset>
+<additionalMetadata>
+    <metadata>
+          <dateStamp>2019-07-01</dateStamp>
+          <hierarchyLevel>dataset</hierarchyLevel>
+            <citation identifier="doi:10.24431/rw1k329">Camrin Braun, Peter Gaube, Tane Sinclair-Taylor, Gregory Skomal, and Simon Thorrold. 2019. Movements of blue sharks in the North Atlantic Ocean using satellite telemetry, 2014-2017. Research Workspace. 10.24431/rw1k329, version: 10.24431_rw1k329_2019624213839.</citation>
+          <resourceLogoUrl>https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/RW.png</resourceLogoUrl>
+    </metadata>
+</additionalMetadata>
+</eml:eml>

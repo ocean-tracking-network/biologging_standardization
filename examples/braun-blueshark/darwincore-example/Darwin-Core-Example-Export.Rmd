@@ -1,0 +1,208 @@
+---
+title: "Example - Export to Darwin Core format"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+```
+
+This demonstrates exporting the example Level 3 output dataset to the Darwin Core Archive format for packaging and publication to biodiversity repositories (eg. GBIF, OBIS, Living Atlases). The format is described in the Darwin Core [text guide](https://dwc.tdwg.org/text/). This example uses the OBIS ENV-DATA approach, described [here](https://obis.org/manual/dataformat/).
+
+## Data In
+
+The data used here are associated with Braun CD, Gaube P, Sinclair-Taylor TH, Skomal GB, Thorrold SR (2019) Mesoscale eddies release pelagic sharks from thermal constraints to foraging in the ocean twilight zone. Proc Natl Acad Sci U S A 116:17187–17192 (doi: [10.1073/pnas.1903067116](https://doi.org/10.1073/pnas.1903067116)), and the data are archived at DataOne (doi: [10.24431/rw1k329](https://doi.org/10.24431/rw1k329)).
+
+Reading the data from the files which are formatted to the metadata templates:
+
+```{r eval = TRUE, echo = TRUE}
+deployment_metadata <- read.csv("../braun_blues_deployment-metadata.csv")
+device_metadata <- read.csv("../braun_blues_device-metadata.csv")
+obs_data <- read.csv("../data_level3/blue_sharks_level3.csv")
+```
+
+## Darwin Core entities
+
+The data is spread across a number of files which are zipped into the archive:
+
+* __event.csv__ the Event Core outlines major project milesones such as capture, deployment, and the deployment completion
+* __occurrence.csv__ the Occurrence Extension contains each occurrence record, usually a HumanObservation which is associated with the initial capture and biota measurements, then a series of MachineObservations associated with the tag and sensor information.
+* __extendedMeasurementOrFact.csv__ the Extended Measurement or Fact Extension contains any measurement or information related to any Event or Occurrence, eg. sensor metadata
+* __meta.xml__ provides a machine readable document describing the structure of the archive
+* __eml.xml__ contains standard scientific publication metadata expressed in Ecological Modelling Language
+
+### Event Core
+
+3 key events in this dataset can be mapped from the __deployment-metadata__:
+
+* Deployment Start / capture
+* Tag Deployment
+* Deployment End
+
+```{r eval = TRUE, include = FALSE}
+starteventdf <- deployment_metadata %>% mutate(eventID = paste0(deploymentID,":start")
+                                          , organismID = organismID
+                                          , eventRemarks = "Deployment Start"
+                                          , eventDate = deploymentDateTime
+                                          , decimalLatitude = deploymentLatitude
+                                          , decimalLongitude = deploymentLongitude) %>% 
+                                   select(eventID, organismID, eventRemarks, eventDate, decimalLatitude, decimalLongitude)
+
+deployeventdf <- deployment_metadata %>% mutate(eventID = deploymentID
+                                          , organismID = organismID
+                                          , eventRemarks = "Deployment"
+                                          , eventDate = paste0(deploymentDateTime,"/",detachmentDateTime) 
+                                          , decimalLatitude = as.numeric(NA)
+                                          , decimalLongitude= as.numeric(NA)) %>% 
+                                   select(eventID, organismID, eventRemarks, eventDate, decimalLatitude, decimalLongitude)
+
+endeventdf <- deployment_metadata %>% mutate(eventID = paste0(deploymentID,":end")
+                                          , organismID = organismID
+                                          , eventRemarks = "Deployment End"
+                                          , eventDate = detachmentDateTime
+                                          , decimalLatitude = detachmentLatitude
+                                          , decimalLongitude = detachmentLongitude) %>% 
+                                   select(eventID, organismID, eventRemarks, eventDate, decimalLatitude, decimalLongitude)
+eventdf <- bind_rows(starteventdf,deployeventdf,endeventdf)
+```
+
+These event records are linked to from occurrence and measurement records.
+
+```{r eval = TRUE}
+eventdf %>% filter(grepl("160424_2016_106744",eventID))
+```
+
+### Occurrence Extension
+
+Biodiversity infrastructures index by occurrence records, denoting species-location-time, and manage them by a semi-controlled vocabulary in the [basisOfRecord term](https://dwc.tdwg.org/terms/#dwc:basisOfRecord) which delineates HumanObservations, MachineObservations, PreservedSpecimen etc.
+
+The archive will record a HumanObservation record which aligns with the animal capture/deployment start event, and will link to observed biotic measurements. 
+MachineObservation occurrence records are features recorded by the tag with spatial and temporal components.
+
+```{r eval = TRUE, include = FALSE}
+#eventID, occurrenceID, eventDate, basisOfRecord, scientificName, vernacularName, scientificNameID, decimalLatitude, decimalLongitude, sex, 
+
+humanobsdf <- deployment_metadata %>%  mutate(eventID = paste0(deploymentID,":start")
+                                               , occurrenceID = paste0(deploymentID,":start")
+                                               , eventDate = deploymentDateTime
+                                               , basisOfRecord = "HumanObservation"
+                                               , organismID = organismID
+                                               , decimalLatitude = deploymentLatitude
+                                               , decimalLongitude = deploymentLongitude
+                                               , scientificName = scientificName
+                                               , vernacularName = commonName
+                                               , scientificNameID = scientificNameSource
+                                               , sex = organismSex
+                                               , reproductiveCondition = organismAgeReproductiveClass) %>% 
+                                          select(eventID 
+                                               , occurrenceID
+                                               , eventDate
+                                               , basisOfRecord
+                                               , organismID
+                                               , decimalLatitude
+                                               , decimalLongitude
+                                               , scientificName
+                                               , vernacularName
+                                               , scientificNameID
+                                               , sex
+                                               , reproductiveCondition)
+
+machineobsdf <- obs_data %>% mutate(eventID = id
+                                  , occurrenceID = paste0(id,":",row_number())
+                                  , eventDate = date
+                                  , basisOfRecord = "MachineObservation"
+                                  , decimalLatitude = lat
+                                  , decimalLongitude = lon
+                                  , scientificName = 'Prionace glauca') %>% 
+                           select(eventID 
+                                  , occurrenceID
+                                  , eventDate
+                                  , basisOfRecord
+                                  , decimalLatitude
+                                  , decimalLongitude
+                                  , scientificName)
+occurrencesdf <- bind_rows(humanobsdf,machineobsdf) 
+```
+
+```{r eval = TRUE}
+head(occurrencesdf %>% filter(grepl("160424_2016_106744",eventID)),3)
+```
+
+### Measurement or Fact Extension
+
+This extension contains measurements and data that are not defined in the DarwinCore terms, have different cardinality to the occurrence or event records (ie many acceleromter records) and usually without a spatial component. 
+
+In this example this includes all of the tag/device metadata, some of the animal measurements, and the detachment information. Each term should have a definition URI. 
+
+```{r eval = TRUE, include = FALSE}
+
+# mof ext fields: eventID, occurrenceID, measurementType, measurementTypeID, measurementValue, measurementValueID, measurementUnit, measurementUnitID
+
+trapping_df <- deployment_metadata %>% mutate(eventID = paste0(deploymentID,":start")
+                                                , occurrenceID = paste0(deploymentID,":start")
+                                                , measurementType = "trappingMethodDetails"
+                                                , measurementTypeID = ""
+                                                , measurementValue = as.character(trappingMethodDetails)) %>%
+                                           select(eventID, occurrenceID, measurementType, measurementTypeID, measurementValue)
+
+attachment_df <- deployment_metadata %>% mutate(eventID = paste0(deploymentID,":start")
+                                                , occurrenceID = paste0(deploymentID,":start")
+                                                , measurementType = "attachmentMethod"
+                                                , measurementTypeID = "https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L26"
+                                                , measurementValue = attachmentMethod) %>%
+                                           select(eventID, occurrenceID, measurementType, measurementTypeID, measurementValue)
+
+instrument_id_df <- deployment_metadata %>% mutate(eventID = deploymentID
+                                                , occurrenceID = ""
+                                                , measurementType = "instrumentID"
+                                                , measurementTypeID = "http://vocab.nerc.ac.uk/collection/W07/current/IDEN0008/"
+                                                , measurementValue = instrumentID) %>%
+                                           select(eventID, occurrenceID, measurementType, measurementTypeID, measurementValue)
+
+ptt_df  <- deployment_metadata %>% mutate(eventID = deploymentID
+                                                , occurrenceID = ""
+                                                , measurementType = "PTT"
+                                                , measurementTypeID = "https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L12"
+                                                , measurementValue = as.character(ptt)) %>%
+                                           select(eventID, occurrenceID, measurementType, measurementTypeID, measurementValue)
+
+
+# for each instrument, add instrumentModel, instrumentManufacturer, trackingDevice, uplinkInterval
+instrument_model_df <- deployment_metadata %>% mutate(eventID = deploymentID
+                                                , occurrenceID = ""
+                                                , measurementType = "instrumentModel"
+                                                , measurementTypeID = "https://github.com/tagbase/tagbase/blob/master/eTagMetadataInventory.csv#L6"
+                                                , measurementValue = "SPOT258G") %>%
+                                           select(eventID, occurrenceID, measurementType, measurementTypeID, measurementValue)
+
+instrument_manu_df <- deployment_metadata %>% mutate(eventID = deploymentID
+                                                , occurrenceID = ""
+                                                , measurementType = "instrumentManufacturer"
+                                                , measurementTypeID = "http://vocab.nerc.ac.uk/collection/W07/current/IDEN0012/"
+                                                , measurementValue = "Wildlife Computers") %>%
+                                           select(eventID, occurrenceID, measurementType, measurementTypeID, measurementValue)
+
+detachment_df <- deployment_metadata %>% mutate(eventID = paste0(deploymentID,":end")
+                                                , occurrenceID = paste0(deploymentID,":end")
+                                                , measurementType = "detachmentDetails"
+                                                , measurementTypeID = ""
+                                                , measurementValue = detachmentDetails) %>%
+                                           select(eventID, occurrenceID, measurementType, measurementTypeID, measurementValue)
+
+mofdf <- bind_rows(trapping_df,attachment_df,instrument_id_df,ptt_df,instrument_model_df,instrument_manu_df,detachment_df)
+```
+```{r eval = TRUE}
+head(mofdf %>% filter(grepl("160424_2016_106744",eventID)))
+```
+
+## Final packaging 
+
+Each file is packaged into a zip with metadata files meta.xml and eml.xml.
+
+```{r eval = FALSE, echo = TRUE}
+write.csv(eventdf,"event.csv",row.names = FALSE)
+write.csv(occurrencesdf,"occurrence.csv",row.names = FALSE)
+write.csv(mofdf,"mof.csv",row.names = FALSE)
+zip("braun-blueshark-dwca.zip",files=c("event.csv","occurrence.csv","mof.csv","eml.xml","meta.xml"))
+```
