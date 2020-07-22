@@ -7,6 +7,7 @@ Data fields provided by the researcher upon submission of data to repository (i.
 | [instrumentID](fields/instrumentID.md) | Unique instrument ID. Can be the instrument serial number, or other similar identification system used by the manufacturer.| | alpha-numerical, e.g. “09A0178”|
 | [deploymentID](fields/deploymentID.md) | Unique identifier for single deployment of device. |  | |
 | [organismID](fields/organismID.md) | Unique identifier for an individual, links data from different deployments or instruments on the same animal. |  | |
+| [organismIDSource](fields/organismIDSource.md) | URN denoting the globally unique identifier as assigned by the repository publishing the dataset. |  | urn:catalog:[repository]:[institution]:[projectcode]:[OrganismID], e.g., urn:catalog:otn:Dalhousie:NSBS:Brandy|
 
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
