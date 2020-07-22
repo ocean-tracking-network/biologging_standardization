@@ -26,7 +26,7 @@ ISO: International Organization for Standardization
 ### Vertical sensors
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | -------- |
-| [unitsReported](fields/unitsReported.md) | Unit of altidue/depth reported. | | string, e.g. “meters”|	
+| [unitsReported](fields/unitsReported.md) | Unit of altitude/depth reported. | | string, e.g. “meters”|	
 | [resolution](fields/resolution.md) | Resolution of altitude/depth measurements in same unit specified for vertical sensor. | |numerical, e.g. “0.1”	
 | [lowerSensorDetectionLimit](fields/lowerSensorDetectionLimit.md) | Lower detection limit for sensor in same unit specified for sensor. | |numerical e.g. “5”| 
 | [upperSensorDetectionLimit](fields/upperSensorDetectionLimit.md) | Upper detection limit for sensor in same unit specified for sensor. | | numerical e.g. “2500”| 
