@@ -44,7 +44,6 @@ ISO = International Organization for Standardization (https://www.itis.gov/)
 | attributeName | description | standard | format | 
 | ------------- | ----------- | -------- | ------ |
 | [organismID](fields/organismID.md) | Unique identifier for an individual, link data from different deployments or instruments on the same animal. |  | Alpha-numerical|   
-| [organismIDSource](fields/organismIDSource.md) | URN denoting the authority from which the species identification is defined. |  | urn:catalog:[repository]:[institution]:[projectcode]:[OrganismID], e.g., urn:catalog:otn:Dalhousie:NSBS:Brandy-release| 
 | [scientificName](fields/scientificName.md) | Binomial species name of organism carrying instrument. | | String of the format “Genus species”, genus capitalized, separated by one space, e.g. “Mirounga angustirostris”|  
 | [scientificNameSource](fields/scientificNameSource.md) | URN denoting the authority from which the species identification is defined | ITIS / WoRMS / other | free-text, e.g. for 'blue shark': urn:lsid:marinespecies.org:taxname:105801, TSN 160424 , (Linnaeus, 1758)|
 | [commonName](fields/commonName.md) | One or more common name(s) of organism carrying instrument. |  | String in sentence case, separated by space|   
