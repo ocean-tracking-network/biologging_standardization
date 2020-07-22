@@ -1,5 +1,5 @@
 ## A standardisation framework for bio-logging data
-This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al<sup>1</sup> (in prep for submission to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
+This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al<sup>1</sup> (submitted to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
 
 ### [Templates](templates)
 The framework includes the use of three templates, which can be found in the templates folder, each specifying how to format all data and metadata needed. Inside the templates folder you can also find a [templates.md](templates/templates.md) file providing a brief description of the three templates:
@@ -21,8 +21,10 @@ This automated procedure and the four data levels are exemplified in the [exampl
 -	[data-level3](examples/braun-blueshark/data_level3/): Interpolated data, i.e., processed bio-logging data that includes smoothed and interpolated locations.
 -	[data-level4](examples/braun-blueshark/data_level4): Gridded data, i.e., bio-logging data presented in a grid format with a specific grid-cell size and temporal resolution.
 -	[sensorml-example](examples/braun-blueshark/sensorml-example): a SensorML example for the device used in the blue shark dataset
-Our objective is to contribute to standardising bio-logging datasets across all taxa and ecosystems, which is one of the stated goals of the [International Bio-Logging Society](https://www.bio-logging.net "Bio-logging Society's homepage").
+- [darwincore-example](examples/braun-blueshark/darwincore-example): a Darwin Core example showing how the blue shark dataset can easily be converted to Darwin Core
 -	[wildlife_computers_raw](examples/braun-blueshark/wildlife_computers_raw): Original decoded sensor data provided by the manufacturer. Translation of these decoded data into Level 1 format is provided in the [Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardization.md) example.
+
+Our objective is to contribute to standardising bio-logging datasets across all taxa and ecosystems, which is one of the stated goals of the [International Bio-Logging Society](https://www.bio-logging.net "Bio-logging Society's homepage").
 
 ### Questions?
 * You can use the "issues" tab to ask new questions
@@ -36,4 +38,4 @@ Our objective is to contribute to standardising bio-logging datasets across all 
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0)
 
 
-<sup>1</sup>Ana M.M. Sequeira, Malcolm O’Toole, Theresa R. Keates, Laura H. McDonnell, Camrin D. Braun, Xavier Hoenner, Fabrice R. A. Jaine, Ian D. Jonsen, Peggy D. Newman, Jonathan Pye, Steven J. Bograd, Graeme C. Hays, Elliott L Hazen, Melinda Holland, Vardis Tsontos, Clint Blight, Francesca Cagnacci, Sarah C. Davidson, Holger Dettki, Carlos M. Duarte, Daniel C. Dunn, Victor M. Eguíluz, Michael Fedak, Adrian C. Gleiss, Neil Hammerschlag, Mark A. Hindell, Kim Holland, Ivica Janekovic, Megan K. McKinzie, Mônica M.C.Muelbert, Chari Pattiaratchi, Christian Rutz, David W. Sims, Samantha E. Simmons, Brendal Townsend, Frederick Whoriskey, Bill Woodward, Daniel P. Costa, Michelle R. Heupel, Clive R. McMahon, Rob Harcourt, Michael Weise. __A standardisation framework for bio-logging data to advance ecological research and conservation__. Submitted to *Nature Scientific Data*.
+<sup>1</sup>Ana M.M. Sequeira, Malcolm O’Toole, Theresa R. Keates, Laura H. McDonnell, Camrin D. Braun, Xavier Hoenner, Fabrice R. A. Jaine, Ian D. Jonsen, Peggy Newman, Jonathan Pye, Steven J. Bograd, Graeme C. Hays, Elliott L Hazen, Melinda Holland, Vardis Tsontos, Clint Blight, Francesca Cagnacci, Sarah C. Davidson, Holger Dettki, Carlos M. Duarte, Daniel C. Dunn, Victor M. Eguíluz, Michael Fedak, Adrian C. Gleiss, Neil Hammerschlag, Mark A. Hindell, Kim Holland, Ivica Janekovic, Megan K. McKinzie, Mônica M.C.Muelbert, Chari Pattiaratchi, Christian Rutz, David W. Sims, Samantha E. Simmons, Brendal Townsend, Frederick Whoriskey, Bill Woodward, Daniel P. Costa, Michelle R. Heupel, Clive R. McMahon, Rob Harcourt, Michael Weise. __A standardisation framework for bio-logging data to advance ecological research and conservation__. Submitted to *Nature Scientific Data*.
