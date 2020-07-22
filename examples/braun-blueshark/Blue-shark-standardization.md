@@ -20,14 +20,14 @@ to foraging in the ocean twilight zone. Proc Natl Acad Sci U S A
 the data are archived at DataOne (doi:
 [10.24431/rw1k329](https://doi.org/10.24431/rw1k329)).
 
-## Raw to Level 1
+## Decoded sensor data to Level 1
 
 Preparing data for Level 1. Conversion from format output by Wildlife
 Computers Portal to standardized set of Level 1 position data.
 
 ``` r
-## list of raw Wildlife Computers tag data files
-fList <- list.files('./wildlife_computers_raw/', full.names = TRUE, recursive = TRUE)
+## list of decoded sensor data from Wildlife Computers tag data files
+fList <- list.files('./wildlife_computers_decoded/', full.names = TRUE, recursive = TRUE)
 loc_files <- fList[grep('Locations', fList)]
 
 ## this metadata is modified from the original metadata at the DataOne repo to match the proposed standardization templates
@@ -37,7 +37,7 @@ meta$trackEndTime <- lubridate::parse_date_time(meta$trackEndTime, orders = 'Ymd
 
 for (i in 1:length(loc_files)){
   
-  ## read and format raw location data
+  ## read and format unprocessed location data
   track <- read.table(loc_files[i], sep = ',', header = TRUE)
   track$Date <- lubridate::parse_date_time(track$Date, orders = c('HMS dbY', 'mdy HM', 'Ymd HMS'), tz = 'UTC')
   
@@ -48,7 +48,7 @@ for (i in 1:length(loc_files)){
   start <- meta$trackStartTime[meta_idx]
   stop <- meta$trackEndTime[meta_idx]
   
-  ## filter raw data to data between track start/end times
+  ## filter decoded sensor data to data between track start/end times
   track <- track[which(track$Date >= start & track$Date <= stop),]
 
   ## add missing columns to dataframe
@@ -126,10 +126,10 @@ head(track)
 
 ## Level 1 -\> 2
 
-This step converts from “raw” location data to a more filtered and QC’d
-version of the “raw” data. Note that only very minor filtering is done
-at this stage to remove erroneous positions, but the location data is
-still the “raw” data.
+This step converts from decoded (e.g. unprocessed) location data to a
+more filtered and QC’d version of the position data. Note that only very
+minor filtering is done at this stage to remove erroneous positions, but
+the location data is still otherwise unprocessed.
 
 ``` r
 ## list of all level 1 data files
@@ -137,7 +137,7 @@ loc_files <- list.files('./data_level1/', full.names = TRUE, recursive = TRUE)
 
 for (i in 1:length(loc_files)){
   
-  ## read and format raw, level 1 location data
+  ## read and format level 1 location data
   track <- read.table(loc_files[i], sep = ',', header = TRUE, stringsAsFactors = F)
   track$time <- lubridate::parse_date_time(track$time, orders = 'YmdHMS', tz = 'UTC')
   
@@ -226,8 +226,8 @@ head(track)
 
 ## Level 2 -\> 3
 
-This step converts cleaned, raw data to a standardized set of location
-data interpolated to a regular temporal
+This step converts cleaned, location data to a standardized set of
+location data interpolated to a regular temporal
 scale.
 
 ``` r
@@ -355,7 +355,12 @@ for (i in 1:12){
   }
 }
 
-writeRaster(month_grids, './data_level4/blue_shark_month_grids.grd', overwrite = TRUE)
+writeRaster(month_grids, './data_level4/blue_shark_month_grids.nc', overwrite = TRUE, format = 'CDF')
 ```
+
+    ## Loading required namespace: ncdf4
+
+    ## Warning in .couldBeLonLat(x, warnings = warnings): CRS is NA. Assuming it
+    ## is longitude/latitude
 
 ![](Blue-shark-standardization_files/figure-gfm/plot_grids-1.png)<!-- -->![](Blue-shark-standardization_files/figure-gfm/plot_grids-2.png)<!-- -->
