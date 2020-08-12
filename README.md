@@ -2,12 +2,17 @@
 This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al<sup>1</sup> (submitted to Nature Scientific Data) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
 
 ### [Templates](templates)
-The framework includes the use of three templates, which can be found in the templates folder, each specifying how to format all data and metadata needed. Inside the templates folder you can also find a [templates.md](templates/templates.md) file providing a brief description of the three templates:
+The framework includes the use of three templates outlining the events that generate data and metadata, and the exact metadata and data that must be captured from these events to produce an optimally reuseable and generalizable animal movement data product. The names and descriptions of the required fields in this set of templates can be found in the templates folder of this repository. A descriptive page has been created for each variable, specifying how to format each entry and the controlled vocabularies that are acceptable to use. Inside the templates folder you can also find a [templates.md](templates/templates.md) file providing a brief overview of the three templates as a whole:
 -	the [device-metadata.md](templates/device-metadata.md) containing all information pertaining to the bio-logging instrument used to collect data,
 -	the [deployment-metadata.md](templates/deployment-metadata.md) containing all information pertaining to the attachment of the bio-logging device to the animal (i.e., deployment procedure), and
 -	the [input-data.md](templates/input-data.md) containing all bio-logging data collected by one deployment of the bio-logging device
 All three templates include definitions for each attribute name and links to other similar terms used in other vocabularies, as well as SensorML and DarwinCore examples so they can be readily used by manufacturers and researchers alike.
 Inside the Templates folder you can also find a [Fields](templates/fields) folder, including all the details from all fields used in the three templates.
+
+### Controlled Vocabularies
+For biologically-sourced terms, we recommend a specific field in the [Darwin Core (DwC)](https://dwc.tdwg.org/) standard. Any terms that are biological in nature that are not covered by this framework can and should be included, with the appropriate Darwin Core name and content.
+For sensor-based information obtained from instrument manufacturers, we have made examples to conform with in [Sensor Model Language](https://www.ogc.org/standards/sensorml)
+For all other researcher and manufacturer provided fields, we recommend first using the [Climate and Forecast](https://cfconventions.org/index.html) vocabularies.
 
 ### [Examples](examples/braun-blueshark)
 The framework includes the description of an automated procedure to be created at the compliant repositories to translate ingested data and metadata into four levels of data standardisation. The objective of this step is to maximize interoperability and facilitate scientific discovery, conservation management, and policy development.
@@ -25,6 +30,10 @@ This automated procedure and the four data levels are exemplified in the [exampl
 -	[wildlife_computers_raw](examples/braun-blueshark/wildlife_computers_raw): Original decoded sensor data provided by the manufacturer. Translation of these decoded data into Level 1 format is provided in the [Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardization.md) example.
 
 Our objective is to contribute to standardising bio-logging datasets across all taxa and ecosystems, which is one of the stated goals of the [International Bio-Logging Society](https://www.bio-logging.net "Bio-logging Society's homepage").
+
+### Rationale
+
+Since the inception of electronic animal tracking, many research networks and data assimilation initiatives (OTN, IMOS, ATN, SAIAB, MigraMar, TOPP, TAG) have worked to better aggregate and publish electronically-derived marine animal movement data. Their efforts have cumulated in a handful of network-wide standards that can be now aggregated and adapted to a single global framework for publishing and expressing animal movement data at various useful scales. The unification of the significant output from these networks will be a data resource unmatched in size and scope, made available in a common, digestible format that will prove valuable across initiatives such as GOOS's [Biological Essential Ocean Variables](http://www.goosocean.org/biology), [Migratory Connectivity in the Ocean](https://mico.eco/), the [Global Shark Movement Project](https://www.globalsharkmovement.org/), the IOC's [Ocean Biodiversity Information System](https://obis.org), and the Group on Earth Observations Biodiversity Observation Network's [Essential Biodiversity Variables](https://geobon.org/ebvs/what-are-ebvs/). By providing sensible and traceable aggregations across a wide range of animal tracking data, we give networks as well as the individual researchers who are behind them an attainable data formatting target that will allow their data to join any and all of these aspects of our global understanding of how animals are using the ocean.
 
 ### Questions?
 * You can use the "issues" tab to ask new questions
