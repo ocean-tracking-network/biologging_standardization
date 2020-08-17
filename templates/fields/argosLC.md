@@ -1,7 +1,7 @@
 # argosLC 
 
 ## Definition 
-Argos location class of data point's position.
+Argos quality class for positions retrieved from ARGOS
 
 ## Format
 Categorical (G,3,2,1,0,A,B,Z)
