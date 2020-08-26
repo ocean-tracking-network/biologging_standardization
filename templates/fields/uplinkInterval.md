@@ -4,7 +4,7 @@
 Interval of time between two consecutive message dispatches. 
 
 ## Format
-Numerical in seconds
+Numerical
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
