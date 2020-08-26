@@ -15,7 +15,6 @@ Data fields provided by the researcher upon submission of data to repository (i.
 | [latitude](fields/latitude.md) | Latitude of data point. | ISO 6709:2008 | Decimal degrees north, -90.0000 to 90.0000|
 | [longitude](fields/longitude.md) | Longitude of data point. | ISO 6709:2008 | Decimal degrees east, -180.0000 to 180.0000|
 | [argosLC](fields/argosLC.md) | Argos quality class for positions retrieved from ARGOS. | CLS Argos  | Categorical (G,3,2,1,0,A,B,Z)|
-| [argosFilterMethod](fields/argosFilterMethod.md) | Filter method implemented by CLS/Argos to generate location. | CLS Argos  | Categorical: Least squares or Kalman|
 | [argosErrorRadius](fields/argosErrorRadius.md) | Error radius for location provided by CLS/Argos. | CLS Argos  | meters|
 | [argosSemiMajor](fields/argosSemiMajor.md) | Length of semi-major axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data. | CLS Argos  | meters|
 | [argosSemiMinor](fields/argosSemiMinor.md) | Length of semi-minor axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data. | CLS Argos  | meters|
