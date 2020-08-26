@@ -1,10 +1,10 @@
 # unitsReported 
 
 ## Definition 
-Unit of variable reported.
+Unit of measurement reported.
 
 ## Format
-string, e.g. “degrees C”
+string, e.g. "meters", “degrees C”
 
 ## Similar Terms 
 |Term|Definition URL|Source Vocabulary Publisher/Creator|
