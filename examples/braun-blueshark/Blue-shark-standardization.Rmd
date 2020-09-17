@@ -118,7 +118,7 @@ for (i in 1:length(loc_files)){
   track <- track[sf2,]
   
   ## manually remove a spurious location that filters do not catch (note added to deployment-metadata QC section). this could easily be done in bulk using other methods
-  if (track$deploymentID[1] == '160424_2015_141261') track <- track[which(track$time != as.POSIXct('2015-10-14 17:18:20', tz='UTC')),] 
+  if (track$deploymentID[1] == '14S0078_2015-10-13') track <- track[which(track$time != as.POSIXct('2015-10-14 17:18:20', tz='UTC')),] 
   
   ## coerce timestamps back to ISO
   track$time <- lubridate::format_ISO8601(track$time)
@@ -139,7 +139,7 @@ head(track)
 
 This step converts cleaned, location data to a standardized set of location data interpolated to a regular temporal scale.
 
-```{r level2to3, eval = TRUE, cache = TRUE}
+```{r level2to3, eval = TRUE, cache = FALSE}
 
 loc_files <- list.files('./data_level2/', full.names = TRUE, recursive = TRUE)
 
