@@ -1,18 +1,18 @@
-﻿instrumentID,instrumentType,instrumentModel,instrumentManufacturer,instrumentSerialNumber,trackingDevice,uplinkInterval
+instrumentID,instrumentType,instrumentModel,instrumentManufacturer,instrumentSerialNumber,trackingDevice,uplinkInterval
 15U2175,satellite,SPOT258G,Wildlife Computers,15U2175,Argos,30
 15U2176,satellite,SPOT258G,Wildlife Computers,15U2176,Argos,30
 15U2177,satellite,SPOT258G,Wildlife Computers,15U2177,Argos,30
 15U2178,satellite,SPOT258G,Wildlife Computers,15U2178,Argos,30
 15U2179,satellite,SPOT258G,Wildlife Computers,15U2179,Argos,30
-,satellite,SPOT258G,Wildlife Computers,,Argos,30
-,satellite,SPOT258G,Wildlife Computers,,Argos,30
+12S1482,satellite,SPOT258G,Wildlife Computers,12S1482,Argos,30
+14S0247,satellite,SPOT258G,Wildlife Computers,14S0247,Argos,30
 14S0078,satellite,SPOT258G,Wildlife Computers,14S0078,Argos,30
 14S0261,satellite,SPOT258G,Wildlife Computers,14S0261,Argos,30
 14S0262,satellite,SPOT258G,Wildlife Computers,14S0262,Argos,30
-,satellite,SPOT258G,Wildlife Computers,,Argos,30
+14S0263,satellite,SPOT258G,Wildlife Computers,14S0263,Argos,30
 14S0264,satellite,SPOT258G,Wildlife Computers,14S0264,Argos,30
 14S0095,satellite,SPOT258G,Wildlife Computers,14S0095,Argos,30
-,satellite,SPOT258G,Wildlife Computers,,Argos,30
-,satellite,SPOT258G,Wildlife Computers,,Argos,30
+14S0097,satellite,SPOT258G,Wildlife Computers,14S0097,Argos,30
+14S0223,satellite,SPOT258G,Wildlife Computers,14S0223,Argos,30
 16U0030,satellite,SPOT258G,Wildlife Computers,16U0030,Argos,30
 16U0040,satellite,SPOT258G,Wildlife Computers,16U0040,Argos,30

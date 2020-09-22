@@ -20,14 +20,14 @@ to foraging in the ocean twilight zone. Proc Natl Acad Sci U S A
 the data are archived at DataOne (doi:
 [10.24431/rw1k329](https://doi.org/10.24431/rw1k329)).
 
-## Raw to Level 1
+## Decoded sensor data to Level 1
 
 Preparing data for Level 1. Conversion from format output by Wildlife
 Computers Portal to standardized set of Level 1 position data.
 
 ``` r
-## list of raw Wildlife Computers tag data files
-fList <- list.files('./wildlife_computers_raw/', full.names = TRUE, recursive = TRUE)
+## list of decoded sensor data from Wildlife Computers tag data files
+fList <- list.files('./wildlife_computers_decoded/', full.names = TRUE, recursive = TRUE)
 loc_files <- fList[grep('Locations', fList)]
 
 ## this metadata is modified from the original metadata at the DataOne repo to match the proposed standardization templates
@@ -37,7 +37,7 @@ meta$trackEndTime <- lubridate::parse_date_time(meta$trackEndTime, orders = 'Ymd
 
 for (i in 1:length(loc_files)){
   
-  ## read and format raw location data
+  ## read and format unprocessed location data
   track <- read.table(loc_files[i], sep = ',', header = TRUE)
   track$Date <- lubridate::parse_date_time(track$Date, orders = c('HMS dbY', 'mdy HM', 'Ymd HMS'), tz = 'UTC')
   
@@ -48,7 +48,7 @@ for (i in 1:length(loc_files)){
   start <- meta$trackStartTime[meta_idx]
   stop <- meta$trackEndTime[meta_idx]
   
-  ## filter raw data to data between track start/end times
+  ## filter decoded sensor data to data between track start/end times
   track <- track[which(track$Date >= start & track$Date <= stop),]
 
   ## add missing columns to dataframe
@@ -80,56 +80,56 @@ for (i in 1:length(loc_files)){
 }
 ```
 
-    ## [1] "160424_2016_106744 complete."
-    ## [1] "160424_2016_106745 complete."
-    ## [1] "160424_2016_106746 complete."
-    ## [1] "160424_2016_106747 complete."
-    ## [1] "160424_2016_106748 complete."
-    ## [1] "160424_2013_132346 complete."
-    ## [1] "160424_2014_141195 complete."
-    ## [1] "160424_2015_141261 complete."
-    ## [1] "160424_2016_141262 complete."
-    ## [1] "160424_2016_141263 complete."
-    ## [1] "160424_2015_141264 complete."
-    ## [1] "160424_2016_141265 complete."
-    ## [1] "160424_2016_141266 complete."
-    ## [1] "160424_2015_141268 complete."
-    ## [1] "160424_2015_141270 complete."
-    ## [1] "160424_2016_165927 complete."
-    ## [1] "160424_2016_165928 complete."
+    ## [1] "15U2175_2016-08-27 complete."
+    ## [1] "15U2176_2016-08-28 complete."
+    ## [1] "15U2177_2016-08-28 complete."
+    ## [1] "15U2178_2016-10-18 complete."
+    ## [1] "15U2179_2016-08-27 complete."
+    ## [1] "12S1482_2013-07-28 complete."
+    ## [1] "14S0247_2014-07-12 complete."
+    ## [1] "14S0078_2015-10-13 complete."
+    ## [1] "14S0261_2016-08-28 complete."
+    ## [1] "14S0262_2016-08-25 complete."
+    ## [1] "14S0263_2015-10-21 complete."
+    ## [1] "14S0264_2016-08-27 complete."
+    ## [1] "14S0095_2016-09-10 complete."
+    ## [1] "14S0097_2015-10-13 complete."
+    ## [1] "14S0223_2015-10-21 complete."
+    ## [1] "16U0030_2016-10-18 complete."
+    ## [1] "16U0040_2016-10-18 complete."
 
 ``` r
 head(track)
 ```
 
-    ##   instrumentID       deploymentID organismID                time latitude
-    ## 1      16U0040 160424_2016_165928         NA 2016-10-19T21:47:54  41.1960
-    ## 2      16U0040 160424_2016_165928         NA 2016-10-19T21:48:19  41.1963
-    ## 3      16U0040 160424_2016_165928         NA 2016-10-19T22:25:05  41.1680
-    ## 4      16U0040 160424_2016_165928         NA 2016-10-19T22:25:20  41.1675
-    ## 5      16U0040 160424_2016_165928         NA 2016-10-20T07:33:20  41.0198
-    ## 6      16U0040 160424_2016_165928         NA 2016-10-20T07:33:20  41.0200
-    ##   longitude argosLC argosErrorRadius argosSemiMajor argosSemiMinor
-    ## 1  -68.6620       B               NA             NA             NA
-    ## 2  -68.6621       B              788          12279             50
-    ## 3  -68.6250       2               NA             NA             NA
-    ## 4  -68.6245       2              419            788            222
-    ## 5  -68.6519       B             8169          11861           5626
-    ## 6  -68.6520       B               NA             NA             NA
-    ##   argosOrientation
-    ## 1               NA
-    ## 2              108
-    ## 3               NA
-    ## 4               56
-    ## 5               81
-    ## 6               NA
+    ##   instrumentID       deploymentID    organismID                time
+    ## 1      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T21:47:54
+    ## 2      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T21:48:19
+    ## 3      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T22:25:05
+    ## 4      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T22:25:20
+    ## 5      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-20T07:33:20
+    ## 6      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-20T07:33:20
+    ##   latitude longitude argosLC argosErrorRadius argosSemiMajor
+    ## 1  41.1960  -68.6620       B               NA             NA
+    ## 2  41.1963  -68.6621       B              788          12279
+    ## 3  41.1680  -68.6250       2               NA             NA
+    ## 4  41.1675  -68.6245       2              419            788
+    ## 5  41.0198  -68.6519       B             8169          11861
+    ## 6  41.0200  -68.6520       B               NA             NA
+    ##   argosSemiMinor argosOrientation
+    ## 1             NA               NA
+    ## 2             50              108
+    ## 3             NA               NA
+    ## 4            222               56
+    ## 5           5626               81
+    ## 6             NA               NA
 
 ## Level 1 -\> 2
 
-This step converts from “raw” location data to a more filtered and QC’d
-version of the “raw” data. Note that only very minor filtering is done
-at this stage to remove erroneous positions, but the location data is
-still the “raw” data.
+This step converts from decoded (e.g. unprocessed) location data to a
+more filtered and QC’d version of the position data. Note that only very
+minor filtering is done at this stage to remove erroneous positions, but
+the location data is still otherwise unprocessed.
 
 ``` r
 ## list of all level 1 data files
@@ -137,7 +137,7 @@ loc_files <- list.files('./data_level1/', full.names = TRUE, recursive = TRUE)
 
 for (i in 1:length(loc_files)){
   
-  ## read and format raw, level 1 location data
+  ## read and format level 1 location data
   track <- read.table(loc_files[i], sep = ',', header = TRUE, stringsAsFactors = F)
   track$time <- lubridate::parse_date_time(track$time, orders = 'YmdHMS', tz = 'UTC')
   
@@ -167,7 +167,7 @@ for (i in 1:length(loc_files)){
   track <- track[sf2,]
   
   ## manually remove a spurious location that filters do not catch (note added to deployment-metadata QC section). this could easily be done in bulk using other methods
-  if (track$deploymentID[1] == '160424_2015_141261') track <- track[which(track$time != as.POSIXct('2015-10-14 17:18:20', tz='UTC')),] 
+  if (track$deploymentID[1] == '14S0078_2015-10-13') track <- track[which(track$time != as.POSIXct('2015-10-14 17:18:20', tz='UTC')),] 
   
   ## coerce timestamps back to ISO
   track$time <- lubridate::format_ISO8601(track$time)
@@ -180,54 +180,54 @@ for (i in 1:length(loc_files)){
 }
 ```
 
-    ## [1] "160424_2013_132346 complete."
-    ## [1] "160424_2014_141195 complete."
-    ## [1] "160424_2015_141261 complete."
-    ## [1] "160424_2015_141264 complete."
-    ## [1] "160424_2015_141268 complete."
-    ## [1] "160424_2015_141270 complete."
-    ## [1] "160424_2016_106744 complete."
-    ## [1] "160424_2016_106745 complete."
-    ## [1] "160424_2016_106746 complete."
-    ## [1] "160424_2016_106747 complete."
-    ## [1] "160424_2016_106748 complete."
-    ## [1] "160424_2016_141262 complete."
-    ## [1] "160424_2016_141263 complete."
-    ## [1] "160424_2016_141265 complete."
-    ## [1] "160424_2016_141266 complete."
-    ## [1] "160424_2016_165927 complete."
-    ## [1] "160424_2016_165928 complete."
+    ## [1] "12S1482_2013-07-28 complete."
+    ## [1] "14S0078_2015-10-13 complete."
+    ## [1] "14S0095_2016-09-10 complete."
+    ## [1] "14S0097_2015-10-13 complete."
+    ## [1] "14S0223_2015-10-21 complete."
+    ## [1] "14S0247_2014-07-12 complete."
+    ## [1] "14S0261_2016-08-28 complete."
+    ## [1] "14S0262_2016-08-25 complete."
+    ## [1] "14S0263_2015-10-21 complete."
+    ## [1] "14S0264_2016-08-27 complete."
+    ## [1] "15U2175_2016-08-27 complete."
+    ## [1] "15U2176_2016-08-28 complete."
+    ## [1] "15U2177_2016-08-28 complete."
+    ## [1] "15U2178_2016-10-18 complete."
+    ## [1] "15U2179_2016-08-27 complete."
+    ## [1] "16U0030_2016-10-18 complete."
+    ## [1] "16U0040_2016-10-18 complete."
 
 ``` r
 head(track)
 ```
 
-    ##   instrumentID       deploymentID organismID                time latitude
-    ## 1      16U0040 160424_2016_165928         NA 2016-10-19T21:47:54  41.1960
-    ## 2      16U0040 160424_2016_165928         NA 2016-10-19T21:48:19  41.1963
-    ## 3      16U0040 160424_2016_165928         NA 2016-10-19T22:25:05  41.1680
-    ## 4      16U0040 160424_2016_165928         NA 2016-10-19T22:25:20  41.1675
-    ## 5      16U0040 160424_2016_165928         NA 2016-10-20T07:33:20  41.0198
-    ## 7      16U0040 160424_2016_165928         NA 2016-10-20T09:20:22  41.1987
-    ##   longitude argosLC argosErrorRadius argosSemiMajor argosSemiMinor
-    ## 1  -68.6620       B               NA             NA             NA
-    ## 2  -68.6621       B              788          12279             50
-    ## 3  -68.6250       2               NA             NA             NA
-    ## 4  -68.6245       2              419            788            222
-    ## 5  -68.6519       B             8169          11861           5626
-    ## 7  -68.6133       B            11889          16934           8346
-    ##   argosOrientation
-    ## 1               NA
-    ## 2              108
-    ## 3               NA
-    ## 4               56
-    ## 5               81
-    ## 7                9
+    ##   instrumentID       deploymentID    organismID                time
+    ## 1      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T21:47:54
+    ## 2      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T21:48:19
+    ## 3      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T22:25:05
+    ## 4      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-19T22:25:20
+    ## 5      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-20T07:33:20
+    ## 7      16U0040 16U0040_2016-10-18 eddies:Triton 2016-10-20T09:20:22
+    ##   latitude longitude argosLC argosErrorRadius argosSemiMajor
+    ## 1  41.1960  -68.6620       B               NA             NA
+    ## 2  41.1963  -68.6621       B              788          12279
+    ## 3  41.1680  -68.6250       2               NA             NA
+    ## 4  41.1675  -68.6245       2              419            788
+    ## 5  41.0198  -68.6519       B             8169          11861
+    ## 7  41.1987  -68.6133       B            11889          16934
+    ##   argosSemiMinor argosOrientation
+    ## 1             NA               NA
+    ## 2             50              108
+    ## 3             NA               NA
+    ## 4            222               56
+    ## 5           5626               81
+    ## 7           8346                9
 
 ## Level 2 -\> 3
 
-This step converts cleaned, raw data to a standardized set of location
-data interpolated to a regular temporal
+This step converts cleaned, location data to a standardized set of
+location data interpolated to a regular temporal
 scale.
 
 ``` r
@@ -276,23 +276,23 @@ plocs %>% summarise(n = n())
     ## # A tibble: 17 x 2
     ##    id                     n
     ##    <chr>              <int>
-    ##  1 160424_2013_132346   228
-    ##  2 160424_2014_141195    65
-    ##  3 160424_2015_141261   285
-    ##  4 160424_2015_141264   266
-    ##  5 160424_2015_141268   118
-    ##  6 160424_2015_141270   570
-    ##  7 160424_2016_106744   171
-    ##  8 160424_2016_106745   274
-    ##  9 160424_2016_106746   229
-    ## 10 160424_2016_106747   281
-    ## 11 160424_2016_106748   101
-    ## 12 160424_2016_141262   225
-    ## 13 160424_2016_141263    68
-    ## 14 160424_2016_141265   162
-    ## 15 160424_2016_141266   104
-    ## 16 160424_2016_165927   133
-    ## 17 160424_2016_165928    70
+    ##  1 12S1482_2013-07-28   228
+    ##  2 14S0078_2015-10-13   285
+    ##  3 14S0095_2016-09-10   104
+    ##  4 14S0097_2015-10-13   118
+    ##  5 14S0223_2015-10-21   340
+    ##  6 14S0247_2014-07-12    65
+    ##  7 14S0261_2016-08-28   225
+    ##  8 14S0262_2016-08-25    68
+    ##  9 14S0263_2015-10-21   266
+    ## 10 14S0264_2016-08-27   162
+    ## 11 15U2175_2016-08-27   171
+    ## 12 15U2176_2016-08-28   274
+    ## 13 15U2177_2016-08-28   229
+    ## 14 15U2178_2016-10-18   281
+    ## 15 15U2179_2016-08-27   101
+    ## 16 16U0030_2016-10-18   133
+    ## 17 16U0040_2016-10-18    70
 
 ``` r
 ## output level2 results
@@ -305,12 +305,12 @@ head(plocs)
     ## # Groups:   id [1]
     ##   id    date                  lon   lat      x     y    x.se    y.se
     ##   <chr> <dttm>              <dbl> <dbl>  <dbl> <dbl>   <dbl>   <dbl>
-    ## 1 1604… 2013-07-29 09:00:00 -71.8  40.7 -7992. 4934. 1.00e-5 1.00e-5
-    ## 2 1604… 2013-07-30 09:00:00 -71.3  40.5 -7936. 4913. 9.98e-1 6.97e-1
-    ## 3 1604… 2013-07-31 09:00:00 -70.8  40.5 -7881. 4909. 6.32e-1 3.80e-1
-    ## 4 1604… 2013-08-01 09:00:00 -70.5  40.5 -7843. 4910. 9.76e-1 9.09e-1
-    ## 5 1604… 2013-08-02 09:00:00 -70.2  40.5 -7812. 4908. 5.26e-1 4.68e-1
-    ## 6 1604… 2013-08-03 09:00:00 -69.9  40.4 -7785. 4899. 4.98e-1 3.73e-1
+    ## 1 12S1… 2013-07-29 09:00:00 -71.8  40.7 -7992. 4934. 1.00e-5 1.00e-5
+    ## 2 12S1… 2013-07-30 09:00:00 -71.3  40.5 -7936. 4913. 9.98e-1 6.97e-1
+    ## 3 12S1… 2013-07-31 09:00:00 -70.8  40.5 -7881. 4909. 6.32e-1 3.80e-1
+    ## 4 12S1… 2013-08-01 09:00:00 -70.5  40.5 -7843. 4910. 9.76e-1 9.09e-1
+    ## 5 12S1… 2013-08-02 09:00:00 -70.2  40.5 -7812. 4908. 5.26e-1 4.68e-1
+    ## 6 12S1… 2013-08-03 09:00:00 -69.9  40.4 -7785. 4899. 4.98e-1 3.73e-1
     ## # … with 4 more variables: u <dbl>, v <dbl>, u.se <dbl>, v.se <dbl>
 
 Here’s an example of the fits for one of the individuals.
@@ -355,7 +355,12 @@ for (i in 1:12){
   }
 }
 
-writeRaster(month_grids, './data_level4/blue_shark_month_grids.grd', overwrite = TRUE)
+writeRaster(month_grids, './data_level4/blue_shark_month_grids.nc', overwrite = TRUE, format = 'CDF')
 ```
+
+    ## Loading required namespace: ncdf4
+
+    ## Warning in .couldBeLonLat(x, warnings = warnings): CRS is NA. Assuming it
+    ## is longitude/latitude
 
 ![](Blue-shark-standardization_files/figure-gfm/plot_grids-1.png)<!-- -->![](Blue-shark-standardization_files/figure-gfm/plot_grids-2.png)<!-- -->
