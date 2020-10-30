@@ -1,0 +1,198 @@
+netcdf Sequeira_et_al_biologging_standardization_blueshark_SPOTsatellitetag {
+
+dimensions:  
+        time = unlimited; // based on the number of records in the tag 
+		str_len = 18; //length of characters in the string "trajectory_id", length of Deployment ID
+
+//Coordinate and Auxiliary Coordinate Variables
+
+variables:
+	char trajectory(str_len);
+		string trajectory:deploymentID = "15U2175_2016-08-27"; 
+
+double time(time);
+        string time:long_name = "Timestamp of data point";
+        string time:standard_name = "time";
+        string time:units = "seconds since 1970-01-01T00:00:00Z";
+        string time:axis = "T";
+        string time:comment = "Datetime in UTC yyyy-MM-ddTHH:mm:ssZ";
+        string time:coverage_content_type = "coordinate";
+        
+double latitude(time);
+        string latitude:long_name = "Latitude of data point";
+        string latitude:standard_name = "latitude";
+        string latitude:units = "degrees_north";  
+        string latitude:axis = "Y";      
+        double latitude:_FillValue = -999999; 
+        double latitude:valid_max = 90;
+        double latitude:valid_min = -90;
+        string latitude:ancillary_variables = "argosErrorRadius"; 
+        string latitude:coverage_content_type = "coordinate";
+
+double longitude(time);
+        string longitude:long_name = "Longitude of data point";
+        string longitude:standard_name = "longitude";
+        string longitude:units = "degrees_east";      
+        string longitude:axis = "X";
+        double longitude:_FillValue = -999999;
+        double longitude:valid_max = 180;
+        double longitude:valid_min = -180;
+        string longitude:ancillary_variables = "argosErrorRadius";
+        string longitude:coverage_content_type = "coordinate";
+        
+char argosLC(time);
+        string argosLC:long_name = "Argos location quality class for positions retrieved from ARGOS";
+        string argosLC:standard_name = "argosLC";
+        string argosLC:flag_values = "G, 3, 2, 1, 0, A, B, Z";
+        string argosLC:flag_meanings = "<100m <250m 250-500m 500-1500m >1500m unestimated3messages unestimated2messages invalidlocations";
+        string argosLC:comment = "Argos location error/quality codes from  http://www.argos-system.org/manual/3-location/34_location_classes.htm";
+        string argosLC:coverage_content_type = "qualityInformation";
+        
+double argosErrorRadius(time);
+        string argosErrorRadius:long_name = "Error radius for location provided by CLS/Argos.";
+        string argosErrorRadius:standard_name = "argosErrorRadius";
+        double argosErrorRadius:_FillValue = "-999999";
+        string argosErrorRadius:units = "meters";
+        string argosErrorRadius:coverage_content_type = "qualityInformation";
+        
+double argosSemiMajor(time);
+        string argosSemiMajor:long_name = "Length of semi-major axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data.";
+        string argosSemiMajor:standard_name = "argosSemiMajor";
+        double argosSemiMajor:_FillValue = "-999999";
+        string argosSemiMajor:units = "meters";
+        string argosSemiMajor:coverage_content_type = "qualityInformation";
+        
+double argosSemiMinor(time);
+        string argosSemiMinor:long_name = "Length of semi-minor axis of error ellipse provided by CLS/Argos. Defaults to NA if Least-Squares Data.";
+        string argosSemiMinor:standard_name = "argosSemiMinor";
+        double argosSemiMinor:_FillValue = "-999999";
+        string argosSemiMinor:units = "meters";
+        string argosSemiMinor:coverage_content_type = "qualityInformation";
+        
+double argosOrientation(time);
+        string argosOrientation:long_name = "Orientation of error ellipse provided by CLS/Argos.";
+        string argosOrientation:standard_name = "argosOrientation";
+        double argosOrientation:_FillValue = "-999999";
+        string argosOrientation:units = "degrees from North";
+        string argosOrientation:coverage_content_type = "qualityInformation";
+
+// Global attributes:
+    // CF-ACDD global attributes: 
+    	string :Conventions = "CF-1.7, ACDD 1.3, COARDS";
+    	string :Metadata_Conventions = "Integrated Taxonomic Information System (ITIS), Climate and Forecast Metadata Conventions (CF), Attribute Conventions for Data Discovery (ACDD), International Organization for Standardization (ISO)";
+    	string :featureType = "trajectory";
+    	string :cdm_data_type = "Trajectory";
+    	string :nodc_template_version = "NODC_NetCDF_Trajectory_Template_v2.0";
+    	string :standard_name_vocabulary = "CF Standard Name Table v27";
+    	string :title = "Animal telemetry archival tag netCDF template";
+    	string :source = "atn.noaa.gov";
+	    string :platform = "Prionace glauca";
+    	string :instrument = "Wildlife Computers SPOT258G";
+    	string :uuid = "";
+    	string :id = "10.1073/pnas.1903067116";
+    	string :metadata_link = "https://github.com/ocean-tracking-network/biologging_standardization/blob/master/examples/braun-blueshark/braun_blues_deployment-metadata.csv","https://github.com/ocean-tracking-network/biologging_standardization/blob/master/examples/braun-blueshark/braun_blues_device-metadata.csv";
+    	string :references = "Camrin D. Braun, Peter Gaube, Tane H. Sinclair-Taylor, Gregory B. Skomal, Simon R. Thorrold, 2019. Mesoscale eddies release pelagic sharks from thermal constraints to foraging in the ocean twilight zone. Proceedings of the National Academy of Sciences Aug 2019, 116 (35) 17187-17192.";
+    	string :sea_name = "Atlantic";
+    	string :naming_authority = "gov.noaa.gov.atn";
+    	string :time_coverage_start = "2016-08-27T23:29:04";
+    	string :time_coverage_end = "2017-02-13T22:40:41";
+    	string :time_coverage_resolution = "PT1S";  // alter time interval of data accordingly
+    	double :geospatial_lat_min = 31.576;
+    	double :geospatial_lat_max = 42.319;
+    	string :geospatial_lat_units = "degrees_north";
+    	string :geospatial_lat_resolution = "0.1 degree";
+    	double :geospatial_lon_min = -75.767;
+    	double :geospatial_lon_max = -61.688;
+    	string :geospatial_lon_units = "degrees_east";
+    	string :geospatial_lon_resolution = "0.1 degree";
+    	string :creator_type = "Working group";
+    	string :creator_institution = "University of California Santa Cruz & University of Miami";
+    	string :creator_email = "tkeates@ucsc.edu & lxm958@miami.edu";
+    	string :creator_name = "Theresa Keates & Laura McDonnell";
+    	string :creator_role = "Researcher";
+    	string :institution = "Standardization of Biologging Data Working Group";
+    	string :publisher_name = "Ivica Janekovic";
+    	string :publisher_type = "person";
+    	string :publisher_email = "ivica.janekovic@uwa.edu.au";
+    	string :publisher_url = "https://research-repository.uwa.edu.au/en/persons/ivica-janekovic";
+    	string :project = "Publication: A standardisation framework for bio-logging data to advance ecological research and conservation";
+    	string :processing_level = "Level 1";
+    	string :keywords_vocabulary = "CF Standard Names, GCMD Science Keywords";
+    	string :keywords = "Remote sensing, Oceanographic model, Satellite telemetry, Marine predator, Mesopelagic";
+    	string :acknowledgement = "Funding provided by ONR under grant N00014-19-1-2573 awarded to Dr Ana M. M. Sequeira, Senior Research Fellow at the University of Western Australia, ana.sequeira@uwa.edu.au.";
+    	string :date_created = "2020-09-16T11:00:01";
+    	string :date_modified = "2020-09-25T11:00:01";
+    	string :date_issued = "2020-09-25T11:00:01";
+    	string :date_metadata_modified = "2020-07-02T13:53:21";
+    	string :program = "Standardization of Biologging Data Working Group";
+    	string :product_version = "1.0";
+    	string :license = "CC-BY";
+    	string :summary = "Deployment of satellite-transmitting tag on a blue shark in the Gulf Stream, Atlantic Ocean, courtesy of Camrin Braun";
+
+group: biologging_standardization_data {
+
+group: device_metadata {
+	string :instrumentID = "15U2175";
+        string :instrumentType = "satellite";
+        string :instrumentModel = "SPOT258G";
+        string :instrumentManufacturer = "Wildlife Computers";
+        string :instrumentSerialNumber = "15U2175";     
+        string :trackingDevice = "Argos";
+        double :uplinkInterval = "30";
+        string :uplinkInvervalUnits = "seconds";
+	}
+                
+group: deployment_metadata {        
+string :deploymentID = "15U2175_2016-08-27";
+
+group: instrument_metadata {
+        double :ptt = "106744";
+	string :transmissionSettings = "24 hours 250 message limit";
+	string :transmissionMode = "hauled out mode disabled";
+		}
+
+group: movement_metadata {
+        string :deploymentDateTime = "2016-08-27T00:00:00.000";
+        double :deploymentLatitude = "41.4043";
+        double :deploymentLongitude = "-69.2987";
+        string :deploymentEndType = "stopped transmitting";
+        double :detachmentDateTime = "2017-02-15T00:00:00.000";
+        string :detachmentDetails = " ";
+        double :detachmentLatitude = "35.089";
+        double :detachmentLongitude = "-73.915";
+        string :trackStartTime = "2016-08-27T00:00:00.000";
+        double :trackStartLatitude = "41.4043";
+        double :trackStartLongitude = "-69.2987";
+        string :trackEndTime = "2017-02-15T00:00:00.000" ;
+        double :trackEndLatitude = "35.089" ;
+        double :sunElevationAngle = "Kalman";
+        }        
+
+group: organism_metadata {
+	string :organismID = "eddies:Don";
+        string :scientificName = "Prionace glauca";
+        string :scientificNameSource = "urn:lsid:marinespecies.org:taxname:105801";
+        string :commonName = "Blue shark";
+        string :organismSex = "M";
+        double :organismSize = "2.77" ;
+        string :organismSizeMeasurementType = "Total length";
+        string :organismSizeMeasurementTime = "2016-08-27T00:00:00.000";
+        string :organismAgeReproductiveClass = "adult";
+        string :trappingMethodDetails = "rod and reel";
+        string :attachmentMethods = "dorsal fin";     
+        }
+
+group: other_data {
+	string :ownerName = "Camrin Braun";
+        string :ownerEmailContact = "camrin.braun@gmail.com";
+        string :ownerInstitutionalContact = "Woods Hole Oceanographic Institution, Woods Hole, MA 02543 and University of Washington, Seattle, WA, 98105";
+        string :ownerPhoneContact = "";
+        string :license = "CC-BY";
+        string :otherRelevantIdentifiers = "";
+        string :otherDataTypesAssociatedWithDeployment = "";
+        string :references = "https://www.pnas.org/content/116/35/17187";
+        }
+	}
+}
+}
+
