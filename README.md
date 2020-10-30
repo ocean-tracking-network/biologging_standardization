@@ -28,8 +28,8 @@ This automated procedure and the four data levels are exemplified in the [exampl
 -	[sensorml-example](examples/braun-blueshark/sensorml-example): a SensorML example for the device used in the blue shark dataset
 - [darwincore-example](examples/braun-blueshark/darwincore-example): a Darwin Core example showing how the blue shark dataset can easily be converted to Darwin Core
 -	[wildlife_computers_raw](examples/braun-blueshark/wildlife_computers_raw): Original decoded sensor data provided by the manufacturer. Translation of these decoded data into Level 1 format is provided in the [Blue-shark-standardisation.md](examples/braun-blueshark/Blue-shark-standardization.md) example.
-- [CDL for NetCDF_Example_blue sharks_Level1.cdl](examples/braun-blueshark/CDL for NetCDF_Example_blue sharks_Level1.cdl): a Common Data Language (CDL) file template to be used to create a netCDF file with the data-level1 from the braun-blueshark example
-- [NetCDF_Example_blue sharks_Level1.nc](examples/braun-blueshark/NetCDF_Example_blue sharks_Level1.nc): an example of the netCDF file containing the data-level1 from the braun-blueshark example and created based on the CDL file template provided.
+- [CDL for NetCDF_Example_blue sharks_Level1.cdl](examples/braun-blueshark/CDL%20for%20NetCDF_Example_blue%20sharks_Level1.cdl): a Common Data Language (CDL) file template to be used to create a netCDF file with the data-level1 from the braun-blueshark example
+- [NetCDF_Example_blue sharks_Level1.nc](examples/braun-blueshark/NetCDF_Example_blue%20sharks_Level1.nc): an example of the netCDF file containing the data-level1 from the braun-blueshark example and created based on the CDL file template provided.
 
 Our objective is to contribute to standardising bio-logging datasets across all taxa and ecosystems, which is one of the stated goals of the [International Bio-Logging Society](https://www.bio-logging.net "Bio-logging Society's homepage").
 
