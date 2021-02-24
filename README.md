@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/267187296.svg)](https://zenodo.org/badge/latestdoi/267187296)
+
 ## A standardisation framework for bio-logging data
 This repository contains a standardisation framework for bio-logging data proposed by Sequeira et al<sup>1</sup> (submitted to Methods in Ecology and Evolution) and involving data flow from manufacturers and researchers to compliant repositories. The objective of adopting this framework is to standardise bio-logging data to promote efficient data collation, usage, and sharing.
 
